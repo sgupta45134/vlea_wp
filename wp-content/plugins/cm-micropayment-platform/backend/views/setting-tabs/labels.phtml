@@ -1,0 +1,36 @@
+<style>
+    table.cmmp_labels_table { width:100%; }
+    table.cmmp_labels_table th { width: 49%; text-align: left; display: inline-block; }
+    table.cmmp_labels_table tr { border-bottom: 1px solid #dadada; box-shadow: 0px 1px 0px 0px #fff; vertical-align: middle; padding: 10px 0px; display: block; }
+    table.cmmp_labels_table td { display: inline-block; width: 50%; }
+    table.cmmp_labels_table input[type="text"] { width: 96%; }
+    table.cmmp_labels_table .field_help { float: right; margin-top:5px; }
+</style>
+<h3>Labels</h3>
+<form action="" method="post">
+    <table class="cmmp_labels_table">
+        <?php $defaultLabels = CMMicropaymentPlatformLabel::getDefaultLabels(); ?>
+        <?php foreach ( $defaultLabels as $label => $default ): ?>
+            <?php
+            $helpLabel = isset( CMMicropaymentPlatformLabel::$labelsSettingsDescriptions[ $label ] ) ? CMMicropaymentPlatformLabel::$labelsSettingsDescriptions[ $label ] : $label;
+            $labelsLabel = isset( CMMicropaymentPlatformLabel::$labelsSettingsLabels[ $label ] ) ? CMMicropaymentPlatformLabel::$labelsSettingsLabels[ $label ] : $default;
+            ?>
+            <tr valign="top">
+                <th scope="row" valign="middle" align="left" >"<?php echo $labelsLabel ?>" label:
+                    <div class="field_help" title="<?php _e( str_replace('"', "'", $helpLabel )); ?>"></div>
+                </th>
+                <td>
+                    <input type="text" name="<?php echo CMMicropaymentPlatformLabel::OPTION_LABEL_PREFIX . $label ?>"
+                           value="<?php echo esc_attr( CMMicropaymentPlatformLabel::getLabel( $label ) ); ?>"
+                           placeholder="<?php echo esc_attr( $default ) ?>" />
+                </td>
+            </tr>
+        <?php endforeach; ?>
+        <?php do_action('cmmp_labels_table_before_submit_btn'); ?>
+        <tr>
+            <td>
+                <p class="submit"><input type="submit" value="<?php _e( 'Save', 'cm-micropayments' ) ?>" class="button button-primary" id="submit" name="submit"></p>
+            </td>
+        </tr>
+    </table>
+</form>

@@ -1,0 +1,73 @@
+/*
+Theme Name:     Entrepreneur - Child Theme
+Theme URI:      http://themovation.com/entrepreneur
+Template:       entrepreneurx
+Author:         Themovation
+Author URI:     http://themovation.com
+Version:        2.0
+Text Domain:    entrepreneur
+Domain Path:    /languages/
+*/
+
+
+/* = Theme customization starts here
+-------------------------------------------------------------- */
+
+.related.products {
+  display: none;
+}
+#themo_woocommerce_layout_content .woocommerce-result-count, #themo_woocommerce_layout_content .woocommerce-ordering {
+	  display: none;
+}
+.checkout_point_text{
+	display: none;
+}
+.woocommerce-NoticeGroup.woocommerce-NoticeGroup-checkout{
+		display: none;
+}
+.post-type-archive-product .entry-title{
+	display: none;
+}
+
+.equal-height-content {
+    height: 100%;
+    display: flex;
+}
+
+
+.woocommerce #order_review table.shop_table th, .woocommerce #order_review table.shop_table td {
+    width:auto!important;
+		text-align:left;
+}
+.woocommerce a.remove {
+    line-height: .8;
+}
+
+.um-header {
+    padding: 25px 0 0 0!important;
+    border-bottom: none!important;
+}
+.um-profile.um .um-profile-headericon a i{
+    color: #fff!important;
+}
+
+.um-profile.um .um-name a {
+    color: #fff!important;
+}
+
+#themo_single_post_layout_content .entry-meta.meta-tags, #themo_single_post_layout_content .comments-closed, #themo_single_post_layout_content .post-meta {
+	display:none;
+}
+
+#themo_single_post_layout_content .wp-post-image {
+	margin: 0 auto;
+}
+
+.cmppp-paybox {
+    text-align: center;
+    margin: 1em auto;
+}
+
+.category-video-tutorials img{
+	display:none;
+}

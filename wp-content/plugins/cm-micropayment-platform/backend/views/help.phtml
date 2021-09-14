@@ -1,0 +1,402 @@
+<?php if ('all' === $what || 'filters' === $what) : ?>
+    <h4><?php _e('Available filters: Wallet - transactions'); ?></h4>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>wallet_has_enough_points</h4>
+            <span>Checks if provided wallet has more or equal points than provided</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>apply_filters('wallet_has_enough_points', array('<strong>wallet_id</strong>' => '1234', '<strong>points</strong>' => 10))</kbd></p>
+            <h5>Return:</h5>
+            <p>boolean</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>withdraw_wallet_points</h4>
+            <span>Checks and withdraw provided amount of points from wallet ID</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>apply_filters('withdraw_wallet_points', array('<strong>wallet_id</strong>' => '1234', '<strong>points</strong>' => 10))</kbd></p>
+            <h5>Return:</h5>
+            <p>boolean</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>transfer_points_by_wallet_id</h4>
+            <span>Transfers some amount of points from one wallet to another</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>apply_filters('transfer_points_by_wallet_id', array('<strong>from</strong>' => '1234','<strong>to</strong>' => '4321', '<strong>amount</strong>' => 10))</kbd></p>
+            <h5>Return:</h5>
+            <p>array</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>charge_wallet</h4>
+            <span>Charges the wallet ID with given amount of points (can be used as a prize for certains actions)</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>apply_filters('charge_wallet', array('<strong>wallet</strong>' => '1234','<strong>amount</strong>' => 10))</kbd></p>
+            <h5>Return:</h5>
+            <p>bool</p>
+        </div>
+    </article>
+
+    <h4><?php _e('Wallet - information'); ?></h4>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>cm_micropayments_user_wallet_id</h4>
+            <span>Returns the id (int) of the wallet for given user_id</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>$walletId = apply_filters('cm_micropayments_user_wallet_id', 1)</kbd></p>
+            <h5>Return:</h5>
+            <p>int</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>cm_micropayments_user_wallet_code</h4>
+            <span>Returns the code (string) of the wallet for given user_id</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>$walletCode = apply_filters('cm_micropayments_user_wallet_code', 1)</kbd></p>
+            <h5>Return:</h5>
+            <p>string</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>cm_micropayments_user_wallet_url</h4>
+            <span>Returns the permalink to the User's wallet page</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>apply_filters('cm_micropayments_user_wallet_url', 1)</kbd></p>
+            <h5>Return:</h5>
+            <p>string</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>cm_micropayments_get_wallet_by_code</h4>
+            <span>Returns the wallet object for given code</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>apply_filters('cm_micropayments_get_wallet_by_code', 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')</kbd></p>
+            <h5>Return:</h5>
+            <p>bool</p>
+        </div>
+    </article>
+
+    <h4><?php _e('Available filters (requiring: "Assign wallets to customers" to be ON)'); ?></h4>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>user_has_enough_points</h4>
+            <span>Checks if provided user has more or equal points as provided</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>apply_filters('user_has_enough_points', array('<strong>username</strong>' => 'username', '<strong>points</strong>' => 10))</kbd></p>
+            <h5>Return:</h5>
+            <p>bool</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>transfer_points</h4>
+            <span>Transfers some amount of points from one user's wallet to other user's wallet</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>apply_filters('transfer_points', array('<strong>from</strong>' => '1234','<strong>to</strong>' => '4321', '<strong>amount</strong>' => 10))</kbd></p>
+            <h5>Return:</h5>
+            <p>array</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>charge_user_wallet</h4>
+            <span>Charges the wallet of the user with given ID with given amount of points (can be used as a prize for certains actions)</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>apply_filters('charge_user_wallet', array('<strong>user_id</strong>' => '1234','<strong>amount</strong>' => 10))</kbd></p>
+            <h5>Return:</h5>
+            <p>bool</p>
+        </div>
+    </article>
+
+<?php endif; ?>
+
+<?php if ('all' === $what || 'shortcodes' === $what) : ?>
+    <h4><?php _e('Available shortcodes functions') ?></h4>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>[create_wallet_button]</h4>
+            <span>Shows button which creates new wallet in backend and displays wallet Id on frontend. Click on this button do a ajax request. On success, based on admin configuration, button will be hided and wallet Id will be displayed</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>[create_wallet_button]</kbd></p>
+            <p>Show the button allowing to create the wallet in the page.</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>[cm_micropayment_checkout]</h4>
+            <span>Shows checkout in the page.</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>[cm_micropayment_checkout]</kbd></p>
+            <p>Shows the checkout allowing to purchase the points with the internal PayPal gateway.</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>[get_transaction_wallet_points]</h4>
+            <span>Show how many points wallet gets after checkout.</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>[get_transaction_wallet_points]</kbd></p>
+            <p>Show on success page how many points wallet gets after successful checkout.</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>[get_transaction_wallet]</h4>
+            <span>Show wallet name after checkout.</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>[get_transaction_wallet]</kbd></p>
+            <p>Shortcode displays the name of the wallet on the success page after transaction.</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>[cm_check_wallet]</h4>
+            <span>Show wallet data by form.</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>[cm_check_wallet]</kbd></p>
+            <p>Shortcode shows form, where user enters wallet name, and displays wallet info.</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>[cm_user_wallet]</h4>
+            <span>Show wallet history.</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>[cm_user_wallet show_wallet_id="1"]</kbd></p>
+            <p>Available parameters:</p>
+            <ul>
+                <li>show_wallet_id (default:0)</li>
+            </ul>
+            <p>If user is logged in, shows lastests transactions on wallet.</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>[cm_user_balance pointlabel=1]</h4>
+            <span>Show user balance.</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Available parameters:</h5>
+            <ul>
+                <li>pointlabel - Default 1 | set 1 to show points label (can be edit in Settings->Labels)</li>
+            </ul>
+            <h5>Example:</h5>
+            <p><kbd>[cm_user_balance]</kbd></p>
+            <p>Show how many points logged user have on his wallet.</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>[cm_user_balance_value]</h4>
+            <span>Show user balance value.</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>[cm_user_balance_value]</kbd></p>
+            <?php
+            $gatewaySettingsUrl = esc_url(add_query_arg(array('post_type' => 'download', 'page' => 'edd-settings', 'tab' => 'gateways'), admin_url('edit.php')));
+            ?>
+            <p>Show how many the points logged user have on his wallet are worth.
+                (Uses the "Currency to Points Ratio" from the <a href="<?php echo $gatewaySettingsUrl; ?>"> Easy Digital Downloads Payment Gateway</a>).</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>[cm_micropayment_points_to_discount]</h4>
+            <span>Exchange points to discounts.</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>[cm_micropayment_points_to_discount]</kbd></p>
+            <?php
+            $gatewaySettingsUrl = esc_url(add_query_arg(array('post_type' => 'download', 'page' => 'edd-settings', 'tab' => 'gateways'), admin_url('edit.php')));
+            ?>
+            <p>Allows user to exchange their MicroPayment Points to Easy Digital Downloads discount codes.
+                (Uses the "Currency to Points Ratio" from the <a href="<?php echo $gatewaySettingsUrl; ?>"> Easy Digital Downloads Payment Gateway</a>).</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>[cm_micropayment_points_discounts]</h4>
+            <span>Show discounts.</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>[cm_micropayment_points_discounts]</kbd></p>
+            <p>Displays the list of the discount codes generated with the [cm_micropayment_points_to_discount].</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>[cm_micropayment_buy_more_link]</h4>
+            <span>Show purchase more points link.</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>[cm_micropayment_buy_more_link]</kbd></p>
+            <p>Displays the link to the page allowing to buy more points.</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>[cm_micropayment_points_to_paypal]</h4>
+            <span>Show PayPal Payout exchange form.</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>[cm_micropayment_points_to_paypal]</kbd></p>
+            <p>Displays the form allowing to exchange the points to money using PayPal Payouts system.</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>[cm_micropayment_points_to_stripe]</h4>
+            <span>Show Stripe Payout exchange form.</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Available parameters:</h5>
+            <ul>
+                <li>connectbutton (default:0)</li>
+            </ul>
+            <h5>Example:</h5>
+            <p><kbd>[cm_micropayment_points_to_stripe]</kbd></p>
+            <p><kbd>[cm_micropayment_points_to_stripe connectbutton="1"]</kbd></p>
+            <p>Displays the form allowing to exchange the points to money using Stripe Payouts system.</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>[transfer_wallet_points]</h4>
+            <span>Show form allowing to transfer points between wallets.</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>[transfer_wallet_points]</kbd></p>
+            <p>Displays the form allowing to send the points from one wallet to another.</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>[cm_wallet_id]</h4>
+            <span>Show user's wallet id.</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>[cm_wallet_id]</kbd></p>
+            <p>Displays the current wallet id of loggen-in user.</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>[cm_micropayment_points_to_woo_discount]</h4>
+            <span>Show user's wallet id.</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>[cm_micropayment_points_to_woo_discount]</kbd></p>
+            <p>Displays the current wallet id of loggen-in user.</p>
+        </div>
+    </article>
+
+    <article class="cm-shortcode-desc">
+        <header>
+            <h4>[cm_micropayment_points_woo_discounts]</h4>
+            <span>Show the form allowing to generate WooCommerce discounts</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Example:</h5>
+            <p><kbd>[cm_micropayment_points_woo_discounts]</kbd></p>
+            <p>Displays all of the generated WooCommerce discounts for current user.</p>
+        </div>
+    </article>
+
+	<article class="cm-shortcode-desc">
+        <header>
+            <h4>[cmmp_tip_button]</h4>
+            <span>Show button for pay tip to users from frontend. Click on this button do a ajax request. On success, points will credit to users.</span>
+        </header>
+        <div class="cm-shortcode-desc-inner">
+            <h5>Available parameters:</h5>
+            <ul>
+                <li>tipamount (default:0)</li>
+                <li>account (default:empty) - It should be user_login of wordpress user</li>
+                <li>class (default:empty)</li>
+                <li>text (default:empty)</li>
+                <li>label (default:Pay Tip)</li>
+            </ul>
+            <h5>Example:</h5>
+            <p><kbd>[cmmp_tip_button]</kbd></p>
+            <p><kbd>[cmmp_tip_button tipamount="5" class="five_tip_class" account="user1" label="Pay Tip"]</kbd></p>
+            <p>Show the button allowing to pay tip to users.</p>
+        </div>
+    </article>
+
+<?php endif; ?>

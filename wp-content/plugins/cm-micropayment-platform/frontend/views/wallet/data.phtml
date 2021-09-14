@@ -1,0 +1,171 @@
+<?php
+if ( isset( $isFromSession ) && $isFromSession ) {
+	include_once('form.phtml');
+}
+$page_url = apply_filters( 'cmmp_change_wallet_page_url', get_page_link( CMMicropaymentPlatform::get_option( 'cm_micropayment_wallet_page_id' ) ) );
+if (isset($data[ 'per_page' ]) && $data[ 'per_page' ] > 0 ) :
+
+	$show_comment_col = false;
+	switch (CMMicropaymentPlatform::get_option( 'cm_micropayment_wallet_history_show_comment', 0 )) {
+		case '2': {
+				if ( is_user_logged_in() ) $show_comment_col = true;
+				break;
+			}
+		case '1': {
+				if ( current_user_can('manage_options') ) $show_comment_col = true;
+				break;
+			}
+		default: break;
+	}
+	?>
+	<div class="wallet_info_container">
+
+		<div class="wallet_info_id">
+			<?php if($show_wallet_id && $walletName): ?>
+				<label style="display: inline-block; padding-right: 10px;">Wallet ID: </label>
+				<span>
+					<?php echo $walletName; ?>
+				</span>
+			<?php endif; ?>
+		</div>
+
+	    <header>
+			<?php if ( CMMicropaymentPlatform::get_option( "cm_micropayment_assign_wallet_to_customer" ) != 1 ): ?>
+				<div class="wallet_name">
+					<?php echo __cm( 'wallet_data_entered_wallet_id' ) ?> <span class="wallet_name"><?php echo $data[ 'walletID' ]; ?></span>
+				</div>
+			<?php endif; ?>
+	    </header>
+
+	    <div class="wallet_transactions_container">
+	        <div class="wallet_transactions_body">
+
+	            <table class="dataTable">
+	                <thead>
+						<tr class="row-1 odd" role="row">
+							<th class="column-1 sorting" role="columnheader" tabindex="0" rowspan="1" colspan="1" style="width: 30px;">
+								<?php echo __cm( 'lo_header' ); ?>
+							</th>
+							<th class="column-2 sorting" role="columnheader" tabindex="0" rowspan="1" colspan="1" style="width: 123px;">
+								<?php echo __cm( 'transaction_date_header' ) ?>
+							</th>
+							<th class="column-3 sorting" role="columnheader" tabindex="0" rowspan="1" colspan="1" style="width: 120px;">
+								<?php echo __cm( 'transaction_points_header' ) ?>
+							</th>
+							<th class="column-4 sorting" role="columnheader" tabindex="0" rowspan="1" colspan="1" style="width: 79px;">
+								<?php echo __cm( 'transaction_type_header' ) ?>
+							</th>
+							<?php if ( $show_comment_col ) : ?>
+							<th class="column-5 sorting" role="columnheader" tabindex="0" rowspan="1" colspan="1" style="width: 120px;">
+								<?php echo __cm( 'transaction_comment_header' ) ?>
+							</th>
+							<?php endif;?>
+						</tr>
+	                </thead>
+	                <tbody class="row-hover" role="alert" aria-live="polite" aria-relevant="all">
+						<?php
+						$i = 1;
+						if ( $data[ 'count' ] > $data[ 'per_page' ] ) {
+							$page = (int)$_GET['pagei'];
+							if ( !$page || !is_numeric( $page ) ) {
+								$page = 1;
+							}
+							$i += ($page - 1) * $data[ 'per_page' ] ;
+						}
+						if ( !$data[ 'transactions' ] ) {
+							$data[ 'transactions' ] = array();
+						}
+						foreach ( $data[ 'transactions' ] as $transaction ): ?>
+							<tr class="row-<?php echo $i ?>">
+								<td class="column-1"><?php echo $i; ?></td>
+								<td class="column-2"><?php echo date(get_option('date_format').' '.get_option('time_format'), strtotime($transaction->order_date)); ?></td>
+                                <td class="column-3 <?php if( $transaction->points < 0 ) echo 'negativeValue'; ?>">
+                                    <?php echo apply_filters('cmmp_change_points_format_in_wallet', $transaction->points); ?>
+                                </td>
+								<td class="column-4">
+									<?php if ( isset( CMMicropaymentPlatformConst::$transactionType[ $transaction->type ] ) ) : ?>
+										<?php echo __cm( CMMicropaymentPlatformConst::$transactionType[ $transaction->type ] ) ?>
+									<?php else : ?>
+										<?php echo __cm('undefined_transaction_type') ?>
+										<?php // _e( 'Undefined transaction type' ); ?>
+									<?php endif; ?>
+								</td>
+							<?php if ( $show_comment_col ) : ?>
+								<td class="column-5">
+									<?php if( isset($transaction->comment) && !empty($transaction->comment) ) echo $transaction->comment; ?>
+								</td>
+							<?php endif; ?>
+							</tr>
+							<?php
+							$i++;
+						endforeach; ?>
+	                </tbody>
+	            </table>
+
+				<?php
+				if ( $data[ 'count' ] > $data[ 'per_page' ] ):
+					$page = (int)$_GET['pagei'];
+					if ( !$page || !is_numeric( $page ) ) {
+						$page = 1;
+					}
+					$pages = ceil( $data[ 'count' ] / $data[ 'per_page' ] );
+					$pgn_links = array();
+					if ( $pages > 1 ) {
+						$pgn_links[] = 1;
+						if ( $page > 4 ) {
+							$pgn_links[] = '...';
+						}
+						if ( $page > 3 ) {
+							$pgn_links[] = $page - 2;
+						}
+						if ( $page > 2 ) {
+							$pgn_links[] = $page - 1;
+						}
+						if ( $page > 1 ) {
+							$pgn_links[] = $page;
+						}
+						if ($pages > $page) {
+							if ( $pages - $page > 1 ) {
+								$pgn_links[] = $page + 1;
+							}
+							if ( $pages - $page > 2 ) {
+								$pgn_links[] = $page + 2;
+							}
+							if ( $pages - $page > 3 ) {
+								$pgn_links[] = '...';
+							}
+							$pgn_links[] = $pages;
+						}
+					}
+					?>
+					<div  class="cmmp_history_pagination_bar">
+					<ul>
+						<?php
+						foreach ( $pgn_links as $lnk ) {
+							?>
+							<?php if ( $page == $lnk ) { ?>
+								<li class="cmmp_pagination_active"><a href="#"><?php echo $lnk ?></a></li>
+							<?php } else { ?>
+								<li>
+								<?php if ($lnk == '...') { ?>
+									<a href="#"><?php echo $lnk ?></a>
+								<?php } else { ?>
+									<a href="<?php echo esc_url(add_query_arg(['pagei' => (int)$lnk, 'wallet_id' => $walletName], $page_url)) ?>">
+                                        <?php echo $lnk ?>
+                                    </a>
+							<?php } ?>
+								</li>
+							<?php } ?>
+						<?php } ?>
+					</ul>
+					</div>
+				<?php endif; ?>
+	        </div>
+	    </div>
+	</div>
+<?php else:
+	if ( current_user_can( 'manage_options' ) ) {
+		echo '<strong>',__( 'Admin only notice: Not displaying any transactions because "Number of transactions in My Wallet" in Settings is set to 0' ),'</strong>';
+	}
+endif;
+?>

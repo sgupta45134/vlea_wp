@@ -1,0 +1,241 @@
+.wallet_info_id label{
+    display: inline-block;
+    padding-right: 10px;
+}
+.wallet_id_unassigned{
+    margin-top: 15px;
+}
+.wallet_transactions_body table {
+    background-color: #CDCDCD;
+    font-family: arial;
+    font-size: 10pt;
+    margin: 10px 0 15px;
+    text-align: left;
+    width: 100%;
+}
+.wallet_transactions_body table thead tr th, .wallet_transactions_body table tfoot tr th {
+    background-color: #FFFFFF;
+    font-size: 10pt;
+    padding: 6px;
+}
+.wallet_transactions_body table thead tr .header {
+    background-image: url("../img/bg.gif");
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.wallet_transactions_body table tbody td {
+    background-color: #FFFFFF;
+    color: #3D3D3D;
+    padding: 4px;
+    vertical-align: top;
+}
+.wallet_transactions_body table tbody td.negativeValue {
+    color: #e14d43 !important;
+}
+.wallet_transactions_body table tbody tr.odd td {
+    background-color: #F0F0F6;
+}
+.wallet_transactions_body table thead tr .headerSortUp {
+    background-image: url("../img/asc.gif");
+}
+.wallet_transactions_body table thead tr .headerSortDown {
+    background-image: url("../img/desc.gif");
+}
+.wallet_transactions_body table thead tr .headerSortDown, .wallet_transactions_body table thead tr .headerSortUp {
+    background-color: #FFFFFF;
+}
+.cmmp_button.create-wallet-button-ajax {
+    /*background-color: #24890d;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;*/
+    position: relative;
+    padding: 0px 20px;
+    padding-left: 60px;
+    box-shadow: none !important;
+    background-color: #3d9e26;
+    color: white !important;
+    display: inline-block;
+    margin: 10px auto;
+    border-radius: 5px;
+    outline: none;
+    height: 48px;
+    line-height: 44px;
+    box-sizing: border-box;
+    border: 2px solid #2b8e15;
+}
+.cmmp_button.create-wallet-button-ajax:active,
+.cmmp_button.create-wallet-button-ajax:hover,
+.cmmp_button.create-wallet-button-ajax:visited {
+    color: white;
+    box-shadow: none;
+}
+.cmmp_button.create-wallet-button-ajax:active {
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+a.cmmp_button.create-wallet-button-ajax span.dashicons {
+    color: rgba(255, 255, 255, 0.43);
+    font-size: 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 48px;
+    height: 100%;
+    line-height: 48px;
+    background-color: #2b8e15;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 50%;
+    vertical-align: middle;
+    display: inline-block;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+}
+a.cmmp_button.create-wallet-button-ajax:hover span.dashicons {
+    font-size: 38px;
+}
+.currentWalletID,
+.createdWalletID {
+    display: inline-block;
+	width: 50%;
+	margin: 3px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #006400;
+    background-color: rgb(240, 255, 240);
+    border: 1px solid rgb(201, 236, 201);
+}
+.currentWalletID.inactive {
+    background-color: #ccc;
+    border: 1px solid #777;
+}
+form#provide-wallet-id input#wallet_id, form#provide-wallet-id input[type="submit"] {
+    height: 48px;
+    box-sizing: border-box;
+    margin: 5px auto;
+}
+form#provide-wallet-id label[for="wallet_id"] {
+    margin: 5px 15px 5px 0px;
+    display: inline-block;
+}
+.createdWalletID {
+    font-weight: bolder;
+}
+form#cm-micropayments-checkout-form ul.cm-micropayments-checkout-form-list label {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+}
+ul.cm-micropayments-checkout-form-list li {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.25);
+    padding: 20px;
+	list-style: none;
+}
+ul.cm-micropayments-checkout-form-list li:last-of-type {
+    border-bottom: 0px;
+}
+form#cm-micropayments-checkout-form {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+form#cm-micropayments-checkout-form h3 {
+    line-height: 1em;
+    vertical-align: middle;
+}
+form#cm-micropayments-checkout-form h3 span {
+    margin-right: 20px;
+    font-size: 1.5em;
+    line-height: inherit;
+}
+form#cm-micropayments-checkout-form span.cm_checkoutMsg {
+    display: block;
+    margin: 10px auto;
+}
+form#cm-micropayments-checkout-form input#cm-micropayments-checkout-form-submit,
+form#provide-wallet-id input[type="submit"],
+form#cmmp_exchange_points_for_discount_form input[type="submit"] {
+    position: relative;
+    padding: 12px 30px;
+    height: 48px;
+    min-width: 120px;
+    box-sizing: border-box;
+    box-shadow: none !important;
+    background-color: #3d9e26;
+    color: white !important;
+    display: inline-block;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 2px solid #2b8e15;
+    outline: none;
+    cursor: pointer;
+}
+form#cm-micropayments-checkout-form input#cm-micropayments-checkout-form-submit:hover,
+form#provide-wallet-id input[type="submit"]:hover,
+form#cmmp_exchange_points_for_discount_form input[type="submit"]:hover {
+    background-color: #298014;
+}
+form#cm-micropayments-checkout-form input#cm-micropayments-checkout-form-submit:active,
+form#provide-wallet-id input[type="submit"]:active,
+form#cmmp_exchange_points_for_discount_form input[type="submit"]:active {
+    margin-top: 12px;
+    margin-bottom: 8px;
+    /*box-shadow: inset 0px 0px 2px 2px green !important;*/
+}
+.dashicons:before, .dashicons[class*=" ps-icon-"]:before {font-family: dashicons !important;}
+
+.cmmp_tip_button_container { float:left; width:100%; clear:both; margin-bottom:20px; }
+.cmmp_tip_button_container span { float:left; }
+.cmmp_tip_button_container a { clear:both; background:#ccc; color:#000; border-radius:5px; text-decoration:none; padding: 10px 30px; float:left; }
+.cmmp_tip_button_container a:hover { background:#ddd; text-decoration:none; }
+.wallet_to_user_section {
+	display: block;
+	position: relative;
+	line-height: 3em;
+}
+input[name="wallet_id_from"] {
+	display: inline-block;
+}
+.select2-selection__rendered,
+.select2-results__option {
+    line-height: 31px !important;
+}
+.select2-container .select2-selection--single {
+    height: 35px !important;
+}
+.select2-selection__arrow {
+    height: 34px !important;
+}
+.cmmp_field {
+	margin: 10px 0;
+}
+.cmmp_history_pagination_bar {
+	display: block;
+	margin: auto;
+}
+
+.cmmp_history_pagination_bar ul {
+	list-style: none;
+  display: inline-block;
+}
+.cmmp_history_pagination_bar ul li {
+  display: block;
+  color: black;
+  float: left;
+}
+.cmmp_history_pagination_bar ul li a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  box-shadow: none !important;
+  border-radius: 3px;
+}
+.cmmp_history_pagination_bar ul li.cmmp_pagination_active a {
+  background-color: #4CAF50;
+  color: white;
+}
+.cmmp_history_pagination_bar ul li:hover:not(.cmmp_pagination_active) a {background-color: #ddd;}
+.custom_points_input_field { height:40px; margin-top:10px !important; width:250px; }

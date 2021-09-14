@@ -1,0 +1,12 @@
+<?php if(isset($_SESSION['success-message'])): ?>
+    <div class="updated">
+        <p><?php echo $_SESSION['success-message']; ?></p>
+    </div>
+	<?php unset($_SESSION['success-message']); ?>
+<?php endif; ?>
+<?php if(isset($_SESSION['error-message'])): ?>
+    <div id="message" class="error below-h2">
+        <p><?php echo $_SESSION['error-message']; ?></p>
+    </div>
+	<?php unset($_SESSION['error-message']); ?>
+<?php endif; ?>

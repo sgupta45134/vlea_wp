@@ -1,0 +1,35 @@
+<div class="wrap">
+    <div id="icon-plugins" class="icon32"><br></div>
+    <h2><?php _e( 'CM Micropayments' ) ?> - <?php _e( 'Reports' ); ?></h2>
+    <div id="post-body" class="metabox-holder columns-2">
+        <div class="clear"></div>
+        <form method="get" id="cm-micropayments-reports-filter">
+            <select name="type">
+                <option <?php if ( isset( $_GET[ 'type' ] ) && $_GET[ 'type' ] == 'graph' ) : ?>selected="selected"<?php endif; ?> value="graph"><?php _e( 'Graph' ) ?></option>
+                <option <?php if ( isset( $_GET[ 'type' ] ) && $_GET[ 'type' ] == 'table' ) : ?>selected="selected"<?php endif; ?> value="table"><?php _e( 'List' ) ?></option>
+            </select>
+			<?php if ( !isset( $_GET[ 'type' ] ) || $_GET[ 'type' ] != 'table' ) : ?>
+				<select name="view">
+					<option <?php if ( isset( $_GET[ 'view' ] ) && $_GET[ 'view' ] == 'amount' ) : ?>selected="selected"<?php endif; ?> value="amount"><?php _e( 'Amount' ) ?></option>
+					<option <?php if ( isset( $_GET[ 'view' ] ) && $_GET[ 'view' ] == 'count' ) : ?>selected="selected"<?php endif; ?> value="count"><?php _e( 'Count' ) ?></option>
+					<option <?php if ( isset( $_GET[ 'view' ] ) && $_GET[ 'view' ] == 'points' ) : ?>selected="selected"<?php endif; ?> value="points"><?php _e( 'Points' ) ?></option>
+				</select>
+			<?php endif; ?>
+            <select name="range">
+                <option <?php if ( isset( $_GET[ 'range' ] ) && $_GET[ 'range' ] == 'today' ) : ?>selected="selected"<?php endif; ?> value="today"><?php _e( 'Today' ) ?></option>
+                <option <?php if ( isset( $_GET[ 'range' ] ) && $_GET[ 'range' ] == 'yesterday' ) : ?>selected="selected"<?php endif; ?> value="yesterday"><?php _e( 'Yesterday' ) ?></option>
+                <option <?php if ( isset( $_GET[ 'range' ] ) && $_GET[ 'range' ] == 'this_week' ) : ?>selected="selected"<?php endif; ?> value="this_week"><?php _e( 'This Week' ) ?></option>
+                <option <?php if ( isset( $_GET[ 'range' ] ) && $_GET[ 'range' ] == 'last_week' ) : ?>selected="selected"<?php endif; ?> value="last_week"><?php _e( 'Last Week' ) ?></option>
+                <option <?php if ( isset( $_GET[ 'range' ] ) && $_GET[ 'range' ] == 'this_month' || !isset( $_GET[ 'range' ] ) ) : ?>selected="selected"<?php endif; ?> value="this_month"><?php _e( 'This Month' ) ?></option>
+                <option <?php if ( isset( $_GET[ 'range' ] ) && $_GET[ 'range' ] == 'last_month' ) : ?>selected="selected"<?php endif; ?> value="last_month"><?php _e( 'Last Month' ) ?></option>
+                <option <?php if ( isset( $_GET[ 'range' ] ) && $_GET[ 'range' ] == 'this_year' ) : ?>selected="selected"<?php endif; ?> value="this_year"><?php _e( 'This Year' ) ?></option>
+                <option <?php if ( isset( $_GET[ 'range' ] ) && $_GET[ 'range' ] == 'last_year' ) : ?>selected="selected"<?php endif; ?> value="last_year"><?php _e( 'Last Year' ) ?></option>
+            </select>
+            <input type="hidden" value="cm_micropayments" name="page">
+            <input type="submit" value="<?php _e( 'Apply' ) ?>" class="button" id="submit" name="submit">
+        </form>
+
+		<?php include_once 'reports/wallet/' . $content_name . '.phtml'; ?>
+    </div>
+
+</div>

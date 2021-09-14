@@ -1,0 +1,474 @@
+
+2021-05-23 07:01:30: Request:
+2021-05-23 07:01:30: Array
+(
+    [amount] => 100
+    [currency] => SGD
+    [payment_methods] => 
+    [email] => tim@timoru.com
+    [purpose] => VLE Academy
+    [name] => Lin ming
+    [phone] => 
+    [reference_number] => 83
+    [redirect_url] => https://vleacademy.com/v2/?wc-api=wc_hitpay&return=1&order_id=83
+    [webhook] => https://vleacademy.com/v2/?wc-api=wc_hitpay&order_id=83
+    [allow_repeated_payments] => 
+    [expiry_date] => 
+    [channel] => api_woocomm
+)
+
+2021-05-23 07:01:30: Not Found -- The payment request could not be found.
+2021-05-23 07:08:14: Request:
+2021-05-23 07:08:14: Array
+(
+    [amount] => 100
+    [currency] => SGD
+    [payment_methods] => 
+    [email] => tim@timoru.com
+    [purpose] => VLE Academy
+    [name] => Lin ming
+    [phone] => 
+    [reference_number] => 83
+    [redirect_url] => https://vleacademy.com/v2/?wc-api=wc_hitpay&return=1&order_id=83
+    [webhook] => https://vleacademy.com/v2/?wc-api=wc_hitpay&order_id=83
+    [allow_repeated_payments] => 
+    [expiry_date] => 
+    [channel] => api_woocomm
+)
+
+2021-05-26 13:31:26: Request:
+2021-05-26 13:31:26: Array
+(
+    [amount] => 320
+    [currency] => SGD
+    [payment_methods] => 
+    [email] => tim@timoru.com
+    [purpose] => VLE Academy
+    [name] => Lin ming
+    [phone] => 
+    [reference_number] => 245
+    [redirect_url] => https://vleacademy.com/v2/?wc-api=wc_hitpay&return=1&order_id=245
+    [webhook] => https://vleacademy.com/v2/?wc-api=wc_hitpay&order_id=245
+    [allow_repeated_payments] => 
+    [expiry_date] => 
+    [channel] => api_woocomm
+)
+
+2021-05-26 13:31:26: Not Found -- The payment request could not be found.
+2021-05-26 13:45:38: Request:
+2021-05-26 13:45:38: Array
+(
+    [amount] => 320
+    [currency] => SGD
+    [payment_methods] => 
+    [email] => tim@timoru.com
+    [purpose] => VLE Academy
+    [name] => Lin ming
+    [phone] => 
+    [reference_number] => 245
+    [redirect_url] => https://vleacademy.com/v2/?wc-api=wc_hitpay&return=1&order_id=245
+    [webhook] => https://vleacademy.com/v2/?wc-api=wc_hitpay&order_id=245
+    [allow_repeated_payments] => 
+    [expiry_date] => 
+    [channel] => api_woocomm
+)
+
+2021-05-26 13:45:38: Not Found -- The payment request could not be found.
+2021-05-26 14:11:11: Request:
+2021-05-26 14:11:11: Array
+(
+    [amount] => 320
+    [currency] => SGD
+    [payment_methods] => 
+    [email] => tim@timoru.com
+    [purpose] => VLE Academy
+    [name] => Lin ming
+    [phone] => 
+    [reference_number] => 245
+    [redirect_url] => https://vleacademy.com/v2/?wc-api=wc_hitpay&return=1&order_id=245
+    [webhook] => https://vleacademy.com/v2/?wc-api=wc_hitpay&order_id=245
+    [allow_repeated_payments] => 
+    [expiry_date] => 
+    [channel] => api_woocomm
+)
+
+2021-05-26 14:13:03: Webhook Triggers
+2021-05-26 14:13:03: Post Data:
+2021-05-26 14:13:03: Array
+(
+    [payment_id] => 93860580-bbf6-42b4-bcf8-6124badf271b
+    [payment_request_id] => 93860580-50cf-4a9b-9fc5-00a9d6b9453e
+    [phone] => 
+    [amount] => 320.00
+    [currency] => SGD
+    [status] => completed
+    [reference_number] => 245
+    [hmac] => bf8cabad7a7142249ae5a550f5da18316c54639416815f545fbafa4f5609b780
+)
+
+2021-05-26 14:13:03: hmac check passed
+2021-05-26 14:35:06: Request:
+2021-05-26 14:35:06: Array
+(
+    [amount] => 180
+    [currency] => SGD
+    [payment_methods] => 
+    [email] => tim@timoru.com
+    [purpose] => VLE Academy
+    [name] => Lin ming
+    [phone] => 
+    [reference_number] => 256
+    [redirect_url] => https://vleacademy.com/v2/?wc-api=wc_hitpay&return=1&order_id=256
+    [webhook] => https://vleacademy.com/v2/?wc-api=wc_hitpay&order_id=256
+    [allow_repeated_payments] => 
+    [expiry_date] => 
+    [channel] => api_woocomm
+)
+
+2021-05-26 14:36:03: Webhook Triggers
+2021-05-26 14:36:03: Post Data:
+2021-05-26 14:36:03: Array
+(
+    [payment_id] => 93860e0d-db8d-4382-a3bc-ad1dc0b8884d
+    [payment_request_id] => 93860e0d-6b87-4a65-a2c7-da7f0c130719
+    [phone] => 
+    [amount] => 180.00
+    [currency] => SGD
+    [status] => completed
+    [reference_number] => 256
+    [hmac] => d49132631b422ca781394dfbdaa5a6ef3361f58f04adf080caf70ffa890f9562
+)
+
+2021-05-26 14:36:03: hmac check passed
+2021-05-26 14:41:32: Request:
+2021-05-26 14:41:33: Array
+(
+    [amount] => 320
+    [currency] => SGD
+    [payment_methods] => 
+    [email] => tim@timoru.com
+    [purpose] => VLE Academy
+    [name] => Lin ming
+    [phone] => 
+    [reference_number] => 260
+    [redirect_url] => https://vleacademy.com/v2/?wc-api=wc_hitpay&return=1&order_id=260
+    [webhook] => https://vleacademy.com/v2/?wc-api=wc_hitpay&order_id=260
+    [allow_repeated_payments] => 
+    [expiry_date] => 
+    [channel] => api_woocomm
+)
+
+2021-05-26 14:42:03: Webhook Triggers
+2021-05-26 14:42:03: Post Data:
+2021-05-26 14:42:03: Array
+(
+    [payment_id] => 9386105b-a9b4-4645-9102-270adb86bb15
+    [payment_request_id] => 9386105b-4825-4aca-9d5e-47364d61d44a
+    [phone] => 
+    [amount] => 320.00
+    [currency] => SGD
+    [status] => completed
+    [reference_number] => 260
+    [hmac] => 2ae36ff153c1573b40d1cb33b16fa8ed37483d893e76bfebfa7a469a53117d05
+)
+
+2021-05-26 14:42:03: hmac check passed
+2021-05-26 14:50:43: Request:
+2021-05-26 14:50:43: Array
+(
+    [amount] => 320
+    [currency] => SGD
+    [payment_methods] => 
+    [email] => tim@timoru.com
+    [purpose] => VLE Academy
+    [name] => Lin ming
+    [phone] => 
+    [reference_number] => 262
+    [redirect_url] => https://vleacademy.com/v2/?wc-api=wc_hitpay&return=1&order_id=262
+    [webhook] => https://vleacademy.com/v2/?wc-api=wc_hitpay&order_id=262
+    [allow_repeated_payments] => 
+    [expiry_date] => 
+    [channel] => api_woocomm
+)
+
+2021-05-26 14:52:03: Webhook Triggers
+2021-05-26 14:52:03: Post Data:
+2021-05-26 14:52:03: Array
+(
+    [payment_id] => 938613a3-7b5c-4c4c-ac23-b570183c59c2
+    [payment_request_id] => 938613a3-1597-478c-b2f4-6c5462bcbc3d
+    [phone] => 
+    [amount] => 320.00
+    [currency] => SGD
+    [status] => completed
+    [reference_number] => 262
+    [hmac] => ff16fc3b8ad679ec3496226439f94be70c8210a472af79e5c2704575745fe469
+)
+
+2021-05-26 14:52:03: hmac check passed
+2021-05-26 14:54:21: Request:
+2021-05-26 14:54:21: Array
+(
+    [amount] => 320
+    [currency] => SGD
+    [payment_methods] => 
+    [email] => tim@timoru.com
+    [purpose] => VLE Academy
+    [name] => Lin ming
+    [phone] => 
+    [reference_number] => 264
+    [redirect_url] => https://vleacademy.com/v2/?wc-api=wc_hitpay&return=1&order_id=264
+    [webhook] => https://vleacademy.com/v2/?wc-api=wc_hitpay&order_id=264
+    [allow_repeated_payments] => 
+    [expiry_date] => 
+    [channel] => api_woocomm
+)
+
+2021-05-26 14:55:04: Webhook Triggers
+2021-05-26 14:55:04: Post Data:
+2021-05-26 14:55:04: Array
+(
+    [payment_id] => 938614f0-df2c-47c4-98de-d6e5a37e4884
+    [payment_request_id] => 938614f0-6bae-4dd9-9641-100841e82ed9
+    [phone] => 
+    [amount] => 320.00
+    [currency] => SGD
+    [status] => completed
+    [reference_number] => 264
+    [hmac] => ee8346a1752f7e624380370a73882437588f46b9d83adbe25d9ce5cdee6fd223
+)
+
+2021-05-26 14:55:04: hmac check passed
+2021-05-26 15:02:22: Request:
+2021-05-26 15:02:22: Array
+(
+    [amount] => 320
+    [currency] => SGD
+    [payment_methods] => 
+    [email] => tim@timoru.com
+    [purpose] => VLE Academy
+    [name] => Lin ming
+    [phone] => 
+    [reference_number] => 266
+    [redirect_url] => https://vleacademy.com/v2/?wc-api=wc_hitpay&return=1&order_id=266
+    [webhook] => https://vleacademy.com/v2/?wc-api=wc_hitpay&order_id=266
+    [allow_repeated_payments] => 
+    [expiry_date] => 
+    [channel] => api_woocomm
+)
+
+2021-05-26 15:04:02: Webhook Triggers
+2021-05-26 15:04:02: Post Data:
+2021-05-26 15:04:02: Array
+(
+    [payment_id] => 938617ce-7b8a-40f0-a281-ca2320778e1e
+    [payment_request_id] => 938617ce-0e28-4974-8e19-04664cd6433e
+    [phone] => 
+    [amount] => 320.00
+    [currency] => SGD
+    [status] => completed
+    [reference_number] => 266
+    [hmac] => b23e0d1a0398b57d16226dd85a5ba29fb046d4c637c9d09ca57ee0fb97cf012b
+)
+
+2021-05-26 15:04:02: hmac check passed
+2021-05-26 15:05:25: Request:
+2021-05-26 15:05:25: Array
+(
+    [amount] => 500
+    [currency] => SGD
+    [payment_methods] => 
+    [email] => tim@timoru.com
+    [purpose] => VLE Academy
+    [name] => Lin ming
+    [phone] => 
+    [reference_number] => 268
+    [redirect_url] => https://vleacademy.com/v2/?wc-api=wc_hitpay&return=1&order_id=268
+    [webhook] => https://vleacademy.com/v2/?wc-api=wc_hitpay&order_id=268
+    [allow_repeated_payments] => 
+    [expiry_date] => 
+    [channel] => api_woocomm
+)
+
+2021-05-26 15:06:03: Webhook Triggers
+2021-05-26 15:06:03: Post Data:
+2021-05-26 15:06:03: Array
+(
+    [payment_id] => 938618e4-ed5f-4d06-a6e3-b635a053623c
+    [payment_request_id] => 938618e4-89d6-46cd-bdea-96bd140aa205
+    [phone] => 
+    [amount] => 500.00
+    [currency] => SGD
+    [status] => completed
+    [reference_number] => 268
+    [hmac] => a304230014c7894545b38f8a671a225f4c174558a34613e8dac5d5815605f7b1
+)
+
+2021-05-26 15:06:03: hmac check passed
+2021-05-26 15:07:31: Request:
+2021-05-26 15:07:31: Array
+(
+    [amount] => 320
+    [currency] => SGD
+    [payment_methods] => 
+    [email] => tim@timoru.com
+    [purpose] => VLE Academy
+    [name] => Lin ming
+    [phone] => 
+    [reference_number] => 270
+    [redirect_url] => https://vleacademy.com/v2/?wc-api=wc_hitpay&return=1&order_id=270
+    [webhook] => https://vleacademy.com/v2/?wc-api=wc_hitpay&order_id=270
+    [allow_repeated_payments] => 
+    [expiry_date] => 
+    [channel] => api_woocomm
+)
+
+2021-05-26 15:09:03: Webhook Triggers
+2021-05-26 15:09:03: Post Data:
+2021-05-26 15:09:03: Array
+(
+    [payment_id] => 938619a6-2a06-467a-82db-09cf1db5c56b
+    [payment_request_id] => 938619a5-cea0-4819-99ee-c61541ae068f
+    [phone] => 
+    [amount] => 320.00
+    [currency] => SGD
+    [status] => completed
+    [reference_number] => 270
+    [hmac] => 2b89f4b1cb2619fbb80c070f87135176d67cc8897b9420e8a03baba9334f7bec
+)
+
+2021-05-26 15:09:03: hmac check passed
+2021-05-26 15:17:39: Request:
+2021-05-26 15:17:39: Array
+(
+    [amount] => 500
+    [currency] => SGD
+    [payment_methods] => 
+    [email] => tim@timoru.com
+    [purpose] => VLE Academy
+    [name] => Lin ming
+    [phone] => 
+    [reference_number] => 273
+    [redirect_url] => https://vleacademy.com/v2/?wc-api=wc_hitpay&return=1&order_id=273
+    [webhook] => https://vleacademy.com/v2/?wc-api=wc_hitpay&order_id=273
+    [allow_repeated_payments] => 
+    [expiry_date] => 
+    [channel] => api_woocomm
+)
+
+2021-05-26 15:19:03: Webhook Triggers
+2021-05-26 15:19:03: Post Data:
+2021-05-26 15:19:03: Array
+(
+    [payment_id] => 93861d45-0288-4d69-a79c-9ee04e39f79e
+    [payment_request_id] => 93861d44-91a8-4d73-9b30-9dbebfcdd5c8
+    [phone] => 
+    [amount] => 500.00
+    [currency] => SGD
+    [status] => completed
+    [reference_number] => 273
+    [hmac] => cf8a3c1631492253a5ad38f96c77a699fa470d6e344ffa3613b9d1ae3921254d
+)
+
+2021-05-26 15:19:03: hmac check passed
+2021-05-26 15:28:20: Request:
+2021-05-26 15:28:20: Array
+(
+    [amount] => 320
+    [currency] => SGD
+    [payment_methods] => 
+    [email] => tim@timoru.com
+    [purpose] => VLE Academy
+    [name] => Lin ming
+    [phone] => 
+    [reference_number] => 274
+    [redirect_url] => https://vleacademy.com/v2/?wc-api=wc_hitpay&return=1&order_id=274
+    [webhook] => https://vleacademy.com/v2/?wc-api=wc_hitpay&order_id=274
+    [allow_repeated_payments] => 
+    [expiry_date] => 
+    [channel] => api_woocomm
+)
+
+2021-05-26 15:29:03: Webhook Triggers
+2021-05-26 15:29:03: Post Data:
+2021-05-26 15:29:03: Array
+(
+    [payment_id] => 93862117-beb6-4c85-a9ba-48f0540aa49f
+    [payment_request_id] => 93862117-4d9e-4179-96eb-8b603fcdf8e6
+    [phone] => 
+    [amount] => 320.00
+    [currency] => SGD
+    [status] => completed
+    [reference_number] => 274
+    [hmac] => 04add125dd5008e6a30bfd1888aaeeef0b7e9fe01e1f993992cea317461e58b6
+)
+
+2021-05-26 15:29:03: hmac check passed
+2021-05-26 17:47:15: Request:
+2021-05-26 17:47:15: Array
+(
+    [amount] => 320
+    [currency] => SGD
+    [payment_methods] => 
+    [email] => tim@timoru.com
+    [purpose] => VLE Academy
+    [name] => Lin tim
+    [phone] => 
+    [reference_number] => 286
+    [redirect_url] => https://vleacademy.com/v2/?wc-api=wc_hitpay&return=1&order_id=286
+    [webhook] => https://vleacademy.com/v2/?wc-api=wc_hitpay&order_id=286
+    [allow_repeated_payments] => 
+    [expiry_date] => 
+    [channel] => api_woocomm
+)
+
+2021-05-26 17:47:59: Webhook Triggers
+2021-05-26 17:47:59: Post Data:
+2021-05-26 17:47:59: Array
+(
+    [payment_id] => 938652c6-70e2-431a-b281-59b396a2b89d
+    [payment_request_id] => 938652c6-1189-4bd3-848d-1c4cecd6f558
+    [phone] => 
+    [amount] => 320.00
+    [currency] => SGD
+    [status] => completed
+    [reference_number] => 286
+    [hmac] => cc50401b8852439d7618db7a50564391181711c9c6dbb024bc338dc37c7dd7f5
+)
+
+2021-05-26 17:47:59: hmac check passed
+2021-08-28 09:11:48: Request:
+2021-08-28 09:11:48: Array
+(
+    [amount] => 320
+    [currency] => SGD
+    [payment_methods] => 
+    [email] => tim@timoru.com
+    [purpose] => VLE Academy
+    [name] => Lin ming
+    [phone] => 
+    [reference_number] => 1471
+    [redirect_url] => https://vleacademy.com/v2/?wc-api=wc_hitpay&return=1&order_id=1471
+    [webhook] => https://vleacademy.com/v2/?wc-api=wc_hitpay&order_id=1471
+    [allow_repeated_payments] => 
+    [expiry_date] => 
+    [channel] => api_woocomm
+)
+
+2021-08-28 09:13:51: Request:
+2021-08-28 09:13:51: Array
+(
+    [amount] => 320
+    [currency] => SGD
+    [payment_methods] => 
+    [email] => tim@timoru.com
+    [purpose] => VLE Academy
+    [name] => Lin ming
+    [phone] => 
+    [reference_number] => 1471
+    [redirect_url] => https://vleacademy.com/v2/?wc-api=wc_hitpay&return=1&order_id=1471
+    [webhook] => https://vleacademy.com/v2/?wc-api=wc_hitpay&order_id=1471
+    [allow_repeated_payments] => 
+    [expiry_date] => 
+    [channel] => api_woocomm
+)

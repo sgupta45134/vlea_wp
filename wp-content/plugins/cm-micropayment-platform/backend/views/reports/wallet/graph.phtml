@@ -1,0 +1,48 @@
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        var dataJSON = '<?php echo $data; ?>';
+        var data = JSON.parse(dataJSON);
+
+        for(i in data){
+            data[i][0] = new Date(data[i][0]);
+        }
+
+        var plot = $.plot("#cm-micropayment-report-placeholder", [
+            {data: data}
+        ], {
+            xaxis: {
+                mode: "time"
+            },
+            series: {
+                lines: {
+                    show: true
+                },
+                points: {
+                    show: true
+                }
+            },
+            grid: {
+                hoverable: true,
+                clickable: true
+            }
+        });
+    });
+</script>
+
+<div id="cm-micropayment-report-placeholder" class="cm-micropayment-report-placeholder" style="width: 77%; height: 300px; float:left;"></div>
+<div class="postbox-container" style="float:right;">
+    <div class="postbox " id="postimagediv">
+        <div title="Click to toggle" class="handlediv"><br></div>
+        <h3 class="hndle"><span><?php _e('Totals') ?></span></h3>
+        <div class="inside">
+            <p><strong><?php _e('Total') ?>:</strong> <?php echo $preparedData['totals'] ?> <?php echo $unitName; ?></p>
+        </div>
+    </div>
+</div><div class="postbox-container" style="float:right;">
+    <div class="postbox " id="postimagediv">
+        <div title="Click to toggle" class="handlediv"><br></div><h3 class="hndle"><span><?php _e('Export') ?></span></h3>
+        <div class="inside">
+            <p><a href="<?php echo $_SERVER["REQUEST_URI"] . "& export=csv" ?> "><?php _e('Export to CSV') ?></a></p>
+        </div>
+    </div>
+</div>

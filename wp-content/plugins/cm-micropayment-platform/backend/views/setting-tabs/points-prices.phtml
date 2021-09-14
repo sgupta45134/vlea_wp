@@ -1,0 +1,4 @@
+<h2><a href="<?php echo esc_url(add_query_arg(array('cmm-action' => 'add'))) ?>" class="add-new-h2"><?php _e('Add New') ?></a></h2>
+<form method="post" action="/wp-admin/options-general.php?page=cm-micropayment-platform-point-price">
+    <?php $wp_list_table->display(); ?>
+</form>

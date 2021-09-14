@@ -1,0 +1,69 @@
+<div class="error">
+	<?php if(isset($error) && $error != '') { echo '<div class="cm-checkout-error">'.$error.'</div>'; } ?>
+</div>
+<?php
+$wallet = isset( $postData[ 'wallet_id' ] ) ? $postData[ 'wallet_id' ] : $walletName;
+?>
+<form action="" method="post" id="cm-micropayments-checkout-form">
+	<?php do_action('cm-micropayments-checkout-form'); ?>
+    <h3><span class="dashicons dashicons-cart"></span> <?php echo __cm( 'checkout_form_headline' ); ?></h3>
+    <style>
+	#cm-micropayments-checkout-form ul { list-style-type: none; padding: 0; margin: 1em 0; }
+	div.error .cm-checkout-error { border: 1px solid; text-align:center; padding: 8px 35px 8px 14px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; background-color: #f2dede; border-color: #eed3d7; color: #b94a48; margin: 18px auto; font-size: .9em; }
+	div.cm-checkout-wallet-id { margin-top: 10px; display: inline-block; width: 100%; }
+    </style>
+    <div class="cm-checkout-wallet-id"<?php if ( $isLogged ): ?> style="display:none;"<?php endif; ?>>
+        <label for="checkout_wallet_id"><?php echo __cm( 'wallet_id_checkout' ) ?></label>
+        <input type="text" name="wallet_id" id="checkout_wallet_id" value="<?php echo $wallet; ?>"/>
+    </div>
+    <input type="hidden" name="referrer" id="referrer" value="checkout-page-cmmicropayment"/>
+    
+	<?php
+	if(CMMicropaymentPlatform::get_option('cm_micropayment_show_input') == 1) {
+		$points = CMMicropaymentPlatform::get_option('cm_micropayment_default_points');
+		$cost = CMMicropaymentPlatform::get_option('cm_micropayment_show_input');
+		?>
+		<input type="text" name="points" id="points" class="custom_points_input_field" value="<?php echo $points; ?>" placeholder="<?php echo get_option('cmmp_label_transfer_points_placeholder', 'Points'); ?>" />
+		<p>Per <?php echo get_option('cmmp_label_transfer_point_placeholder', 'point'); ?> you need to pay <?php echo number_format($cost, 2); ?></p>
+		<?php
+	} else {
+		?>
+		<ul class="cm-micropayments-checkout-form-list">
+			<?php if ( count( $data[ 'points_prices' ] ) > 0 ) :
+					$currencySymbol   = CMMicropaymentPlatform::get_option( 'cm_micropayment_unit_currency_symbol', '' );
+					$theCurrency = ( !empty( $currencySymbol ) ) ? $currencySymbol : CMMicropaymentPlatform::get_option( 'cm_micropayment_unit_currency', 'USD' );
+					if ( ! $manual ) :
+						foreach ( $data[ 'points_prices' ] AS $points ):
+							$singularOrPlural = ($points->points_value > 1 ? CMMicropaymentPlatform::get_option( 'cm_micropayment_plural_name' ) : CMMicropaymentPlatform::get_option( 'cm_micropayment_singular_name' ));
+							$points_value = '<b>' . CMMicropaymentPlatform::numberToLocale($points->points_value, CMMicropaymentPlatform::get_option( 'cm_micropayment_enable_decimal', false )) . '</b>';
+							$points_cost = '<b>' . CMMicropaymentPlatform::numberToLocale($points->cost) . '</b>';
+							$prettyPoints = cminds_prettyPoints($points->points_value, 'remove');
+						?>
+							<li>
+								<input type="radio" name="points" value="<?php echo $points->points_value; ?>" <?php echo (isset( $postData[ 'points' ] ) && $postData[ 'points' ] == $points->points_value) ? "checked='checked'" : "" ?> id="points_<?php echo $prettyPoints; ?>">
+								<label for="points_<?php echo $prettyPoints; ?>"><?php echo sprintf( __cm( 'format_price_in_checkout' ), $points_value, $singularOrPlural, $points_cost, $theCurrency ); ?></label>
+							</li>
+						<?php endforeach;
+					else :
+						$point_1 = array_filter($data[ 'points_prices' ], function($points) { return intval($points->points_value) === 1; });
+						if ( count($point_1) === 0 ) {
+							echo "No price for 1 point defined. Add point 1 price to settings.";
+						} else {
+						$points_cost = array_values($point_1)[0]->cost;
+					?>
+						<input type="number"  name="points" id="points_1" min="0" step="1" value="0"><br>
+						<span>1 <?php echo CMMicropaymentPlatformLabel::getLabel( 'cm_micropayment_singular_name' ) . " = " . $theCurrency .$points_cost; ?></span>
+						<div style="display: inline-block; float: right; font-weight: 600;">Total:&nbsp;<?php echo $theCurrency; ?><div id="cmmp_points_total_price" data-cost="<?php echo $points_cost;?>" style="display: inline-block; float: right; min-width: 40px;">0</div></div>
+					<?php 
+						}
+					endif;
+				else : ?>
+				<li><?php echo __cm( 'checkout_no_points_defined' ); ?></li>
+			<?php endif; ?>
+		</ul>
+		<?php
+	}
+	?>
+    <span class="cm_checkoutMsg"><?php echo __cm( 'checkout_form_msg_above_send_button' ); ?></span>
+    <input type="submit" id="cm-micropayments-checkout-form-submit" value="<?php echo __cm( 'checkout_button_send' ); ?>"/>
+</form>

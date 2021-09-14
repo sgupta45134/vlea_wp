@@ -1,0 +1,39 @@
+<div id="icon-plugins" class="icon32"><br></div>
+<h2><?php _e('CM Micropayments') ?> - <?php _e('Settings'); ?></h2>
+
+<?php include_once 'setting-tabs/tabs.phtml' ?>
+
+<div id="tab_container">
+    <p><i><?php _e('Create a point purchase option') ?></i></p>
+    <form action="" method="POST">
+        <input name="sender" id="sender" type="hidden" value="settings-points-values-form" />
+        <input name="points_cost_id" id="points_cost_id" type="hidden" value="<?php echo $data ? $data->points_cost_id : 0 ?>" />
+        <table class="form-table">
+            <tbody>
+            <tr class="form-field">
+                <th scope="row" valign="top">
+                    <label for="points-value"><?php _e('Points value'); ?></label>
+                    <div class="field_help" title="<?php _e('How many points the user will receive.') ?>"></div>
+                </th>
+                <td>
+                    <input name="points-value" id="points_value" type="text" value="<?php echo $data ? $data->points_value : '' ?>" style="width: 300px;"/>
+                </td>
+            </tr>
+            <tr class="form-field">
+                <th scope="row" valign="top">
+                    <label for="cash-value"><?php _e('Cash value'); ?></label>
+                    <div class="field_help" title="<?php echo sprintf(__('In %s'), (CMMicropaymentPlatform::get_option('cm_micropayment_unit_currency','') != '') ? CMMicropaymentPlatform::get_option('cm_micropayment_unit_currency','') : 'USD'); ?> - <?php _e('How much real money these points will cost.') ?>"></div>
+                </th>
+                <td>
+                    <input type="text" id="cash-value" name="cost" value="<?php echo $data ? $data->cost : '' ?>" style="width: 300px;"/>
+
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <p class="submit">
+            <input type="submit" value="<?php _e('Save'); ?>" class="button button-primary" />
+            <input type="submit" name="cancel" value="<?php _e('Cancel'); ?>" class="button" />
+        </p>
+    </form>
+</div>

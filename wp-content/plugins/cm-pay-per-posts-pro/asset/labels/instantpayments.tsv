@@ -1,0 +1,18 @@
+eddpay_activate_subscription_header	Activate subscription	Call to action "Activate subscription".	Payments
+eddpay_activate_subscription_header_shortcode_group_paybox	Activate subscription	Call to action "Activate subscription".	Payments
+eddpay_activate_subscription_text	To view this post please activate subscription.	Text on the group paybox for logged-in users.	Payments
+eddpay_activate_subscription_text_shortcode_group_paybox	To access content from the group %s please activate subscription.	Text on the group paybox for shortcode [cmppp-group-paybox].	Payments
+eddpay_activate_subscription_text_single	To view this post please activate subscription.	Text on the single paybox for logged-in users.	Payments
+eddpay_activate_subscription_text_guest	To view this post please <a href="javascript:void(0)" class="cmreg-login-click">login</a> and activate subscription.	Text on the paybox for not logged-in users.	Payments
+eddpay_period_for_amount	%s for $%.2f	Subscription option to choose eg. "2 weeks for $20".	Payments
+eddpay_subscription_checkout_button	Checkout	Checkout button label.	Payments
+eddpay_subscription_checkout_button_period_for_amount	Checkout %s for $%.2f	Activate subscription button label when only one cost is available.	Payments
+eddpay_subscription_checkout_button_period_for_amount_guest	%s for $%.2f	Activate subscription text when only one cost is available for guest user.	Payments
+eddpay_subscription_activate_success	Your subscription has been activated.	Success message after subscription has been activated.	Payments
+eddpay_checkout_redirection	You will be redirected now to the checkout page.	Checkout redirection message.	Payments
+eddpay_transaction_label	Checkout post %s - %s	Transaction label.	Payments
+eddpay_post_cost	Subscription checkout cost:	Subscription checkout cost	Payments
+eddpay_activate_subscription_for_single	Activate subscription for single	Call to action "Activate subscription for single".	Payments
+eddpay_activate_subscription_header_for_category	Activate subscription for category	Call to action "Activate subscription for category".	Payments
+category_activate_subscription_button	Checkout %s for $%.2f	Activate subscription button label for categories.	Payments
+eddpay_wait_until_admin_approve	 You must wait until the Administrator will confirm the purchase	 User will see this text if he chose an offline method for payment and admin hasn't confirmed the purchase.	Payments

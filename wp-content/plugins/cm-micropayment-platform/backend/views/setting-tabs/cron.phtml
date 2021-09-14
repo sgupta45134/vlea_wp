@@ -1,0 +1,68 @@
+<h3>Periodic Grant/Charge Operations</h3>
+<p>
+    Set periodical action which will grant/charge <strong>each</strong> wallet the given amount of points every X days.
+</p>
+<form action="" method="post">
+    <table class="form-table">
+        <tr valign="top">
+            <th scope="row"><?php _e( 'Turn on Periodic Operations' ) ?>
+                <div class="field_help" title="<?php _e( 'Enable periodic operations.' ) ?>"></div>
+            </th>
+            <td><input type="hidden" value="0" name="cm_micropayment_allow_cron_operations">
+                <input type="checkbox" value="1" name="cm_micropayment_allow_cron_operations" id="cm_micropayment_allow_cron_operations" <?php echo (CMMicropaymentPlatform::get_option( 'cm_micropayment_allow_cron_operations' ) == 1) ? 'checked="checked"' : '' ?>>
+            </td>
+        </tr>
+        <tr valign="top">
+            <th scope="row"><?php _e( 'Periodic Grant wallet log label' ) ?>
+                <div class="field_help" title="<?php _e( 'How the wallet log will identify the grant' ) ?>"></div>
+            </th>
+            <td>
+                <input type="text" name="cm_micropayment_cron_grant_reason" id="cm_micropayment_cron_grant_reason" value="<?php echo esc_attr( CMMicropaymentPlatform::get_option( 'cm_micropayment_cron_grant_reason' ) ); ?>">
+            </td>
+        </tr>
+
+        <tr valign="top">
+            <th scope="row"><?php _e( 'Periodic Charge wallet log label' ) ?>
+                <div class="field_help" title="<?php _e( 'How the wallet log will identify the charge' ) ?>"></div>
+            </th>
+            <td>
+                <input type="text" name="cm_micropayment_cron_charge_reason" id="cm_micropayment_cron_charge_reason" value="<?php echo esc_attr( CMMicropaymentPlatform::get_option( 'cm_micropayment_cron_charge_reason' ) ); ?>">
+            </td>
+        </tr>
+        <tr valign="top">
+            <th scope="row"><?php _e( 'Periodic Operations interval' ) ?>
+                <div class="field_help" title="<?php _e( 'How often (in days) should the points be granted / charged.' ) ?>"></div>
+            </th>
+            <td>
+                <input type="number" name="cm_micropayment_cron_interval" id="cm_micropayment_cron_interval" value="<?php echo intval( CMMicropaymentPlatform::get_option( 'cm_micropayment_cron_interval', '7' ) ); ?>" min="0"> days
+            </td>
+        </tr>
+		<tr valign="top">
+            <th scope="row"><?php _e( 'Periodic Operations points amount type' ) ?>
+                <div class="field_help" title="<?php _e( 'Type of periodic operations points amount.' ) ?>"></div>
+            </th>
+            <td>
+				<?php
+				$cm_micropayment_cron_amount_type = CMMicropaymentPlatform::get_option('cm_micropayment_cron_amount_type', 'fixed');
+				?>
+                <select name="cm_micropayment_cron_amount_type" id="cm_micropayment_cron_amount_type">
+					<option value="fixed" <?php if($cm_micropayment_cron_amount_type == 'fixed') { echo 'selected="selected"'; } ?>>Fixed</option>
+					<option value="percentage" <?php if($cm_micropayment_cron_amount_type == 'percentage') { echo 'selected="selected"'; } ?>>Percentage</option>
+				</select>
+            </td>
+        </tr>
+        <tr valign="top">
+            <th scope="row"><?php _e( 'Periodic Operations points amount' ) ?>
+                <div class="field_help" title="<?php _e( 'How many points will be charged or granted. Positive for grant, negative for charge.#br#For example:#br# \'-10\' will charge 10 points.#br# \'10\' will grant 10 points.' ) ?>"></div>
+            </th>
+            <td>
+                <input type="number" name="cm_micropayment_cron_amount" id="cm_micropayment_cron_amount" value="<?php echo intval( CMMicropaymentPlatform::get_option( 'cm_micropayment_cron_amount', '0' ) ); ?>" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="submit"><input type="submit" value="<?php _e( 'Save', 'cm-micropayments' ) ?>" class="button button-primary" id="submit" name="submit"></p>
+            </td>
+        </tr>
+    </table>
+</form>

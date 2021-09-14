@@ -1,0 +1,181 @@
+<div class="wrap">
+
+	<?php
+	$eddIntergration = CMMicropaymentPlatform::isEddIntegrationActive();
+	$disabled        = disabled( 1, $eddIntergration, false );
+	?>
+
+	<?php if ( $eddIntergration ) : ?>
+        <div class="error">
+            <p>The <strong>"CM Micropayment Platform"</strong> is currently using Easy Digital Downloads Checkout mode. All Payment related Settings have been disabled.</p>
+        </div>
+	<?php endif; ?>
+
+
+    <form action="" method="post">
+        <table class="form-table">
+            <tbody>
+            <tr>
+                <td colspan="2">
+                    <h2>Stripe PayOut</h2>
+                </td>
+            </tr>
+            <tr valign="top">
+                <th scope="row"><?php _e( 'Test Mode' ) ?>
+                    <div class="field_help" title="<?php _e( 'Alows you to test your checkout. #br# After going to live server, you should disable test mode and fill the settings with your production credentials.' ) ?>"></div>
+                </th>
+                <td>
+                    <input type="hidden" name="cm_micropayment_stripe_test_mode" value="0">
+                    <input type="checkbox" <?php echo $disabled; ?> value="1" name="cm_micropayment_stripe_test_mode" id="cm_micropayment_stripe_test_mode" <?php echo CMMicropaymentPlatform::get_option( 'cm_micropayment_stripe_test_mode' ) == 1 ? 'checked="checked"' : '' ?>>
+                </td>
+            </tr>
+            <tr valign="top">
+                <th scope="row">
+					<?php _e( 'Points to Currency ratio' ) ?>
+                    <div class="field_help" title="Enter how many points are worth 1 of the real currency. #br#For example, entering \'10\' means that, for each 10 points, the user gets $1"></div>
+                </th>
+                <td>
+                    <input type="text" name="cm_micropayment_stripe_points_ratio" id="cm_micropayment_stripe_points_ratio" class="regular-text" value="<?php echo CMMicropaymentPlatform::get_option( 'cm_micropayment_stripe_points_ratio', '10' ); ?>">
+                    <label for="cm_micropayment_stripe_points_ratio"></label>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr valign="top">
+                <th scope="row"><?php _e( 'Stripe email' ) ?>
+                    <div class="field_help" title="<?php _e( 'Stripe account email.' ) ?>"></div>
+                </th>
+                <td>
+                    <input type="text" class="regular-text" name="cm_micropayment_stripe_email" id="cm_micropayment_stripe_email" value="<?php echo CMMicropaymentPlatform::get_option( 'cm_micropayment_stripe_email' ); ?>" />
+                </td>
+            </tr>
+            <tr valign="top">
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr valign="top">
+                <th scope="row"><?php _e( 'Publishable key' ) ?>
+                    <div class="field_help" title="<?php _e( 'Find it on your stripe account. (https://dashboard.stripe.com/account/apikeys)' ) ?>"></div>
+                </th>
+                <td>
+                    <input type="text" class="regular-text" name="cm_micropayment_stripe_publishable_key" id="cm_micropayment_stripe_publishable_key" value="<?php echo CMMicropaymentPlatform::get_option( 'cm_micropayment_stripe_publishable_key' ); ?>" />
+                    <br>
+                    <label for="cm_micropayment_stripe_publishable_key">
+                        Create or retrieve these keys from the
+                        <a href="https://dashboard.stripe.com/account/apikeys" target="_blank">
+                            Stripe dashboard
+                        </a>.
+                        Check our
+                        <a target="_blank" href="https://creativeminds.helpscoutdocs.com/article/2227-cm-micropayments-cmmp-getting-started-stripe-configuration">
+                            documentation
+                        </a>
+                        for more information.
+                    </label>
+                </td>
+            </tr>
+            <tr valign="top">
+                <th scope="row"><?php _e( 'Secret key' ) ?>
+                    <div class="field_help" title="<?php _e( 'Find it on your stripe account. (https://dashboard.stripe.com/account/apikeys)' ) ?>"></div>
+                </th>
+                <td>
+                    <input type="text" class="regular-text" name="cm_micropayment_stripe_secret_key" id="cm_micropayment_stripe_secret_key" value="<?php echo CMMicropaymentPlatform::get_option( 'cm_micropayment_stripe_secret_key' ); ?>" />
+                    <br>
+                    <label for="cm_micropayment_stripe_publishable_key">
+                        Create or retrieve these keys from the
+                        <a href="https://dashboard.stripe.com/account/apikeys" target="_blank">
+                            Stripe dashboard
+                        </a>.
+                        Check our
+                        <a target="_blank" href="https://creativeminds.helpscoutdocs.com/article/2227-cm-micropayments-cmmp-getting-started-stripe-configuration">
+                            documentation
+                        </a>
+                        for more information.
+                    </label>
+                </td>
+            </tr>
+            <tr valign="top">
+                <th scope="row"><?php _e( 'Client ID' ) ?>
+                    <div class="field_help" title="<?php _e( 'Find it on your stripe account. (https://dashboard.stripe.com/account/applications/settings)' ) ?>"></div>
+                </th>
+                <td>
+                    <input type="text" class="regular-text" name="cm_micropayment_stripe_client_id" id="cm_micropayment_stripe_client_id" value="<?php echo CMMicropaymentPlatform::get_option( 'cm_micropayment_stripe_client_id' ); ?>" />
+                    <br>
+                    <label for="cm_micropayment_stripe_publishable_key">
+                        Retrieve this key from the
+                        <a href="https://dashboard.stripe.com/account/applications/settings" target="_blank">
+                            Stripe dashboard Settings
+                        </a>. This is used to the wallet connect to Stripe.
+                    </label>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr valign="top">
+                <th scope="row"><?php _e( 'Publishable test key' ) ?>
+                    <div class="field_help" title="<?php _e( 'Find it on your stripe account. (https://dashboard.stripe.com/account/apikeys)' ) ?>"></div>
+                </th>
+                <td>
+                    <input type="text" class="regular-text" name="cm_micropayment_stripe_publishable_test_key" id="cm_micropayment_stripe_publishable_test_key" value="<?php echo CMMicropaymentPlatform::get_option( 'cm_micropayment_stripe_publishable_test_key' ); ?>" />
+                    <br>
+                    <label for="cm_micropayment_stripe_publishable_key">
+                        Create or retrieve these keys from the
+                        <a href="https://dashboard.stripe.com/account/apikeys" target="_blank">
+                            Stripe dashboard
+                        </a>.
+                        Check our
+                        <a target="_blank" href="https://creativeminds.helpscoutdocs.com/article/2227-cm-micropayments-cmmp-getting-started-stripe-configuration">
+                            documentation
+                        </a>
+                        for more information.
+                    </label>
+                </td>
+            </tr>
+            <tr valign="top">
+                <th scope="row"><?php _e( 'Secret test key' ) ?>
+                    <div class="field_help" title="<?php _e( 'Find it on your stripe account. (https://dashboard.stripe.com/account/apikeys)' ) ?>"></div>
+                </th>
+                <td>
+                    <input type="text" class="regular-text" name="cm_micropayment_stripe_secret_test_key" id="cm_micropayment_stripe_secret_test_key" value="<?php echo CMMicropaymentPlatform::get_option( 'cm_micropayment_stripe_secret_test_key' ); ?>" />
+                    <br>
+                    <label for="cm_micropayment_stripe_publishable_key">
+                        Create or retrieve these keys from the
+                        <a href="https://dashboard.stripe.com/account/apikeys" target="_blank">
+                            Stripe dashboard
+                        </a>.
+                        Check our
+                        <a target="_blank" href="https://creativeminds.helpscoutdocs.com/article/2227-cm-micropayments-cmmp-getting-started-stripe-configuration">
+                            documentation
+                        </a>
+                        for more information.
+                    </label>
+                </td>
+            </tr>
+
+            <tr valign="top">
+                <th scope="row"><?php _e( 'Client test ID' ) ?>
+                    <div class="field_help" title="<?php _e( 'Find it on your stripe account. (https://dashboard.stripe.com/account/applications/settings)' ) ?>"></div>
+                </th>
+                <td>
+                    <input type="text" class="regular-text" name="cm_micropayment_stripe_client_test_id" id="cm_micropayment_stripe_client_test_id" value="<?php echo CMMicropaymentPlatform::get_option( 'cm_micropayment_stripe_client_test_id' ); ?>" />
+                    <br>
+                    <label for="cm_micropayment_stripe_publishable_key">
+                        Retrieve this key from the
+                        <a href="https://dashboard.stripe.com/account/applications/settings" target="_blank">
+                            Stripe dashboard Settings
+                        </a>. This is used to connect the wallet to Stripe.
+                    </label>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <p class="submit"><input type="submit" value="<?php _e( 'Save' ) ?>" class="button button-primary" id="submit" name="submit"></p>
+    </form>
+
+</div>

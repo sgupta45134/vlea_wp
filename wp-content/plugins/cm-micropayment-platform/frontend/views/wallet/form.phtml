@@ -1,0 +1,10 @@
+<?php
+    $wallet_id = '';
+    $wallet_id = isset($postData['wallet_id']) ? $postData['wallet_id'] : '';
+    $wallet_id = isset($_SESSION['sent_wallet_id']) ? $_SESSION['sent_wallet_id'] : '';
+?>
+<form action="" method="get" id="provide-wallet-id">
+    <label for="wallet_id"><?php echo __cm('check_wallet_form_wallet_id'); ?></label>
+    <input type="text" name="wallet_id" id="wallet_id" value="<?php echo $wallet_id ?>"/>
+    <input type="submit" value="<?php echo __cm('check_wallet_form_send_button_label') ?>"/>
+</form>

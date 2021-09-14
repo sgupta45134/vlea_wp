@@ -1,0 +1,180 @@
+<wpml-config>
+  <custom-types>
+    <custom-type translate="1">themo_tour</custom-type>
+  </custom-types>
+  <taxonomies>
+    <taxonomy translate="1">themo_tour_type</taxonomy>
+  </taxonomies>
+  <custom-fields>
+    <custom-field action="translate">th_project_highlight</custom-field>
+    <custom-field action="translate">th_project_title</custom-field>
+    <custom-field action="translate">th_project_intro</custom-field>
+    <custom-field action="translate">th_project_button_text</custom-field>
+    <custom-field action="copy-once">th_project_thumb</custom-field>
+    <custom-field action="copy-once">themo_transparent_header</custom-field>
+    <custom-field action="copy-once">themo_hide_title</custom-field>
+    <custom-field action="copy-once">themo_page_layout</custom-field>
+    <custom-field action="copy-once">_elementor_page_settings</custom-field>
+    <custom-field action="copy-once">themo_header_content_style</custom-field>
+    <custom-field action="copy-once">themo_alt_logo</custom-field>
+  </custom-fields>
+
+  <admin-texts>
+    <key name="theme_mods_entrepreneurx">
+      <key name="themo_top_nav_icon_blocks">
+        <key name="0">
+          <key name="title"/>
+          <key name="themo_top_nav_icon"/>
+          <key name="themo_top_nav_icon_url"/>
+          <key name="themo_top_nav_icon_url_target"/>
+        </key>
+        <key name="1">
+          <key name="title"/>
+          <key name="themo_top_nav_icon"/>
+          <key name="themo_top_nav_icon_url"/>
+          <key name="themo_top_nav_icon_url_target"/>
+        </key>
+        <key name="2">
+          <key name="title"/>
+          <key name="themo_top_nav_icon"/>
+          <key name="themo_top_nav_icon_url"/>
+          <key name="themo_top_nav_icon_url_target"/>
+        </key>
+        <key name="3">
+          <key name="themo_top_nav_icon"/>
+          <key name="themo_top_nav_icon_url"/>
+          <key name="themo_top_nav_icon_url_target"/>
+        </key>
+      </key>
+      <key name="themo_social_media_accounts">
+        <key name="0">
+          <key name="title"/>
+          <key name="themo_social_font_icon"/>
+          <key name="themo_social_url"/>
+          <key name="themo_social_url_target"/>
+        </key>
+        <key name="1">
+          <key name="title"/>
+          <key name="themo_social_font_icon"/>
+          <key name="themo_social_url"/>
+          <key name="themo_social_url_target"/>
+        </key>
+        <key name="2">
+          <key name="title"/>
+          <key name="themo_social_font_icon"/>
+          <key name="themo_social_url"/>
+          <key name="themo_social_url_target"/>
+        </key>
+      </key>
+      <key name="themo_payments_accepted">
+        <key name="0">
+          <key name="title"/>
+          <key name="themo_payment_url"/>
+          <key name="themo_payment_url_target"/>
+        </key>
+        <key name="1">
+          <key name="title"/>
+          <key name="themo_payment_url"/>
+          <key name="themo_payment_url_target"/>
+        </key>
+        <key name="2">
+          <key name="title"/>
+          <key name="themo_payment_url"/>
+          <key name="themo_payment_url_target"/>
+        </key>
+      </key>
+      <key name="themo_contact_icons">
+        <key name="0">
+          <key name="title"/>
+          <key name="themo_contact_icon"/>
+          <key name="themo_contact_icon_url"/>
+          <key name="themo_contact_icon_url_target"/>
+        </key>
+        <key name="1">
+          <key name="title"/>
+          <key name="themo_contact_icon"/>
+          <key name="themo_contact_icon_url"/>
+          <key name="themo_contact_icon_url_target"/>
+        </key>
+        <key name="2">
+          <key name="title"/>
+          <key name="themo_contact_icon"/>
+          <key name="themo_contact_icon_url"/>
+          <key name="themo_contact_icon_url_target"/>
+        </key>
+      </key>
+      <key name="themo_footer_credit"/>
+    </key>
+    <key name="theme_mods_entrepreneurx-child">
+      <key name="themo_top_nav_icon_blocks">
+        <key name="0">
+          <key name="title"/>
+          <key name="themo_top_nav_icon"/>
+          <key name="themo_top_nav_icon_url"/>
+        </key>
+        <key name="1">
+          <key name="title"/>
+          <key name="themo_top_nav_icon"/>
+          <key name="themo_top_nav_icon_url"/>
+        </key>
+        <key name="2">
+          <key name="title"/>
+          <key name="themo_top_nav_icon"/>
+          <key name="themo_top_nav_icon_url"/>
+        </key>
+        <key name="3">
+          <key name="themo_top_nav_icon"/>
+          <key name="themo_top_nav_icon_url"/>
+        </key>
+      </key>
+      <key name="themo_social_media_accounts">
+        <key name="0">
+          <key name="title"/>
+          <key name="themo_social_font_icon"/>
+          <key name="themo_social_url"/>
+        </key>
+        <key name="1">
+          <key name="title"/>
+          <key name="themo_social_font_icon"/>
+          <key name="themo_social_url"/>
+        </key>
+        <key name="2">
+          <key name="title"/>
+          <key name="themo_social_font_icon"/>
+          <key name="themo_social_url"/>
+        </key>
+      </key>
+      <key name="themo_payments_accepted">
+        <key name="0">
+          <key name="title"/>
+          <key name="themo_payment_url"/>
+        </key>
+        <key name="1">
+          <key name="title"/>
+          <key name="themo_payment_url"/>
+        </key>
+        <key name="2">
+          <key name="title"/>
+          <key name="themo_payment_url"/>
+        </key>
+      </key>
+      <key name="themo_contact_icons">
+        <key name="0">
+          <key name="title"/>
+          <key name="themo_contact_icon"/>
+          <key name="themo_contact_icon_url"/>
+        </key>
+        <key name="1">
+          <key name="title"/>
+          <key name="themo_contact_icon"/>
+          <key name="themo_contact_icon_url"/>
+        </key>
+        <key name="2">
+          <key name="title"/>
+          <key name="themo_contact_icon"/>
+          <key name="themo_contact_icon_url"/>
+        </key>
+      </key>
+    </key>
+  </admin-texts>
+</wpml-config>

@@ -1,0 +1,16 @@
+<?php if($user->ID): ?>
+    <div class="wallet_id_container">
+        <?php if($wallet_id): ?>
+            <label style="display: inline-block; padding-right: 10px;">Wallet ID: </label>
+            <span>
+                <?php echo $wallet_id; ?>
+            </span>
+        <?php else: ?>
+            <div class="wallet_id_container_no_wallet">
+                <?php echo __cm('no_assigned_wallet'); ?>
+            </div>
+        <?php endif; ?>
+    </div>
+<?php else: ?>
+    <?php echo __cm('access_is_not_allowed'); ?>
+<?php endif; ?>

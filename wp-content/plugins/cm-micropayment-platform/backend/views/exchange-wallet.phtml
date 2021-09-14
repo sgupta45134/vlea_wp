@@ -1,0 +1,32 @@
+<?php
+
+/** @var  $wallet */
+
+$model = new CMMicropaymentPlatformWallet();
+$wallets = $model->getWallets();
+$fees_user_id = CMMicropaymentPlatformBackendFeesUser::getFeesUserId();
+$store_purchases_user_id = CMMicropaymentPlatformBackendStorePurchasesUser::getStorePurchasesUserId();
+?>
+
+<label for="cmmp_change_user_wallet" id="cmmp_change_user_wallet_show" class="button button-secondary">Change user wallet</label>
+<input type="checkbox" id="cmmp_change_user_wallet" name="cmmp_change_user_wallet" value="1" style="visibility: hidden">
+<div class="cmmp_change_user_wallet_wrap" style="display: none;">
+	<h4 class="cmmp_change_user_wallet_label">Change to:</h4>
+	<select name="cmmp_change_wallet_userID" id="cmmp_change_wallet_userID">
+		<?php foreach ($wallets as $user_wallet): ?>
+			<?php if($user_wallet->wallet_id == $wallet->wallet_id): continue; endif;
+
+			$current_wallet = $model->getWalletByUserID($user_wallet->user_id);
+			$current_wallet_username = get_user_by( 'id', $current_wallet->user_id )->data->user_nicename;
+
+			if($fees_user_id == $current_wallet->user_id || $store_purchases_user_id == $current_wallet->user_id) {
+				continue;
+			} ?>
+			<option value="<?php echo $current_wallet->user_id ?>">
+				<?php echo sprintf('%s (%s)', $current_wallet->wallet_name, $current_wallet_username); ?>
+			</option>
+		<?php endforeach; ?>
+	</select>
+	<p>Current user wallet will be assigned to chosen user </p>
+	<button id="cmmp_change_user_wallet_submit" class="button button-primary">Change</button>
+</div>

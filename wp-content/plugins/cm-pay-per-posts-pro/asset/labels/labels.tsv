@@ -1,0 +1,72 @@
+activate_subscription_header	Activate subscription	Call to action "Activate subscription" for logged-in users.	Micropayments
+activate_subscription_header_guest	Activate subscription	Call to action "Activate subscription" for not logged-in users.	Micropayments
+activate_subscription_text_guest	Please <a href="javascript:void(0)" class="cmreg-login-click">login</a> to activate subscription.	Message on paybox for not logged-in users.	Micropayments
+activate_subscription_text	To read this page please active subscription.	Message on paybox for logged-in users.	Micropayments
+period_for_points	%s for %d points	Subscription option to choose eg. "2 weeks for 20 points".	Micropayments
+mp_error_wallet_not_exists	Wallet doesn't exists.	Error when trying to charging not existing wallet.	Micropayments
+mp_error_not_enough_points	Not enough points in wallet.	Error when trying to charging wallet which have not enough points.	Micropayments
+msg_activation_success	Your subscription has been activated. Charged %d points from your wallet.	Message after successful subscription activation.	Micropayments
+paybox_pay_btn	OK	Paybox pay button.	Micropayments
+paybox_pay_single_btn	Pay %d points for %s	Paybox pay button for only one time period.	Micropayments
+
+mp_amount_payed_format	%d points	Amount payed format for Micropayments.	Subscription
+eddpay_amount_payed_format	$%.2f	Amount payed format for EDD Payment.	Subscription
+autoredirect_text	You will be redirected to the content in %s seconds	Number of seconds to autoredirect.	Subscription
+shortcode_group_paybox_subscribed	Subscription for group %group_name% is active until %end_date%.	Text will appear in the  [cmppp-group-paybox] shortcode if user has paid for the content. Use %group_name% to show the pricing group name and %end_date% to display the date when the subscription ends.	Subscription
+shortcode_group_paybox_subscribed_lifetime	Subscription for group %group_name% is active forever.	Text will appear in the [cmppp-group-paybox] shortcode if user has paid for the content with a lifetime subscription. Use %group_name% to show the pricing group name.	Subscription
+shortcode_group_paybox_has_no_content	The group %group_name% has no content.	Text will appear in the [cmppp-group-paybox] shortcode if the group has no content assigned. Use %group_name% to show the pricing group name.
+
+shortcode_subscriptions_table_caption	Your Subscriptions	Table caption in the subscriptions shortcode.	Shortcode
+shortcode_subscriptions_table_no	No subscriptions.	No subscriptions text in the subscriptions shortcode.	Shortcode
+shortcode_subscriptions_post	Post	"Post" column name in the subscriptions shortcode.	Shortcode
+shortcode_subscriptions_start	Start	"Start" column name in the subscriptions shortcode.	Shortcode
+shortcode_subscriptions_end	End	"End" column name in the subscriptions shortcode.	Shortcode
+shortcode_subscriptions_duration	Duration	"Duration" column name in the subscriptions shortcode.	Shortcode
+shortcode_subscriptions_amount	Amount	"Amount" column name in the subscriptions shortcode.	Shortcode
+shortcode_subscriptions_status	Status	"Status" column name in the subscriptions shortcode.	Shortcode
+status_past	Past	Subscription status "past".	Shortcode
+status_active	Active	Subscription status "active".	Shortcode
+status_refund	Refund	Subscription status "refund".	Shortcode
+shortcode_author_subscriptions_table_caption	Author Subscriptions	Table caption in the author subscriptions shortcode.	Shortcode
+shortcode_author_subscriptions_user_name	User Name	"User Name" column name in the author subscriptions shortcode.	Shortcode
+shortcode_author_subscriptions_user_email	User Email	"User Email" column name in the author subscriptions shortcode.	Shortcode
+
+refund_btn	Refund	Refund button label.	Refund
+refund_box_header	Reason for Instant Refund	Refund box header.	Refund
+refund_box_text	You have %d minutes from paying for an acticle to request an Instant Refund. Please help us improve the Pay-Per-View system by letting us and the Writer know why you would like an Instant Refund.	Refund box text.	Refund
+refund_box_reason_other	Other reason (please specify)...	Other reason label.	Refund
+refund_box_submit_btn	Request refund %d points	Refund confirmation button.	Refund
+refund_box_cancel_btn	I changed my mind	Refund cancel button.	Refund
+refund_other_reason_placeholder	Enter your reason here...	Other reason textarea placeholder.	Refund
+refund_success_msg	Refund success. You wallet has been granted with %d points.	Refund success message.	Refund
+refund_error_msg	Refund error. Please try again.	Refund error message.	Refund
+refund_error_timeout_msg	Sorry, the time for refund has been exceeded.	Error message when time for refund has been exceeded.	Refund
+refund_error_mp_msg	An error occurred.	Error message when Micropayments returned an error.	Refund
+
+minute	minute	Minute	Dates
+minutes	minutes	Minutes	Dates
+hour	hour	Hour	Dates
+hours	hours	Hours	Dates
+day	day	Day	Dates
+days	days	Days	Dates
+week	week	Week	Dates
+weeks	weeks	Weeks	Dates
+month	month	Month	Dates
+months	months	Months	Dates
+year	year	Year	Dates
+years	years	Years	Dates
+lifetime	lifetime	Lifetime	Dates
+
+restrict_copying_content	I'm sorry, but the content of this page cannot be copied.	Prevent users from copying content message	Restrict copying content
+
+restricted_shortcode_heading	Restricted Section	Restricted shortcode heading	Restricted Shortcode
+restricted_shortcode_content	Only subscribed user would be able to view this content.	Restricted shortcode content	Restricted Shortcode
+
+post_availability_no_more	No more available for buying	Post availability no more message	Post Availability
+post_availability_no_more_with_no	This post is no more available because it has been already bought by %d subscribers	Post availability no more message with number (%d)	Post Availability
+post_availability_more_with_no	This post only available for %d subscribers	Post availability more message with number (%d)	Post Availability
+post_availability_available	Available	Available text	Post Availability
+post_availability_not_available	Not Available	Not available text	Post Availability
+post_availability_already_own	You already own this post	You already own this post text	Post Availability
+
+message_cmppp_show_message_you_have_bought_the_post	You've bought the post	You've bought the post text	Messages

@@ -1,0 +1,53 @@
+.right {float: right;}
+.cmppp-pagination, .cmppp-pagination li {list-style: none; margin: 0; padding: 0;}
+.cmppp-pagination li {display: inline-block;}
+.cmppp-pagination a {display: inline-block; padding: 0.5em 1em; font-size: 14px; text-decoration: none; font-weight: bold; background: #f0f0f0; border: 1px solid #cccccc; color: #777777;}
+.cmppp-pagination a:hover {color: black; border-color: #999999;}
+.cmppp-pagination .current-page a {background: white; color: black;}
+.cmppp-get-pro {background: white; padding: 1em; width: 450px; border: solid 1px #dddddd; margin: 0 auto;}
+.cmppp-get-pro, .cmppp-get-pro p {font-size: 110%;}
+.cmppp-get-pro p {margin: 0;}
+.cmppp-get-pro .center {text-align: center;}
+.cmppp-get-pro a.button {font-size: 120%; font-weight: bold; padding: 0 2em; line-height: 2em; height: 2em; background: #006699; color: white; margin: 1em 0;}
+.cmppp-pro-features {list-style: none;}
+.cmppp-pro-features li {margin: 0;}
+.cmppp-pro-features li:before {content: "\f147"; display: inline-block; padding-right: 5px; -webkit-font-smoothing: antialiased; font: normal 30px 'dashicons'; vertical-align: middle; color: #009900; cursor: default; }
+.cmmp-group {margin-bottom: 2em; border-bottom: 1px solid #e0e0e0; padding-bottom: 1em; white-space: nowrap;}
+.cmmp-group label {margin-right: 0.5em !important;}
+.cmmp-group input[type=text] {width: 100px;}
+.cmmp-prices {margin-left: 1em; position: relative}
+.cmmp-group .cmmp-prices {margin-left: 0; margin-bottom: 10px;}
+.cmmp-group .cmmp-prices .cmmp-price {margin-top: 10px; padding-left: 1em;}
+.cmmp-group .cmppp-assign-posts-to-group {margin-left: 10px;}
+
+.cmmp-price input[type=number] {width:70px; vertical-align:bottom;}
+.cmmp-price select {width: 7em;}
+.cmppp-report-table {margin-top: 15px}
+.cmppp-select-all-bulk{width: 15px;}
+input.cmppp-select-all-bulk-input{margin-left: 0 !important; vertical-align: text-bottom !important;}
+.cmppp-report-table td {height: 2em;}
+.cmppp-report-row-filter {margin-left: 1em; display: none; border: 1px solid #cccccc; background: #f0f0f0; color: #333333; padding: 3px 0.5em; float: right; font-size: 10px;}
+td:hover .cmppp-report-row-filter, .cmppp-report-row-filter:active {display: inline-block;}
+.cmppp-report-table .cmppp-actions, .cmppp-report-table .cmppp-actions li {list-style: none; display: inline-block; margin: 0; padding: 0;}
+.cmppp-report-table .cmppp-actions a {padding: 0 0.5em 0 0;}
+.cmppp-subscription-add-form .inner {background: white; padding: 1em; margin-bottom: 1em; border: solid 1px #e0e0e0;}
+.cmppp-subscription-add-form .inner.closed {display: none;}
+.cmppp-subscription-add-form select {vertical-align: top;}
+.cmppp-subscription-add-form input[type=text] {width: 8em;}
+.cmppp-subscription-add-form input[type=number] {width: 5em;}
+.cmppp-subscription-add-form label {margin-right: 1em;}
+.cmppp-subscription-add-form input[type=submit] {padding-left: 1em; padding-right: 1em; cursor:pointer; }
+.cmppp-subscription-add-form .cmppp-subscription-add-post {display: none;}
+.cmppp-refund-reason {display: none;}
+th.option-title { background-color: transparent !important; float: none !important; }
+
+.cmppp-export-subscriptions__wrap {
+    margin-top: 5px;
+}
+.cmppp-export-subscriptions__wrap label {
+    margin-bottom: 5px;
+}
+.cmppp-export-subscriptions__wrap input {
+    max-width: 100px;
+}
+.cmppp-export-subscriptions, #bulk_remove {background-color: #f3f5f6;text-decoration: none;padding: 7px 7px;font-size: 13px;border: 1px solid rgb(0, 113, 161);border-radius: 2px;margin-left: 4px;}

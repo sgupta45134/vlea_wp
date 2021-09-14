@@ -1,0 +1,2 @@
+<?php
+ namespace MailPoetVendor\Symfony\Component\DependencyInjection\Compiler; if (!defined('ABSPATH')) exit; use MailPoetVendor\Symfony\Component\DependencyInjection\ContainerBuilder; class ExtensionCompilerPass implements CompilerPassInterface { public function process(ContainerBuilder $container) { foreach ($container->getExtensions() as $extension) { if (!$extension instanceof CompilerPassInterface) { continue; } $extension->process($container); } } } 

@@ -1,0 +1,25 @@
+<div class="wrap">
+    <div id="icon-plugins" class="icon32"><br></div>
+    <h2><?php _e('CM Micropayments') ?> - <?php _e('Settings'); ?></h2>
+
+    <div class="cminds_settings_description">
+        <?php if( isset($errors) && $errors ): ?>
+            <div id="message" class="error below-h2">
+                <p><?php echo $errors; ?></p>
+            </div>
+        <?php endif; ?>
+    </div>
+
+    <?php
+    echo do_shortcode( '[cminds_pro_ads id="cmmp"]');
+    ?>
+
+	<br/>
+	<div class="clear"></div>
+
+    <?php include_once 'setting-tabs/tabs.phtml' ?>
+
+    <div id="tab_container" class="cm_mp_settings">
+        <?php echo $tab_content_filtered; ?>
+    </div>
+</div>

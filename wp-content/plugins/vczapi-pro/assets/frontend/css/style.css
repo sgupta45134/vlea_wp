@@ -1,0 +1,147 @@
+.dpn-zvc-sidebar-box .btn-register-btn-link, .dpn-zvc-sidebar-box .btn-start-link { background: #1c3b82; padding: 10px 20px; color: #fff; border-radius: 0; display: block; margin-top: 10px; }
+
+.dpn-zvc-sidebar-box .vczapi-pro-ical-links a { font-weight: 700; width: 100%; }
+
+.vczapi-pro-registration-container { margin: 0 auto; max-width: 900px; min-height: 600px; padding-top: 40px; }
+
+.vczapi-pro-registration-container--header { font-size: 24px; text-align: center; padding-bottom: 30px; font-weight: 600; }
+
+.vczapi-pro-registration-container--details { border-bottom: solid 1px #eee; border-top: solid 1px #eee; padding: 10px 0; margin-bottom: 40px; }
+
+.vczapi-pro-registration-container--details .details-inner { display: block; padding: 10px 0; }
+
+.vczapi-pro-registration-container--details .details-inner .control-label { font-weight: bold; width: 80px; display: inline-block; }
+
+.vczapi-pro-registration-container p { padding: 0; margin: 0; }
+
+.vczapi-pro-registration-container--registration-wrap .vczapi-pro-registration-notice { padding: 10px 20px; background: #349bcc; border: 0; color: #fff; display: none; }
+
+.vczapi-pro-registration-container--registration-wrap .vczapi-pro-registration-notice p { margin: 0; padding: 0; }
+
+.vczapi-pro-registration-container--registration-wrap .registration-form__control { display: block; margin: 15px 0; }
+
+.vczapi-pro-registration-container--registration-wrap .registration-form__control label { display: block; font-weight: bold; }
+
+.vczapi-pro-registration-container--registration-wrap .registration-form__control input, .vczapi-pro-registration-container--registration-wrap .registration-form__control select { width: 100%; color: #232333; box-shadow: none; padding: 10px; border-color: #ddd; margin-top: 5px; }
+
+.vczapi-pro-registration-container--registration-wrap .registration-form__control input[type="submit"] { color: #fff; }
+
+.vczapi-pro-registration-container--registration-wrap .registration-form .btn-registration { position: relative; vertical-align: top; height: 40px; width: 25%; padding: 0; color: #fff; text-align: center; border: 0; cursor: pointer; margin-left: auto; }
+
+.vczapi-pro-registration-container--registration-wrap .registration-form .error { color: red; font-size: 13px; }
+
+.zvc-all-occurrences__list { display: none; }
+
+.zvc-all-occurrences__list ul { margin: 0 20px; }
+
+.vczapi-pro-row { display: flex; flex-wrap: wrap; margin-right: -15px; margin-left: -15px; }
+
+.vczapi-pro-row label { display: inline-block; margin-bottom: .3rem; }
+
+.vczapi-pro-row .vczapi-pro-form-control { display: block; width: 100%; height: calc(1.5em + .75rem + 2px); padding: .375rem .75rem; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #495057; background-color: #fff; background-clip: padding-box; border: 1px solid #ced4da; border-radius: .25rem; transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
+
+.vczapi-pro-row .description { font-size: 12px; font-style: italic; margin: 0; padding-top: 5px; }
+
+.vczapi-pro-col-md-4, .vczapi-pro-col-md-6, .vczapi-pro-col-md-12 { position: relative; width: 100%; padding-right: 15px; padding-left: 15px; margin-bottom: 10px; }
+
+@media (min-width: 768px) { .vczapi-pro-col-md-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+  .vczapi-pro-col-md-12 { flex: 0 0 100%; max-width: 100%; }
+  .vczapi-pro-col-md-6 { flex: 0 0 50%; max-width: 50%; } }
+
+.vczapi-api-meeting-create-notifications p { margin: 0; }
+
+.vczapi-api-meeting-create-notifications-error { background: #c75959; color: #fff; padding: 10px 20px; }
+
+.vczapi-api-meeting-create-notifications-success { background: #345a3b; color: #fff; padding: 10px 20px; }
+
+.vczapi-pro-inline-registration-container { background: #f2f2f2; padding: 8px 16px; }
+
+.vczapi-pro-inline-registration-header { background: #3a3a3a; padding: 0 16px; border-radius: 2px; margin-top: 20px; }
+
+.vczapi-pro-inline-registration-header h3 { color: #fff; margin: 0; padding: 10px 0; }
+
+.vczapi-pro-datatable #vczapi-pro-frontend-author-meeting-list-table_wrapper { margin-top: 10px; }
+
+.vczapi-pro-datatable #vczapi-pro-frontend-author-meeting-list-table_filter-bulk_delete, .vczapi-pro-datatable #vczapi-pro-frontend-author-meeting-list-table_filter label { display: inline-block; }
+
+.vczapi-pro-datatable #vczapi-pro-frontend-author-meeting-list-table_filter-bulk_delete { padding-left: 20px; }
+
+.vczapi-pro-datatable .dataTables_wrapper .dataTables_length, .vczapi-pro-datatable .dataTables_wrapper .dataTables_filter, .vczapi-pro-datatable .dataTables_wrapper .dataTables_info, .vczapi-pro-datatable .dataTables_wrapper .dataTables_processing, .vczapi-pro-datatable .dataTables_wrapper .dataTables_paginate { margin: 20px 0; }
+
+.vczapi-pro-datatable .dt-buttons { float: left; }
+
+.vczapi-pro-datatable table.dataTable thead td, .vczapi-pro-datatable table.dataTable thead th { padding: 10px; }
+
+#vczapi-pro-frontend-meeting-create-form .select2-container--default .select2-selection--single { border: 1px solid #ced4da; }
+
+#vczapi-pro-frontend-meeting-create-form .select2-container .select2-selection--single, #vczapi-pro-frontend-meeting-create-form .select2-container--default .select2-selection--single .select2-selection__arrow { height: calc(1.5em + .75rem + 2px); }
+
+#vczapi-pro-frontend-meeting-create-form .select2-container--default .select2-selection--single .select2-selection__rendered { line-height: 34px; padding-left: 14px; }
+
+#vczapi-pro-frontend-meeting-create-form .vczapi-pro-validate-error { color: red; margin: 5px 0; }
+
+#vczapi-pro-frontend-meeting-create-form .vczapi-pro-field-validate-error input, #vczapi-pro-frontend-meeting-create-form .vczapi-pro-field-validate-error select, #vczapi-pro-frontend-meeting-create-form .vczapi-pro-field-validate-error textarea, #vczapi-pro-frontend-meeting-create-form .vczapi-pro-field-validate-error .select2-container--default .select2-selection--single { border-color: red; }
+
+.vczapi-pro-calendar-container { position: relative; }
+
+.vczapi-pro-calendar-container .vczapi-pre-loader { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0.7; background-color: #000; z-index: 99; text-align: center; display: none; }
+
+.vczapi-pro-calendar-container .vczapi-pre-loader img { position: absolute; z-index: 100; left: 0; right: 0; text-align: center; top: 0; bottom: 0; margin: auto; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar .fc-daygrid-day-frame .fc-daygrid-day-top { flex-direction: row; padding: 8px 10px; font-size: 20px; font-weight: 600; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar .fc-daygrid-day-frame .fc-daygrid-day-bottom { padding: 4px 10px; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar .fc-daygrid-day-frame .fc-daygrid-day-events .fc-daygrid-event { padding: 4px 10px; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar .fc-daygrid-day-frame .fc-daygrid-day-events .fc-daygrid-event .fc-daygrid-event-dot { margin-right: 4px; margin-left: 0; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar .fc-daygrid-day-frame .fc-daygrid-day-events .fc-daygrid-event:hover { background: none; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar .fc-daygrid-day-frame .fc-daygrid-day-events .fc-daygrid-event:hover .fc-event-title { text-decoration: underline; cursor: pointer; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar .fc-daygrid-day-frame .fc-daygrid-day-events .fc-daygrid-event .fc-event-time { font-size: 0.8em; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar .fc-h-event:hover .fc-event-main-frame .fc-event-time, .vczapi-pro-calendar-container .vczapi-pro-calendar .fc-h-event:hover .fc-event-main-frame .fc-event-title { color: #0274be; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar .fc-more-popover .fc-daygrid-event-harness .fc-daygrid-event { padding: 4px 10px; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar .fc-more-popover .fc-daygrid-event-harness .fc-daygrid-event .fc-daygrid-event-dot { margin-right: 4px; margin-left: 0; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar .fc-more-popover .fc-daygrid-event-harness .fc-daygrid-event:hover { background: none; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar .fc-more-popover .fc-daygrid-event-harness .fc-daygrid-event:hover .fc-event-title { text-decoration: underline; cursor: pointer; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar .fc-more-popover .fc-daygrid-event-harness .fc-daygrid-event .fc-event-time { font-size: 0.8em; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar .fc-dayGridMonth-view .fc-daygrid-event { flex-wrap: wrap; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar .fc-dayGridMonth-view .fc-event-title { width: 100%; white-space: normal; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar thead .fc-scrollgrid-section-header table.fc-col-header { margin: 0; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar tbody .fc-scrollgrid-section-body table.fc-scrollgrid-sync-table { margin: 0; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar .tippy-box { min-width: 250px; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar .tippy-box .vczapi-calendar-tooltip { padding: 10px; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar .tippy-box .vczapi-calendar-tooltip h5 { margin: 10px 0 5px 0; font-size: 1em; font-weight: 700; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar .tippy-box .vczapi-calendar-tooltip .meeting-date { color: #6d6d6d; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar .tippy-box .vczapi-calendar-tooltip .meeting-date, .vczapi-pro-calendar-container .vczapi-pro-calendar .tippy-box .vczapi-calendar-tooltip .meeting-description, .vczapi-pro-calendar-container .vczapi-pro-calendar .tippy-box .vczapi-calendar-tooltip .meeting-description p, .vczapi-pro-calendar-container .vczapi-pro-calendar .tippy-box .vczapi-calendar-tooltip .meeting-link { margin-bottom: 8px; font-size: 0.9em; }
+
+.vczapi-pro-calendar-container .vczapi-pro-calendar .tippy-box .vczapi-calendar-tooltip .meeting-link { text-decoration: underline; }
+
+.vczapi-pro-calendar-container .vczapi-calendar-tpl { display: none; }
+
+.vczapi-pro-btn { border-style: solid; border-top-width: 0; border-right-width: 0; border-left-width: 0; border-bottom-width: 0; color: #ffffff; border-color: #0274be; background-color: #0274be; padding: 8px 30px; font-family: inherit; font-weight: inherit; line-height: 1; }
+
+.vczapi-pro-btn:visited { color: #fff; }
+
+.vczapi-pro-btn:hover { color: #ffffff; background-color: #3a3a3a; border-color: #3a3a3a; }
+
+.vczapi-pro-register-view-btn-link, .vczapi-pro-register-btn-link { width: 100%; display: block; text-align: center; margin-top: 6px; }
+
+.vczapi-list-zoom-meetings--items { display: flex; flex-wrap: wrap; justify-content: space-between; }

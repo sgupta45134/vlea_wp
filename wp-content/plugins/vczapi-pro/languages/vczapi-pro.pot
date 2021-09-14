@@ -1,0 +1,1480 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Video Conferencing with Zoom Pro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-06 07:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.1; wp-5.4.2"
+
+#: templates/fragments/meeting-details.php:86
+msgid " hour"
+msgid_plural " hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/fragments/meeting-details.php:86
+#: templates/fragments/meeting-details.php:88
+msgid " minute"
+msgid_plural " minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Bootstrap.php:209
+#, php-format
+msgid ""
+"\"%1$s\" requires \"%2$s\" plugin. Please Download and Activate from %3$s"
+msgstr ""
+
+#: includes/Bootstrap.php:154
+#, php-format
+msgid ""
+"\"%1$s\" requires \"%2$s\" version %3$s or greater. Please Update or "
+"Activate or Download from %4$s"
+msgstr ""
+
+#: includes/Bootstrap.php:173 includes/Bootstrap.php:191
+#, php-format
+msgid ""
+"\"%1$s\" requires \"%2$s\" version %3$s or greater. Please update your "
+"existing plugin version from plugins page."
+msgstr ""
+
+#: templates/fragments/meeting-details.php:102
+#, php-format
+msgid ""
+"%sNote%s: Countdown time is shown based on your local timezone. Meeting time "
+"has 1 hour threshold before another occurrence is shown."
+msgstr ""
+
+#: templates/registration.php:185
+#: templates/registration/inline-registration.php:143
+msgid "1-3 months"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:44
+msgid "24 hours before meeting"
+msgstr ""
+
+#: templates/registration.php:186
+#: templates/registration/inline-registration.php:144
+msgid "4-6 months"
+msgstr ""
+
+#: templates/registration/registered-meeting-list.php:25
+#: templates/frontend/author-registrants.php:28
+#: templates/frontend/author-meetings.php:30 includes/Backend/Sync/Sync.php:110
+msgid "Action"
+msgstr ""
+
+#: templates/frontend/author-meetings.php:21
+msgid "Add Meeting"
+msgstr ""
+
+#: templates/registration.php:119
+#: templates/registration/inline-registration.php:77
+#: includes/Backend/Settings/tpl-settings.php:81
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:221
+msgid "Address"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:173
+msgid "Advacned Cron Manager"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:153
+msgid "After"
+msgstr ""
+
+#: includes/WC/WooCommerce.php:80
+msgid "Allow Anytime Purchase "
+msgstr ""
+
+#: templates/fragments/register.php:27
+msgid "Already registered ? Please check your email for the join links."
+msgstr ""
+
+#: includes/Backend/Settings/Licensing.php:128
+#: includes/Backend/Settings/Licensing.php:155
+#: includes/Backend/Settings/Licensing.php:201
+#: includes/Backend/Settings/Licensing.php:212
+msgid "An error occurred, please try again."
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:170
+msgid "and copy to"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:46
+msgid ""
+"and search for Email Reminders section to know more about the variables you "
+"can add to your email template."
+msgstr ""
+
+#: includes/Backend/Sync/Sync.php:46 includes/Backend/Sync/Sync.php:100
+msgid ""
+"API keys are not configured properly ! Please configure them before syncing."
+msgstr ""
+
+#: includes/Backend/Registrations/Registrations.php:154
+msgid "Approve"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:190
+msgid "Attendees register once and can attend any of the occurrences."
+msgstr ""
+
+#: includes/Elementor/Widgets/Calendar.php:92
+msgid "Author ID"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:12
+msgid "Auto Generated"
+msgstr ""
+
+#: templates/frontend/create-meeting.php:20
+msgid "Back to List"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:88
+msgid "By"
+msgstr ""
+
+#: includes/Backend/Sync/tpl-sync.php:45 includes/Backend/Sync/tpl-sync.php:77
+msgid "Cache data did not loa properly. Please refresh the page once again."
+msgstr ""
+
+#: includes/Elementor/Widgets/Calendar.php:128
+#: includes/Elementor/Widgets/Calendar.php:145
+msgid "Calendar Views"
+msgstr ""
+
+#: includes/Backend/Registrations/Registrations.php:154
+msgid "Cancel"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:267
+msgid "Cancel Registration Status"
+msgstr ""
+
+#: templates/fragments/meeting-details.php:74
+msgid "Category"
+msgstr ""
+
+#: includes/Backend/Registrations/tpl-registrants-list.php:10
+msgid "Change Status"
+msgstr ""
+
+#: includes/WC/WooCommerce.php:81
+msgid ""
+"Check this box to allow purchase of meeting even after first occurrence of "
+"Meeting has occurred and before last occurrence has occurred"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:183
+msgid ""
+"Check this box to send user to Zoom instead of registering on a form on the "
+"site. Useful if your registration form has custom fields."
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:45
+msgid ""
+"Check this option to disable email notification for 24 hours before the "
+"meeting."
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:64
+msgid ""
+"Checking this option will create a new user if not exists when registration "
+"form is submitted. Default role for the user will be"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:18
+msgid ""
+"Checking this option will enable email after a user is registered into a "
+"meeting."
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:55
+msgid ""
+"Checking this option will enable registration form on the meeting page "
+"instead of seperate page."
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:36
+msgid ""
+"Checking this option will hide add to calendar and add to Google calendar "
+"links for products which are not yet purchased."
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:27
+msgid ""
+"Checking this option will hide add to calendar and add to Google calendar "
+"links from single pages and archive pages."
+msgstr ""
+
+#: includes/Backend/Sync/tpl-sync.php:7
+msgid "Choose a method to sync your meeting."
+msgstr ""
+
+#: includes/Backend/Sync/tpl-sync.php:28
+msgid "Choose User"
+msgstr ""
+
+#: includes/Backend/Sync/tpl-sync.php:48
+msgid ""
+"Choose which user the inserted meeting ID belongs to. This needs to be "
+"correct."
+msgstr ""
+
+#: templates/registration.php:125
+#: templates/registration/inline-registration.php:83
+#: includes/Backend/Settings/tpl-settings.php:85
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:225
+msgid "City"
+msgstr ""
+
+#: templates/fragments/meeting-details.php:46
+msgid "Click below join link to join this meeting."
+msgstr ""
+
+#: templates/fragments/meeting-details.php:60
+msgid "Click to See All Meeting Occurrences"
+msgstr ""
+
+#: includes/Elementor/Widgets/MeetingList.php:179
+msgid "Column Layout"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:129
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:269
+msgid "Comments"
+msgstr ""
+
+#: includes/Frontend/Registrations.php:344
+msgid "Confirmation for"
+msgstr ""
+
+#: includes/Elementor/Widgets/Calendar.php:84
+#: includes/Elementor/Widgets/MeetingRegistrants.php:89
+#: includes/Elementor/Widgets/MeetingList.php:85
+msgid "Content"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:24
+msgid "Convert this scheduled meeting to recurring meeting ?"
+msgstr ""
+
+#: includes/Elementor/Widgets/MeetingList.php:152
+msgid "Count of meetings"
+msgstr ""
+
+#: templates/registration.php:131
+#: templates/registration/inline-registration.php:89
+#: includes/Backend/Settings/tpl-settings.php:89
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:229
+msgid "Country"
+msgstr ""
+
+#: templates/frontend/create-meeting.php:103
+msgid "Create Meeting"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:60
+msgid "Create user on Registration ?"
+msgstr ""
+
+#: includes/Elementor/Widgets/Calendar.php:102
+msgid "CSS Class"
+msgstr ""
+
+#: includes/Frontend/Registrations.php:467
+#: includes/Backend/Registrations/tpl-registrants-list.php:9
+msgid "Current Status"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:31
+msgid "Daily"
+msgstr ""
+
+#: includes/Bootstrap.php:320
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:49
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:56
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:80
+msgid "Day"
+msgstr ""
+
+#: templates/fragments/countdown-timer.php:23
+msgid "days"
+msgstr ""
+
+#: templates/registration.php:196
+#: templates/registration/inline-registration.php:154
+msgid "Decision Maker"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:205
+msgid ""
+"Default is TRUE. Send email notifications to registrants about approval, "
+"cancellation, confirmation denial of the registration. If checked, users "
+"will not receive any registration confirmation email notification from Zoom "
+"side."
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:60
+msgid "Define the interval at which the meeting should occur."
+msgstr ""
+
+#: templates/frontend/create-meeting.php:42
+msgid "Description"
+msgstr ""
+
+#: templates/fragments/meeting-details.php:19
+msgid "Details"
+msgstr ""
+
+#: templates/frontend/create-meeting.php:61
+msgid "Did not find any hosts here ? Please contact administrator."
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:41
+msgid "Disable Reminder Emails"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-webhooks.php:5
+msgid "Documentation"
+msgstr ""
+
+#: includes/Backend/Duplicator.php:39
+msgid "Duplicate Meeting"
+msgstr ""
+
+#: templates/fragments/meeting-details.php:82
+msgid "Duration"
+msgstr ""
+
+#: templates/registration.php:100
+#: templates/registration/inline-registration.php:58
+msgid "E-mail"
+msgstr ""
+
+#: includes/Frontend/Registrations.php:463
+#: includes/Backend/Registrations/tpl-registrants-list.php:5
+msgid "Email"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:158
+msgid "Email Reminders"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Enable recurring meetings as well as enhance more features to zoom from your "
+"WordPress dashboard."
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:132
+msgid "End Date"
+msgstr ""
+
+#: includes/Backend/Sync/tpl-sync.php:52
+msgid "Enter a Meeting/Webinar ID"
+msgstr ""
+
+#: includes/Elementor/Widgets/MeetingRegistrants.php:101
+msgid ""
+"Enter a user ID to show registered meeting for only the selected User. Leave "
+"this field blank to show registered events for the loggedin user."
+msgstr ""
+
+#: includes/Core/Updater.php:322
+msgid "Error"
+msgstr ""
+
+#: includes/Frontend/Meetings.php:388
+#, php-format
+msgid "Error occurred when trying to create meeting. Error Message: %s"
+msgstr ""
+
+#: includes/Frontend/Meetings.php:330
+msgid "Error occurred when trying to create meeting. Please try again later."
+msgstr ""
+
+#: includes/Frontend/Meetings.php:358 includes/Frontend/Meetings.php:364
+#, php-format
+msgid "Error occurred when trying to update meeting. Error Message: %s"
+msgstr ""
+
+#: templates/registration.php:197
+#: templates/registration/inline-registration.php:155
+msgid "Evaluator/Recommender"
+msgstr ""
+
+#: includes/Frontend/Registrations.php:191
+msgid "Event ID does not seem to be valid. Please try again later."
+msgstr ""
+
+#: includes/Core/Factory.php:354
+msgid "Failed to import meeting with ID"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:75
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:215
+msgid "Field"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:91
+msgid "First"
+msgstr ""
+
+#: templates/registration.php:92 includes/Frontend/Registrations.php:464
+#: templates/registration/inline-registration.php:50
+#: includes/Backend/Registrations/tpl-registrants-list.php:6
+msgid "First Name"
+msgstr ""
+
+#: includes/Bootstrap.php:342
+msgid "First Name is required !"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:100
+msgid "Fourth"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:122
+msgid "Friday"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:173
+msgid ""
+"from WordPress repository and goto wp-admin > Tools > Cron Manager - Search "
+"for \"vczapi_pro_daily_cron\" and click on execute now to manually execute "
+"the reminders."
+msgstr ""
+
+#: includes/Backend/Settings/tpl-webhooks.php:17
+#, php-format
+msgid ""
+"Get your verification code from your %s. Verification code needs to be exact."
+msgstr ""
+
+#: templates/registration.php:73 templates/registration.php:82
+#: includes/Frontend/Registrations.php:275
+msgid "Go back to event page."
+msgstr ""
+
+#: templates/fragments/add-to-calender.php:20
+msgid "Google Calendar"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:64
+#, php-format
+msgid ""
+"Goto \"emails\" tab for changing email details and follow this %s to change "
+"role of user."
+msgstr ""
+
+#: templates/registration.php:81
+#: templates/registration/inline-registration.php:40
+msgid "Here"
+msgstr ""
+
+#: includes/Frontend/Registrations.php:272
+msgid "here"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:23
+msgid "Hide Add to Calender links ?"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:32
+msgid "Hide add to Calender links for not purchased meetings ?"
+msgstr ""
+
+#: includes/WC/WooCommerce.php:174 templates/fragments/meeting-details.php:32
+msgid "Hosted By"
+msgstr ""
+
+#: templates/frontend/list-meetings.php:34
+msgid "Hosted By:"
+msgstr ""
+
+#: templates/fragments/countdown-timer.php:29
+msgid "hours"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:163
+msgid "How many times this meeting should occur before it is cancelled !"
+msgstr ""
+
+#: templates/fragments/add-to-calender.php:23
+msgid "iCal Export"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:198
+msgid ""
+"If this option is checked, User will not be required to be loggedin to this "
+"website. Note: User will only receive join link via email and register "
+"button will stay regardless after the registration process."
+msgstr ""
+
+#: includes/Backend/Sync/tpl-sync.php:85
+msgid "Import"
+msgstr ""
+
+#: includes/Backend/Sync/Sync.php:190
+msgid "Import Meeting"
+msgstr ""
+
+#: includes/Backend/Sync/Sync.php:159
+msgid "Import Webinar"
+msgstr ""
+
+#: templates/fragments/meeting-details.php:50
+msgid "In Progress Occurence"
+msgstr ""
+
+#: templates/registration.php:164
+#: templates/registration/inline-registration.php:122
+#: includes/Backend/Settings/tpl-settings.php:105
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:245
+msgid "Industry"
+msgstr ""
+
+#: templates/registration.php:198
+#: templates/registration/inline-registration.php:156
+msgid "Influencer"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:51
+msgid "Inline Registration Form"
+msgstr ""
+
+#: includes/Backend/Sync/tpl-sync.php:55
+msgid ""
+"Insert meeting ID that belongs to above selected user. Usually, 11 "
+"characters."
+msgstr ""
+
+#: includes/Backend/Settings/Licensing.php:142
+msgid "Invalid license."
+msgstr ""
+
+#: templates/registration.php:176
+#: templates/registration/inline-registration.php:134
+#: includes/Backend/Settings/tpl-settings.php:113
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:253
+msgid "Job Title"
+msgstr ""
+
+#: templates/registration/registered-meeting-list.php:34
+msgid "Join Event"
+msgstr ""
+
+#: templates/fragments/register.php:20 templates/frontend/list-meetings.php:84
+#: templates/shortcode/meeting-join-links.php:25
+#: templates/shortcode/meeting-join-links.php:25
+#: templates/shortcode/meeting-join-links.php:34
+msgid "Join Meeting"
+msgstr ""
+
+#: includes/WC/WooCommerce.php:261 includes/WC/WooCommerce.php:267
+msgid "Join via App"
+msgstr ""
+
+#: templates/shortcode/meeting-join-links.php:23
+msgid "Join via Zoom App"
+msgstr ""
+
+#: includes/Frontend/Registrations.php:466
+#: includes/Backend/Registrations/tpl-registrants-list.php:8
+msgid "Joined"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:103
+msgid "Last"
+msgstr ""
+
+#: includes/Frontend/Registrations.php:465
+#: includes/Backend/Registrations/tpl-registrants-list.php:7
+msgid "Last Name"
+msgstr ""
+
+#: templates/registration.php:96
+#: templates/registration/inline-registration.php:54
+msgid "Last name"
+msgstr ""
+
+#: includes/Bootstrap.php:343
+msgid "Last Name is required !"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-licensing.php:9
+msgid "License Key"
+msgstr ""
+
+#: includes/Frontend/Registrations.php:410
+msgid "Loading registrants.. Please wait.."
+msgstr ""
+
+#: includes/User.php:65
+msgid "Login Details"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:172
+msgid "Manual Option"
+msgstr ""
+
+#: includes/Frontend/Meetings.php:228 templates/frontend/create-meeting.php:67
+#: includes/Backend/Sync/tpl-sync.php:15
+msgid "Meeting"
+msgstr ""
+
+#: includes/WC/WooCommerce.php:212
+msgid "Meeting Details"
+msgstr ""
+
+#: includes/Frontend/Meetings.php:383
+#, php-format
+msgid "Meeting has been created succesfully. Your meeting ID is: %s"
+msgstr ""
+
+#: includes/Frontend/Meetings.php:353
+#, php-format
+msgid "Meeting has been updated succesfully. Your meeting ID is: %s"
+msgstr ""
+
+#: templates/frontend/create-meeting.php:51
+msgid "Meeting Host"
+msgstr ""
+
+#: templates/frontend/author-registrants.php:26
+#: templates/frontend/author-meetings.php:28 includes/Backend/Sync/Sync.php:111
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:3
+msgid "Meeting ID"
+msgstr ""
+
+#: includes/Backend/Registrations/Registrations.php:216
+msgid "Meeting ID is not defined. Please try again."
+msgstr ""
+
+#: includes/Frontend/Meetings.php:70
+msgid "Meeting is not defined. Try updating this meeting"
+msgstr ""
+
+#: includes/Backend/Registrations/Registrations.php:60
+msgid "Meeting Registrants"
+msgstr ""
+
+#: includes/Frontend/Registrations.php:73
+msgid "Meeting Registration"
+msgstr ""
+
+#: includes/Core/CronRegistrar.php:93
+msgid "Meeting Reminder for"
+msgstr ""
+
+#: includes/Backend/Sync/tpl-sync.php:23
+msgid "Meeting/Webinar ID"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:69
+msgid "Meeting/Webinar Registration Fields"
+msgstr ""
+
+#: includes/Backend/Sync/Sync.php:55
+#, php-format
+msgid "Meeting/Webinar with ID: %d already exists."
+msgstr ""
+
+#: includes/Elementor/Widgets/MeetingList.php:93
+msgid "Meetings Category"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-webhooks.php:26
+msgid "Meetings Endpoint"
+msgstr ""
+
+#: includes/Elementor/Widgets/MeetingList.php:106
+msgid "Meetings Order By"
+msgstr ""
+
+#: includes/Elementor/Widgets/MeetingList.php:121
+msgid "Meetings Type"
+msgstr ""
+
+#: templates/fragments/countdown-timer.php:35
+msgid "minutes"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:110
+msgid "Monday"
+msgstr ""
+
+#: includes/Bootstrap.php:322
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:53
+msgid "Month"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:33
+msgid "Monthly"
+msgstr ""
+
+#: templates/registration.php:187
+#: templates/registration/inline-registration.php:145
+msgid "More than 6 months"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:193
+msgid "New User Email"
+msgstr ""
+
+#: includes/WC/WooCommerce.php:228 templates/fragments/meeting-details.php:40
+msgid "Next Occurence"
+msgstr ""
+
+#: templates/frontend/list-meetings.php:46
+msgid "Next Occurrence"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:34
+msgid "No Fixed Time"
+msgstr ""
+
+#: includes/WC/WooCommerce.php:169 includes/WC/WooCommerce.php:221
+msgid "No Fixed Time Recurring Meeting"
+msgstr ""
+
+#: templates/shortcode-listing.php:44
+msgid "No Meetings found."
+msgstr ""
+
+#: includes/Frontend/Registrations.php:443
+#: includes/Frontend/Registrations.php:445
+msgid "No registrations for this event so far."
+msgstr ""
+
+#: includes/Backend/Registrations/Registrations.php:132
+msgid "No registrations for this meeting so far."
+msgstr ""
+
+#: templates/registration.php:188
+#: templates/registration/inline-registration.php:146
+msgid "No timeframe"
+msgstr ""
+
+#: templates/registration.php:199
+#: templates/registration/inline-registration.php:157
+msgid "Not involved"
+msgstr ""
+
+#: includes/Backend/Registrations/tpl-registrants-list.php:15
+msgid ""
+"Note: Avoid changing meeting details after registrants are registered. "
+"Changing meeting details after registrants are available can cause the "
+"registrant list to reset. Proceed with caution."
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:171
+msgid ""
+"Note: This feature requires the host to be of Zoom Licensed user type. "
+"Registration cannot be enabled for a basic user. This will require a user to "
+"login before joining the meeting via site. Join via browser will not work "
+"when this is enabled."
+msgstr ""
+
+#: templates/registration.php:205
+#: templates/registration/inline-registration.php:163
+#: includes/Backend/Settings/tpl-settings.php:125
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:265
+msgid "Number of Employees"
+msgstr ""
+
+#: templates/fragments/meeting-details.php:45
+msgid "Occurence"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:162
+msgid "Occurrences"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:64
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:76
+msgid "Occurs on"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:84
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:127
+msgid "of the month"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:182
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:197
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:204
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:274
+msgid "Only valid if registration is enabled"
+msgstr ""
+
+#: includes/Frontend/Registrations.php:451
+msgid "Opps! This post does not exist anymore."
+msgstr ""
+
+#: templates/registration.php:170
+#: templates/registration/inline-registration.php:128
+#: includes/Backend/Settings/tpl-settings.php:109
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:249
+msgid "Organization"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:211
+msgid "Override addtional registration fields"
+msgstr ""
+
+#: templates/frontend/create-meeting.php:95
+msgid "Password"
+msgstr ""
+
+#: templates/frontend/create-meeting.php:97
+msgid ""
+"Password to join the meeting. Password may only contain the following "
+"characters: [a-z A-Z 0-9]. Max of 10 characters.( Leave blank for auto "
+"generate )"
+msgstr ""
+
+#: templates/registration.php:158
+#: templates/registration/inline-registration.php:116
+#: includes/Backend/Settings/tpl-settings.php:101
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:241
+msgid "Phone"
+msgstr ""
+
+#: includes/Backend/Sync/Sync.php:50
+msgid "Please select a user and enter a valid meeting/webinar ID."
+msgstr ""
+
+#: includes/Backend/Settings/Settings.php:53
+msgid "PRO"
+msgstr ""
+
+#: templates/registration.php:182
+#: templates/registration/inline-registration.php:140
+#: includes/Backend/Settings/tpl-settings.php:117
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:257
+msgid "Purchasing Time Frame"
+msgstr ""
+
+#: templates/registration.php:220
+#: templates/registration/inline-registration.php:178
+msgid "Questions & Comments"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:28
+msgid "Recurrence"
+msgstr ""
+
+#: templates/fragments/meeting-details.php:29
+#: templates/frontend/list-meetings.php:61
+msgid "Recurring"
+msgstr ""
+
+#: includes/WC/WooCommerce.php:175 includes/WC/WooCommerce.php:227
+msgid "Recurring Meeting"
+msgstr ""
+
+#: includes/WC/WooCommerce.php:135
+#, php-format
+msgid ""
+"Recurring meeting time has passed for %s. Please purchase another occurence."
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:20
+msgid "Recurring Meeting?"
+msgstr ""
+
+#: templates/registration.php:228
+#: templates/registration/inline-registration.php:186
+msgid "Register"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:202
+msgid "Register Email Notification?"
+msgstr ""
+
+#: templates/fragments/register.php:32 templates/frontend/list-meetings.php:95
+#: templates/shortcode/meeting-join-links.php:36
+#: templates/shortcode/meeting-join-links.php:36
+msgid "Register Now"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:180
+msgid "Register offsite/on zoom"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:195
+msgid "Register without Login?"
+msgstr ""
+
+#: includes/Elementor/Widgets/MeetingRegistrants.php:48
+msgid "Registered Events (PRO)"
+msgstr ""
+
+#: templates/registration.php:35
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:168
+msgid "Registration"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:230
+msgid "Registration Confirmation"
+msgstr ""
+
+#: templates/registration/inline-registration.php:35
+msgid "Registration Details"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:14
+msgid "Registration Email ?"
+msgstr ""
+
+#: includes/Backend/Registrations/Registrations.php:174
+msgid "Registration Email or ID is not defined."
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:209
+msgid "Registration Fields"
+msgstr ""
+
+#: includes/WC/WooCommerce.php:256
+msgid "Registration ID"
+msgstr ""
+
+#: includes/Frontend/Registrations.php:448
+msgid "Registration is not enabled for this event."
+msgstr ""
+
+#: includes/Backend/Registrations/Registrations.php:211
+msgid "Registration status has been updated. Reloading this page.."
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:187
+msgid "Registration Type"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:191
+msgid "Registration type. Used for recurring meeting with fixed time only."
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:39
+msgid "Repeat Every"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:76
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:216
+msgid "Required"
+msgstr ""
+
+#: includes/Frontend/Registrations.php:186
+msgid ""
+"Required field is missing. Please fill all the required fields before "
+"registering !"
+msgstr ""
+
+#: includes/Backend/Sync/Sync.php:25
+msgid "Required fields are missing !!"
+msgstr ""
+
+#: includes/Frontend/Meetings.php:285
+msgid "Required fields are missing!"
+msgstr ""
+
+#: templates/registration.php:194
+#: templates/registration/inline-registration.php:152
+msgid "Role in Purchase Process"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:121
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:261
+msgid "Role in Purchase process"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:125
+msgid "Saturday"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-webhooks.php:16
+msgid "Save"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:94
+msgid "Second"
+msgstr ""
+
+#: templates/fragments/countdown-timer.php:41
+msgid "seconds"
+msgstr ""
+
+#: includes/Frontend/FullCalendar.php:183
+#: includes/Frontend/FullCalendar.php:198
+msgid "See More"
+msgstr ""
+
+#: templates/frontend/create-meeting.php:53
+msgid "Select a Host"
+msgstr ""
+
+#: includes/Backend/Sync/tpl-sync.php:39 includes/Backend/Sync/tpl-sync.php:66
+#: includes/Backend/Sync/tpl-sync.php:71
+msgid "Select a User"
+msgstr ""
+
+#: includes/Bootstrap.php:370
+msgid "Settings"
+msgstr ""
+
+#: includes/Elementor/Widgets/MeetingRegistrants.php:109
+msgid "Show"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:74
+#: includes/Backend/Settings/EmailTemplates.php:100
+msgid "Show Customer First Name"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:75
+#: includes/Backend/Settings/EmailTemplates.php:101
+msgid "Show Customer Last Name"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:69
+#: includes/Backend/Settings/EmailTemplates.php:95
+msgid "Show Customer Name"
+msgstr ""
+
+#: includes/Elementor/Widgets/MeetingList.php:137
+msgid "Show Filter"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:79
+#: includes/Backend/Settings/EmailTemplates.php:105
+msgid "Show Meeting Description"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:78
+#: includes/Backend/Settings/EmailTemplates.php:104
+msgid "Show Meeting Duration"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:76
+#: includes/Backend/Settings/EmailTemplates.php:102
+msgid "Show Meeting ID"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:72
+#: includes/Backend/Settings/EmailTemplates.php:98
+msgid "Show Meeting Join Link"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:73
+#: includes/Backend/Settings/EmailTemplates.php:99
+msgid "Show Meeting Password"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:71
+#: includes/Backend/Settings/EmailTemplates.php:84
+#: includes/Backend/Settings/EmailTemplates.php:97
+msgid "Show Meeting Start Time"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:77
+#: includes/Backend/Settings/EmailTemplates.php:103
+msgid "Show Meeting Timezone"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:70
+#: includes/Backend/Settings/EmailTemplates.php:83
+#: includes/Backend/Settings/EmailTemplates.php:96
+msgid "Show Meeting Topic"
+msgstr ""
+
+#: includes/Elementor/Widgets/Calendar.php:113
+#: includes/Elementor/Widgets/MeetingList.php:163
+msgid "Show Type of Meeting"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:274
+msgid ""
+"Shows addtional fields when user tries to register this "
+"event/meeting/webinar. Override main settings page fields individually from "
+"here. If you have enabled registration fields from settings page then fields "
+"will be added based on the settings page options even if you have not "
+"selected \"Override addtional registration fields\"."
+msgstr ""
+
+#: includes/Frontend/Registrations.php:158
+msgid "Something went wrong when trying to register as a user !"
+msgstr ""
+
+#: templates/frontend/list-meetings.php:67
+msgid "Start"
+msgstr ""
+
+#: templates/registration/registered-meeting-list.php:23
+#: templates/frontend/author-registrants.php:25
+#: templates/frontend/author-meetings.php:27
+msgid "Start Date"
+msgstr ""
+
+#: templates/frontend/create-meeting.php:72
+msgid "Start Date/Time"
+msgstr ""
+
+#: includes/Frontend/Meetings.php:248 templates/fragments/join-links.php:27
+#: templates/fragments/register.php:22
+msgid "Start Meeting"
+msgstr ""
+
+#: includes/WC/WooCommerce.php:235 templates/frontend/list-meetings.php:53
+msgid "Start Time"
+msgstr ""
+
+#: templates/registration.php:152
+#: templates/registration/inline-registration.php:110
+#: includes/Backend/Settings/tpl-settings.php:97
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:237
+msgid "State"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:64
+msgid "SUBSCRIBER"
+msgstr ""
+
+#: includes/Core/Factory.php:346
+msgid "Successfully imported meeting with ID"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:107
+msgid "Sunday"
+msgstr ""
+
+#: includes/Backend/Sync/tpl-sync.php:59
+msgid "Sync by User"
+msgstr ""
+
+#: includes/Backend/Sync/tpl-sync.php:21
+msgid "Sync Method"
+msgstr ""
+
+#: includes/Backend/Sync/tpl-sync.php:12
+msgid "Sync Type"
+msgstr ""
+
+#: includes/Core/Updater.php:184
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s "
+"or %5$supdate now%6$s."
+msgstr ""
+
+#: includes/Core/Updater.php:182
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:97
+msgid "Third"
+msgstr ""
+
+#: includes/Backend/Settings/Licensing.php:149
+#, php-format
+msgid "This appears to be an invalid license key for %s."
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:173
+msgid ""
+"This cron uses WordPress default cronjob so it might not be effective "
+"sometimes. If your reminders are not sent for some reason, you can solve "
+"this by manual approach. Download and activate"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:134
+msgid ""
+"This is global field page. If you check options here - Zoom registration "
+"event page will show the fields based on these settings. You can override "
+"these settings by individually selecting fields when creating individual "
+"meetings. Select none to disable this. You will need to update your meetings "
+"after you change this setting."
+msgstr ""
+
+#: templates/frontend/create-meeting.php:111
+msgid "This meeting does not exist anymore. Please create a new one."
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:119
+msgid "Thursday"
+msgstr ""
+
+#: templates/registration.php:41 includes/WC/WooCommerce.php:174
+msgid "Time"
+msgstr ""
+
+#: includes/WC/WooCommerce.php:174 includes/WC/WooCommerce.php:242
+#: templates/registration/registered-meeting-list.php:24
+#: templates/fragments/meeting-details.php:96
+#: templates/frontend/list-meetings.php:72
+#: templates/frontend/create-meeting.php:76
+msgid "Timezone"
+msgstr ""
+
+#: templates/frontend/author-registrants.php:24
+#: templates/frontend/create-meeting.php:38
+#: templates/frontend/author-meetings.php:26
+msgid "Title"
+msgstr ""
+
+#: templates/frontend/create-meeting.php:39
+msgid "Title of your meeeting."
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:90
+msgid "Title of your Site"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:170
+msgid "To override this email template goto"
+msgstr ""
+
+#: templates/registration.php:38 includes/WC/WooCommerce.php:214
+#: templates/registration/registered-meeting-list.php:22
+#: templates/fragments/meeting-details.php:26
+#: includes/Backend/Sync/Sync.php:112
+msgid "Topic"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:113
+msgid "Tuesday"
+msgstr ""
+
+#: includes/WC/WooCommerce.php:174 includes/WC/WooCommerce.php:226
+#: templates/fragments/meeting-details.php:29
+#: templates/frontend/list-meetings.php:60
+#: templates/frontend/author-registrants.php:27
+#: templates/frontend/create-meeting.php:65
+#: templates/frontend/author-meetings.php:29 includes/Backend/Sync/Sync.php:113
+msgid "Type"
+msgstr ""
+
+#: templates/frontend/create-meeting.php:103
+msgid "Update Meeting"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:91
+msgid "URL of your site"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:162
+#: includes/Backend/Settings/EmailTemplates.php:197
+#: includes/Backend/Settings/EmailTemplates.php:234
+#: includes/Backend/Settings/EmailTemplates.php:271
+msgid "Use below strings to replace dynamic text in your email."
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:15
+msgid ""
+"Use Personal Meeting ID instead of an automatically generated meeting ID. It "
+"can only be used for scheduled meetings, instant meetings and recurring "
+"meetings with no fixed time."
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:13
+msgid "Use PMI"
+msgstr ""
+
+#: includes/Backend/Sync/tpl-sync.php:24
+msgid "User"
+msgstr ""
+
+#: includes/Elementor/Widgets/MeetingRegistrants.php:97
+msgid "User ID"
+msgstr ""
+
+#: templates/registration/registered-meeting-list.php:14
+msgid "User must be logged in to view this page"
+msgstr ""
+
+#: templates/frontend/author-registrants.php:35
+#: templates/frontend/author-meetings.php:37
+msgid "User needs to be logged in to view this page."
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:89
+msgid "User Password"
+msgstr ""
+
+#: includes/Backend/Settings/EmailTemplates.php:88
+msgid "User Username"
+msgstr ""
+
+#: includes/Bootstrap.php:344
+msgid "Valid email address is required !"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-webhooks.php:13
+msgid "Verification Code"
+msgstr ""
+
+#. Name of the plugin
+msgid "Video Conferencing with Zoom Pro"
+msgstr ""
+
+#: templates/frontend/list-meetings.php:85
+#: templates/frontend/list-meetings.php:96
+#: templates/frontend/list-meetings.php:98
+msgid "View"
+msgstr ""
+
+#: includes/Frontend/Meetings.php:250
+msgid "View Registrants"
+msgstr ""
+
+#: includes/Backend/Settings/Settings.php:56
+msgid "Webhooks (Beta)"
+msgstr ""
+
+#: includes/Frontend/Meetings.php:228 templates/frontend/create-meeting.php:68
+#: includes/Backend/Sync/tpl-sync.php:16
+msgid "Webinar"
+msgstr ""
+
+#: includes/Frontend/Webinars.php:59
+msgid "Webinar is not defined. Try updating this Webinar"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-webhooks.php:32
+msgid "Webinars Endpoint"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:116
+msgid "Wednesday"
+msgstr ""
+
+#: includes/Bootstrap.php:321
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:51
+msgid "Week"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:32
+msgid "Weekly"
+msgstr ""
+
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:164
+msgid ""
+"When selecting end date please keep in mind only 50 occurrences are "
+"supported by Zoom, selecting time range that creates more than 50 "
+"occurrences will lead to error"
+msgstr ""
+
+#: templates/registration.php:184
+#: templates/registration/inline-registration.php:142
+msgid "Within a month"
+msgstr ""
+
+#: includes/Bootstrap.php:158 includes/Bootstrap.php:212
+msgid "WordPress repository"
+msgstr ""
+
+#: templates/registration/inline-registration.php:39
+msgid "You are already registered in this event. You can join this event from"
+msgstr ""
+
+#: templates/registration.php:80
+msgid ""
+"You are already registered in this event. You can join this meeting from"
+msgstr ""
+
+#: includes/Core/Updater.php:322
+msgid "You do not have permission to install plugin updates"
+msgstr ""
+
+#: includes/Frontend/Registrations.php:276
+#, php-format
+msgid ""
+"You have been succesfully registered to this event. Please check your email "
+"for join links. %s"
+msgstr ""
+
+#: includes/Frontend/Registrations.php:273
+#, php-format
+msgid ""
+"You have been succesfully registered to this event. You can join this event "
+"from %s."
+msgstr ""
+
+#: includes/TemplateFunctions.php:94
+msgid "You need to be logged in to register for this meeting."
+msgstr ""
+
+#: templates/registration.php:73
+msgid "You need to be logged in to register or join this event."
+msgstr ""
+
+#: includes/Backend/Settings/Licensing.php:146
+msgid "Your license is not active for this URL."
+msgstr ""
+
+#: includes/Backend/Settings/Licensing.php:135
+#, php-format
+msgid ""
+"Your license key expired on %s. Please check your email for renew notice "
+"related to your existing license."
+msgstr ""
+
+#: includes/Backend/Settings/Licensing.php:139
+msgid "Your license key has been disabled."
+msgstr ""
+
+#: includes/Backend/Settings/Licensing.php:152
+msgid "Your license key has reached its activation limit."
+msgstr ""
+
+#: includes/Backend/Settings/tpl-licensing.php:14
+msgid "Your license key here"
+msgstr ""
+
+#: includes/Backend/Registrations/Registrations.php:243
+#, php-format
+msgid "Your registration for meeting %s has been cancelled"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-settings.php:93
+#: includes/Backend/Recurring/tpl-recurrings-meta-fields.php:233
+msgid "Zip"
+msgstr ""
+
+#: templates/registration.php:146
+#: templates/registration/inline-registration.php:104
+msgid "Zip/Postal Code"
+msgstr ""
+
+#: includes/Elementor/Widgets/Calendar.php:44
+msgid "Zoom Calendar (PRO)"
+msgstr ""
+
+#: includes/Elementor/Widgets/MeetingList.php:44
+msgid "Zoom Events List (PRO)"
+msgstr ""
+
+#: includes/Backend/Settings/tpl-webhooks.php:6
+msgid ""
+"Zoom utilizes webhooks as a medium to notify this plugin (consumer "
+"application) about events that occur in a Zoom account. Instead of making "
+"repeated calls to pull data frequently from the Zoom API, you can use "
+"webhooks to get information on events that happen in a Zoom account."
+msgstr ""

@@ -1,0 +1,44 @@
+<?php
+$out = '';
+if($unlogged == true) {
+	$out .= '';
+} else {
+	$alinkid = rand();
+	$alinkid = md5($alinkid);
+
+	$nonce = wp_create_nonce('cmmp_tip_user_'.$atts['account']);
+
+	$out .= '<div class="cmmp_tip_button_container">';
+	$out .= '<span>'.$atts['text'].'</span>';
+	$out .= '<a nonce="'.$nonce.'" href="javascript:void(0);" class="'.$atts['class'].'" id="'.$alinkid.'" user_id="'.$user_id.'" tipamount="'.$atts['tipamount'].'" account="'.$atts['account'].'">'.$atts['label'].'</a>';
+	$out .= '</div>';
+	
+	$out .= '<script type="text/javascript">';
+		$out .= 'jQuery(document).ready(function ($) {';
+			$out .= '$(".cmmp_tip_button_container").each(function( index ) {';
+				$out .= '$("#"+$(this).find("a").attr("id")).unbind();';
+				$out .= '$("#"+$(this).find("a").attr("id")).on("click", function (e) {';
+					$out .= 'var tipButton = $(this);';
+					$out .= 'e.preventDefault();';
+					$out .= '$.ajax({';
+						$out .= 'url: "'.admin_url( 'admin-ajax.php' ).'",';
+						$out .= 'type: "post",';
+						$out .= 'data: {';
+							$out .= 'action: "pay_tip",';
+							$out .= 'tipamount: tipButton.attr("tipamount"),';
+							$out .= 'account: tipButton.attr("account"),';
+							$out .= 'user_id: tipButton.attr("user_id"),';
+							$out .= 'nonce: tipButton.attr("nonce")';
+						$out .= '},';
+						$out .= 'success: function (response) {';
+							$out .= 'alert(response);';
+						$out .= '}';
+					$out .= '});';
+				$out .= '});';
+			$out .= '});';
+		$out .= '});';
+	$out .= '</script>';
+
+}
+echo $out;
+?>

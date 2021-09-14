@@ -1,0 +1,70 @@
+== Changelog ==
+
+= 2.4.0 =
+* Fix: php issue in includes\controllers\products.php
+
+= 2.3.9 =
+* Fix: WooCommerce compatibility
+
+= 2.3.8 =
+* Fix: shop_table class in checkout
+
+= 2.3.7 =
+* Fix: shop add to cart redirect
+
+= 2.3.6 =
+* Fix: codecanyon license validation
+
+= 2.3.5 =
+* Fix: qty cart checkout
+* Fix: delete cart checkout
+
+= 2.3.4 =
+* Fix: hidden license and email fields
+
+= 2.3.3 =
+* Fix: ajax add to cart alert fix
+
+= 2.3.2 =
+* Fix: ajax add to cart fix
+
+= 2.3.0 =
+* New: purchase now button type
+
+= 2.2.9 =
+* Fix: free version compatibility
+
+= 2.2.8 =
+* Fix: fixed purchase now button redirect non selected variation
+
+= 2.2.7 =
+* Fix: fixed coupon code already applied
+
+= 2.2.6 =
+* Fix: option to show/hide ajax add to cart alert
+
+= 2.2.5 =
+* Fix: individual product ajax add to cart setting
+* Fix: product ajax add to cart alert
+
+= 2.2.4 =
+* Fix: product variation attributes quick purchase
+
+= 2.2.3 =
+* Fix: automatic updates
+
+= 2.2.2 =
+* Fix: Call to undefined property 
+
+= 2.2.1 =
+* Fix: Call to undefined method 
+
+= 2.2.0 =
+* Fix: code refactoring
+
+2.1.9
+
+*Fix. purchase now removed from external products
+*Fix. ajax add to cart compatibility
+
+[https://quadlayers.com/documentation/woocommerce-direct-checkout/changelog/](https://quadlayers.com/documentation/woocommerce-direct-checkout/changelog/)

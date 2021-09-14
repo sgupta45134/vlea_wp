@@ -1,0 +1,17 @@
+<?php include_once CMMP_PLUGIN_DIR . '/backend/views/common/notifications.phtml'; ?>
+<form method="get" id="cm-filter-form">
+	<div>
+		<input type="checkbox" value="1" name="only_successful" id="only_successful" <?php echo (isset( $_GET[ 'only_successful' ] ) && $_GET[ 'only_successful' ] == 1) ? 'checked="checked"' : '' ?>>
+		<label for="only_successful"><?php _e( 'Show only successful' ) ?></label>
+		<br>
+		<input type="submit" value="Export to CSV" name="export_to_csv" id="export">
+	</div>
+
+	<?php $this->display(); ?>
+    <input type="hidden" name="type" value="<?php echo isset( $_GET[ 'type' ] ) ? $_GET[ 'type' ] : '' ?>"/>
+    <input type="hidden" name="view" value="<?php echo isset( $_GET[ 'view' ] ) ? $_GET[ 'view' ] : '' ?>"/>
+    <input type="hidden" name="range" value="<?php echo isset( $_GET[ 'wange' ] ) ? $_GET[ 'range' ] : '' ?>"/>
+    <input type="hidden" name="page" value="<?php echo isset( $_GET[ 'page' ] ) ? $_GET[ 'page' ] : '' ?>"/>
+    <input type="hidden" name="walletID" value="<?php echo isset( $_GET[ 'walletID' ] ) ? $_GET[ 'walletID' ] : '' ?>"/>
+    <input type="hidden" name="paged" value="<?php echo isset( $_GET[ 'paged' ] ) ? $_GET[ 'paged' ] : '' ?>"/>
+</form>

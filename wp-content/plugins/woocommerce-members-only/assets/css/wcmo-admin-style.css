@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'membersonly';
+  src:  url('../fonts/membersonly.eot?93ogj6');
+  src:  url('../fonts/membersonly.eot?93ogj6#iefix') format('embedded-opentype'),
+    url('../fonts/membersonly.ttf?93ogj6') format('truetype'),
+    url('../fonts/membersonly.woff?93ogj6') format('woff'),
+    url('../fonts/membersonly.svg?93ogj6#membersonly') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'membersonly' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-members-only:before {
+  content: "\e900";
+}
+.wcmo_show_if_password,
+.wcmo_show_if_redirect_to_page,
+.wcmo_show_if_categories,
+.wcmo_show_if_user-role,
+.wcmo_product_show_if_user_role,
+.wcmo_show_if_category {
+  display: none
+}
+.wcmo-restriction-method-password .wcmo_show_if_password,
+.wcmo-redirect-new .wcmo_show_if_redirect_to_page,
+.wcmo-content-category .wcmo_show_if_categories,
+.wcmo-restriction-method-user-role .wcmo_show_if_user-role,
+.term-php.taxonomy-category .term-wcmo-excerpt-wrap.wcmo_show_if_category {
+  display: table-row
+}
+.wcmo-restriction-method-user-role h2.wcmo_show_if_user-role,
+.wcmo-restriction-method-password h2.wcmo_show_if_password {
+  display: block;
+}
+.edit-tags-php .wcmo-restriction-method-password .wcmo_show_if_password,
+.edit-tags-php .wcmo-redirect-new .wcmo_show_if_redirect_to_page,
+.edit-tags-php .wcmo-content-category .wcmo_show_if_categories,
+.edit-tags-php .wcmo-restriction-method-user-role .wcmo_show_if_user-role,
+.edit-tags-php.taxonomy-category .term-wcmo-excerpt-wrap.wcmo_show_if_category {
+  display: block
+}
+.term-wcmo-user-roles-wrap .select2-container {
+  width: 95% !important
+}
+
+.wcmo_panel,
+.wcmo_product_user_ids_field,
+.wcmo_product_passwords_field,
+.wcmo_product_restriction_method_no-restriction .wcmo_product_exclude_from_archives_field,
+.wcmo_product_restriction_method_password .wcmo_product_exclude_from_archives_field {
+  display: none;
+}
+.wcmo_product_restriction_method_user-id .wcmo_product_user_ids_field,
+.wcmo_product_restriction_method_password .wcmo_product_passwords_field,
+.wcmo_product_restriction_method_user-role .wcmo_product_show_if_user_role {
+  display: block;
+}
+.fixed .column-restriction_method {
+  width: 100px
+}
+
+.wcmo_hide_if_no_role {
+  display: none;
+}
+.wcmo_role_selected .wcmo_hide_if_no_role {
+  display: table-row;
+}
+.wcmo-role-settings-page .woocommerce-save-button {
+  /* display: none; */
+}
+.woocommerce table.wcmo-registration-fields th,
+.woocommerce table.wcmo-registration-fields td {
+  padding-top: 3px;
+  padding-left: 0
+}
+.woocommerce table.wcmo-registration-fields.widefat th,
+.woocommerce table.wcmo-registration-fields.widefat td {
+  padding-top: 15px;
+  padding-left: 10px
+}
+.woocommerce table.wcmo-registration-fields.widefat tr th:first-of-type,
+.woocommerce table.wcmo-registration-fields.widefat tr td:first-of-type {
+  padding-left: 15px
+}
+.woocommerce table.form-table table input[type=number].wcmo-field-priority {
+  width: 70px
+}
+.woocommerce_options_panel.wcmo_panel .select2-container {
+  min-width: 240px;
+}
+.role-capabilities {
+  display: none
+}
+a.wcmo-remove-field {
+  text-decoration: none;
+  color: #ff0000;
+  font-size: 1.5em
+}
+.wcmo-variation-fields .form-field label {
+  display: block;
+}

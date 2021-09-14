@@ -1,0 +1,2 @@
+<?php
+ namespace MailPoetVendor\Symfony\Component\DependencyInjection\LazyProxy\PhpDumper; if (!defined('ABSPATH')) exit; use MailPoetVendor\Symfony\Component\DependencyInjection\Definition; class NullDumper implements DumperInterface { public function isProxyCandidate(Definition $definition) : bool { return \false; } public function getProxyFactoryCode(Definition $definition, $id, $factoryCode = null) : string { return ''; } public function getProxyCode(Definition $definition) : string { return ''; } } 

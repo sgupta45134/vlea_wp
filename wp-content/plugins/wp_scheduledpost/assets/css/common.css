@@ -1,0 +1,6 @@
+a.tooltip { outline: none; cursor: help; text-decoration: none; position: relative;}
+a.tooltip span {margin-left: -999em; padding:5px 6px; position: absolute; width:auto; white-space:nowrap; line-height:1.5;box-shadow:0px 0px 10px #999; -moz-box-shadow:0px 0px 10px #999; -webkit-box-shadow:0px 0px 10px #999; border-radius:3px 3px 3px 3px; -moz-border-radius:3px; -webkit-border-radius:3px;}
+a.tooltip span img {max-width:450px;}
+a.tooltip {background:#ffffff; text-decoration:none;cursor: help;} /*BG color is a must for IE6*/
+a.tooltip:hover span,a.tooltip.left:hover span{ left: 1em;top: 2em; margin-left: 0; z-index:99999; position:absolute; background:#ffffff; border:1px solid #cccccc; color:#6c6c6c;}
+.req{color:#ff2323;}

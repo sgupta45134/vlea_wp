@@ -1,0 +1,817 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Members Only\n"
+"POT-Creation-Date: 2020-04-20 11:24+0100\n"
+"PO-Revision-Date: 2020-04-20 11:26+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: woocommerce-members-only.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/class-wcmo-settings.php:76 admin/class-wcmo-settings.php:98
+#: admin/class-wcmo-settings.php:538 admin/functions-admin-products.php:18
+msgid "Members Only"
+msgstr "Solo Utenti Speciali"
+
+#: admin/class-wcmo-settings.php:105
+msgid "Restriction Method"
+msgstr "Metodi di Riserva"
+
+#: admin/class-wcmo-settings.php:108
+msgid "How you'd like to restrict content"
+msgstr "Come vuoi gestire i contenuti riservati"
+
+#: admin/class-wcmo-settings.php:119
+msgid "Content Settings"
+msgstr "Impostazioni Contenuti"
+
+#: admin/class-wcmo-settings.php:125
+msgid "After Logging In"
+msgstr "Dopo Login"
+
+#: admin/class-wcmo-settings.php:128
+msgid "Action after the user successfully logs in"
+msgstr "Azioni dopo login avvenuta con successo"
+
+#: admin/class-wcmo-settings.php:143
+msgid "After Log In, Redirect To"
+msgstr "Dopo login, reindirizza verso"
+
+#: admin/class-wcmo-settings.php:147
+msgid "Where to send the user after successfully logging in"
+msgstr "Dove mandare l’utente dopo la login avvenuta con successo"
+
+#: admin/class-wcmo-settings.php:153
+msgid "Restricted Content"
+msgstr "Contenuto Riservato"
+
+#: admin/class-wcmo-settings.php:156
+msgid "Which content will be restricted"
+msgstr "Quale contenuto sarà riservato"
+
+#: admin/class-wcmo-settings.php:162
+msgid "If Restricted, Redirect To"
+msgstr "Se Riservato, Reindirizza Verso"
+
+#: admin/class-wcmo-settings.php:165
+msgid "Where to send the user after trying to access a restricted page"
+msgstr ""
+"Dove inviare l’utente dopo un tentativo di accesso ad una pagina riservata"
+
+#: admin/class-wcmo-settings.php:171
+msgid "Restricted Categories"
+msgstr "Categorie Riservate"
+
+#: admin/class-wcmo-settings.php:174
+msgid "The restricted categories"
+msgstr "Le categorie riservate"
+
+#: admin/class-wcmo-settings.php:186
+msgid "Password Settings"
+msgstr "Impostazioni Password"
+
+#: admin/class-wcmo-settings.php:192 admin/functions-admin-categories.php:28
+#: admin/functions-admin-categories.php:74
+#: admin/functions-admin-products.php:121
+msgid "Passwords"
+msgstr "Password"
+
+#: admin/class-wcmo-settings.php:195
+msgid "Enter each password on a new line"
+msgstr "Inserisci ogni password in una nuova riga"
+
+#: admin/class-wcmo-settings.php:200
+msgid "Password Form Page"
+msgstr "Pagina del Form della Password"
+
+#: admin/class-wcmo-settings.php:203
+msgid "The location of the password form"
+msgstr "La localizzazione del form della password"
+
+#: admin/class-wcmo-settings.php:214
+msgid "User Role Settings"
+msgstr "Impostazione Ruoli Utente"
+
+#: admin/class-wcmo-settings.php:220 admin/functions-admin-products.php:78
+msgid "Permitted User Roles"
+msgstr "Ruoli Utente Permessi"
+
+#: admin/class-wcmo-settings.php:223
+msgid "The user roles that can access content"
+msgstr "I ruoli utente che possono accedere il contenuto"
+
+#: admin/class-wcmo-settings.php:235
+msgid "Archive Settings"
+msgstr "Archivio Impostazioni"
+
+#: admin/class-wcmo-settings.php:241 admin/functions-admin-products.php:130
+msgid "Hide in Archives"
+msgstr "Nascondi negli Archivi"
+
+#: admin/class-wcmo-settings.php:244
+msgid "Select this to remove products/posts from all archives pages and loops"
+msgstr ""
+"Seleziona per rimuovere prodotti/post da tutte le pagine di archivio e i "
+"cicli"
+
+#: admin/class-wcmo-settings.php:249 admin/functions-admin-categories.php:47
+#: admin/functions-admin-categories.php:99
+msgid "Excerpt"
+msgstr "Estratto"
+
+#: admin/class-wcmo-settings.php:252
+msgid "Enter a replacement excerpt for restricted posts"
+msgstr "Inserisci un estratto diverso per i post riservati"
+
+#: admin/class-wcmo-settings.php:256
+msgid "Add To Cart Text"
+msgstr "Testo per Aggiungi al Carrello"
+
+#: admin/class-wcmo-settings.php:259
+msgid "Replace the 'Add To Cart' text on restricted products"
+msgstr "Sostituisci il testo ’Aggiungi al Carrello’ per i prodotti riservati "
+
+#: admin/class-wcmo-settings.php:269
+msgid "Widget and Menu Settings"
+msgstr "Impostazioni Widget e Menu"
+
+#: admin/class-wcmo-settings.php:275
+msgid "Enable Widget Whitelist"
+msgstr "Abilita Whitelist per i Widget"
+
+#: admin/class-wcmo-settings.php:278
+msgid "Select this to block widgets not on the widget whitelist below"
+msgstr "Selezione per bloccare i widgets non in whitelist "
+
+#: admin/class-wcmo-settings.php:283
+msgid "Widget Whitelist"
+msgstr "Whitelist dei Widget "
+
+#: admin/class-wcmo-settings.php:286
+msgid ""
+"Enter the name of widgets, e.g. Search, that can be displayed to users who "
+"are restricted from viewing content. Enter each name on a new line"
+msgstr ""
+"Inserisci nome del widget, e.s. Cerca, che può essere mostrata agli utenti "
+"che sono bloccati dal vedere i contenuti riservati. Inserisci ogni nome in "
+"una nuova riga"
+
+#: admin/class-wcmo-settings.php:290
+msgid "Exclude from Menu"
+msgstr "Escludi dal Menu"
+
+#: admin/class-wcmo-settings.php:293
+msgid ""
+"Enter menu item names, e.g. Shop, to exclude from the menu when a user does "
+"not have access rights. Enter each name on a new line"
+msgstr ""
+"Inserisci il nome dell’oggetto del menu, e.s. Negozio, escludi dal menu "
+"quando un utentnon ha accesso ai privilegi. Entra ogni nome in una nuova riga"
+
+#: admin/class-wcmo-settings.php:304 admin/class-wcmo-settings.php:544
+msgid "Licence"
+msgstr "Licenza"
+
+#: admin/class-wcmo-settings.php:310 admin/class-wcmo-settings.php:562
+msgid "Licence key"
+msgstr "Codice Licenza"
+
+#: admin/class-wcmo-settings.php:313
+msgid "Enter your licence key"
+msgstr "Inserisci il tuo Codice Licenza"
+
+#: admin/class-wcmo-settings.php:325 admin/class-wcmo-settings.php:540
+#: admin/functions-admin-categories.php:32
+#: admin/functions-admin-categories.php:80
+msgid "User Roles"
+msgstr "Ruoli Utente"
+
+#: admin/class-wcmo-settings.php:331 admin/class-wcmo-settings.php:350
+#: admin/class-wcmo-settings.php:622 admin/class-wcmo-settings.php:675
+msgid "User roles"
+msgstr "Ruoli Utente"
+
+#: admin/class-wcmo-settings.php:334
+msgid "Current user roles on this site"
+msgstr "Ruoli utente correnti su questo sito"
+
+#: admin/class-wcmo-settings.php:344
+msgid "Edit Role"
+msgstr "Edita Ruolo"
+
+#: admin/class-wcmo-settings.php:353
+msgid "Edit an existing user role"
+msgstr "Edita un ruolo utente esistente"
+
+#: admin/class-wcmo-settings.php:365 admin/class-wcmo-settings.php:541
+msgid "Registration"
+msgstr "Registrazione"
+
+#: admin/class-wcmo-settings.php:371 admin/class-wcmo-settings.php:445
+msgid "Enable User Approval"
+msgstr "Abilita Approvazione Utente"
+
+#: admin/class-wcmo-settings.php:374 admin/class-wcmo-settings.php:448
+msgid "New registrations will need to be approved"
+msgstr "Nuove registrazioni avranno bisogno di essere approvate"
+
+#: admin/class-wcmo-settings.php:379
+msgid "Prevent Pending Users"
+msgstr "Blocca gli Utenti non Ancora Approvati"
+
+#: admin/class-wcmo-settings.php:382
+msgid "Prevent pending users from logging in to the site"
+msgstr "Impedisci agli Utenti non Ancora Approvati ti loggarsi nel sito"
+
+#: admin/class-wcmo-settings.php:387
+msgid "Prevent Rejected Users"
+msgstr "Blocca gli Utenti Respinti"
+
+#: admin/class-wcmo-settings.php:390
+msgid "Prevent rejected users from logging in to the site"
+msgstr "Impedisci agli utenti respinti di loggarsi nel sito"
+
+#: admin/class-wcmo-settings.php:395
+msgid "Enable Multiple Roles"
+msgstr "Abilita Multi Ruolo"
+
+#: admin/class-wcmo-settings.php:398
+msgid "Allow multiple roles per user"
+msgstr "Consenti multipli ruoli per utente"
+
+#: admin/class-wcmo-settings.php:403
+msgid "Default User Roles"
+msgstr "Ruoli di Default per Utente"
+
+#: admin/class-wcmo-settings.php:406
+msgid "The default user roles assigned on registration"
+msgstr "I ruoli utente di default assegnati nella fase di registrazione"
+
+#: admin/class-wcmo-settings.php:413
+msgid "Prevent Auto Log-In"
+msgstr "Impedisci l’Auto Login"
+
+#: admin/class-wcmo-settings.php:416
+msgid "Disable automatic log-in when a new user registers"
+msgstr "Disabilita login automatica quando un nuovo utente si registra"
+
+#: admin/class-wcmo-settings.php:421
+msgid "Assign Roles Order Status"
+msgstr ""
+
+#: admin/class-wcmo-settings.php:424
+#, fuzzy
+#| msgid ""
+#| "Choose which roles to assign to the customer after purchasing this product"
+msgid ""
+"Choose at what point a role is assigned to a user after purchasing a product"
+msgstr ""
+"Scegli quali ruoli assegnare ai clienti dopo aver acquistato questo prodotto"
+
+#: admin/class-wcmo-settings.php:427
+msgid "Order Processing"
+msgstr ""
+
+#: admin/class-wcmo-settings.php:428
+msgid "Order Completed"
+msgstr ""
+
+#: admin/class-wcmo-settings.php:439
+#, fuzzy
+#| msgid "Registration"
+msgid "Registration Fields"
+msgstr "Registrazione"
+
+#: admin/class-wcmo-settings.php:455
+#, fuzzy
+#| msgid "Enable Multiple Roles"
+msgid "Enable Roles Field"
+msgstr "Abilita Multi Ruolo"
+
+#: admin/class-wcmo-settings.php:458
+msgid ""
+"Add a select field to the registration form for users to select their role"
+msgstr ""
+
+#: admin/class-wcmo-settings.php:463 admin/class-wcmo-settings.php:820
+#, fuzzy
+#| msgid "Registration"
+msgid "Registration Roles"
+msgstr "Registrazione"
+
+#: admin/class-wcmo-settings.php:466
+msgid "Which roles to display in the registration field"
+msgstr ""
+
+#: admin/class-wcmo-settings.php:481 admin/class-wcmo-settings.php:487
+#: admin/class-wcmo-settings.php:542
+msgid "Payment Methods"
+msgstr ""
+
+#: admin/class-wcmo-settings.php:502 admin/class-wcmo-settings.php:508
+#: admin/class-wcmo-settings.php:543
+msgid "Shipping Methods"
+msgstr ""
+
+#: admin/class-wcmo-settings.php:570
+msgid "Status"
+msgstr "Status"
+
+#: admin/class-wcmo-settings.php:584 admin/class-wcmo-settings.php:596
+msgid "Action"
+msgstr "Azione"
+
+#: admin/class-wcmo-settings.php:589
+msgid "Deactivate this licence"
+msgstr "Scollega questa licenza"
+
+#: admin/class-wcmo-settings.php:601
+msgid "Activate this licence"
+msgstr "Attiva questa licenza"
+
+#: admin/class-wcmo-settings.php:618 admin/class-wcmo-settings.php:628
+msgid "Select a role to duplicate"
+msgstr "Seleziona un ruolo da copiare"
+
+#: admin/class-wcmo-settings.php:644
+msgid "New role name"
+msgstr "Nuovo nome ruolo"
+
+#: admin/class-wcmo-settings.php:654
+msgid "Duplicate role"
+msgstr "Copia ruolo"
+
+#: admin/class-wcmo-settings.php:671 admin/class-wcmo-settings.php:681
+msgid "Select a role to edit"
+msgstr "Seleziona un ruolo da editare"
+
+#: admin/class-wcmo-settings.php:698
+msgid "Capabilities"
+msgstr "Capacità"
+
+#: admin/class-wcmo-settings.php:719
+msgid "Update role"
+msgstr "Aggiorna ruolo"
+
+#: admin/class-wcmo-settings.php:737
+msgid "Additional Registration Fields"
+msgstr ""
+
+#: admin/class-wcmo-settings.php:749
+msgid "Enabled"
+msgstr ""
+
+#: admin/class-wcmo-settings.php:753
+msgid "Required"
+msgstr ""
+
+#: admin/class-wcmo-settings.php:833
+msgid "Include"
+msgstr ""
+
+#: admin/class-wcmo-settings.php:837
+#, fuzzy
+#| msgid "Enable User Approval"
+msgid "Needs Approval"
+msgstr "Abilita Approvazione Utente"
+
+#: admin/class-wcmo-settings.php:907
+msgid "Restrict or enable specific payment methods by user role"
+msgstr ""
+
+#: admin/class-wcmo-settings.php:923 admin/class-wcmo-settings.php:1033
+#, fuzzy
+#| msgid "Restricted Content"
+msgid "Restricted roles"
+msgstr "Contenuto Riservato"
+
+#: admin/class-wcmo-settings.php:948 admin/class-wcmo-settings.php:1058
+#, fuzzy
+#| msgid "Permitted User Roles"
+msgid "Permitted roles"
+msgstr "Ruoli Utente Permessi"
+
+#: admin/class-wcmo-settings.php:1017
+msgid "Restrict or enable specific shipping methods by user role"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: admin/class-wcmo-settings.php:1110 admin/functions-admin-categories.php:18
+#: inc/licence/functions-licence.php:218 inc/licence/functions-licence.php:224
+msgid "WooCommerce Members Only"
+msgstr "Gestione Utenti Riservati"
+
+#: admin/class-wcmo-settings.php:1111
+msgid ""
+"It looks like your restriction method is set to \"Password\" but you don't "
+"have a password form page created. Would you like to automatically create "
+"one?"
+msgstr ""
+"Sembra che il tuo sistema di riserva basato sulla \"Password\" ma che tu non "
+"abbia creato un pagina con il form. Vuoi che ne creiamo in automatico una?"
+
+#: admin/class-wcmo-settings.php:1117
+msgid "Yes, please create a page for the password form"
+msgstr "Sì, per favore create una pagina per il form della password"
+
+#: admin/class-wcmo-settings.php:1124
+#, php-format
+msgid ""
+"The page has been created. You can <a href=\"%s\" target=\"_blank\">view it "
+"here</a>."
+msgstr "Pagina creata. Puoi <a href=\"%s\" target=\"_blank\">vederla qui</a>."
+
+#: admin/class-wcmo-settings.php:1137
+msgid "There was an error creating the page. You might like to try again."
+msgstr "Si è verificato un errore nella creazione della pagina. Prova ancora."
+
+#: admin/class-wcmo-settings.php:1168
+msgid "Password Form"
+msgstr "Form della Password"
+
+#: admin/functions-admin-categories.php:21
+msgid ""
+"These settings will override the global Members Only settings for this "
+"category only"
+msgstr "Queste impostazione sovrascriveranno le impostazioni globali"
+
+#: admin/functions-admin-categories.php:24
+#: admin/functions-admin-categories.php:67
+msgid "Override Global Restrictions?"
+msgstr "Sovrascrivi Restrizioni Globali?"
+
+#: admin/functions-admin-multiple-roles.php:58
+msgid "Permissions"
+msgstr "Permessi"
+
+#: admin/functions-admin-multiple-roles.php:61
+msgid "Roles"
+msgstr "Ruoli"
+
+#: admin/functions-admin-products.php:53
+msgid "Restriction method"
+msgstr "Metodi di Riserva"
+
+#: admin/functions-admin-products.php:57 admin/functions-admin-settings.php:17
+msgid "No Restriction"
+msgstr "Nessuna Riserva"
+
+#: admin/functions-admin-products.php:58
+msgid "By User"
+msgstr "Riserva per Utente"
+
+#: admin/functions-admin-products.php:59
+msgid "By User Role"
+msgstr "Riserva per Ruolo Utente"
+
+#: admin/functions-admin-products.php:60 admin/functions-admin-settings.php:19
+msgid "Password"
+msgstr "Password"
+
+#: admin/functions-admin-products.php:62
+msgid "The restriction method for this product."
+msgstr "Il metodo di riserva per questo prodotto"
+
+#: admin/functions-admin-products.php:68
+msgid "User IDs"
+msgstr "Id Utente"
+
+#: admin/functions-admin-products.php:71
+msgid "Enter a comma separated list of User IDs that can access this product."
+msgstr ""
+"Inserisci una lista di Id Utente che possono accedere al prodotto separata "
+"da virgole"
+
+#: admin/functions-admin-products.php:99
+msgid "Hide From User Roles"
+msgstr "Nascondi dai Ruoli Utente"
+
+#: admin/functions-admin-products.php:124
+msgid "Enter a list of passwords for this product."
+msgstr "Inserisci una lista di password per questo prodotto"
+
+#: admin/functions-admin-products.php:133
+msgid ""
+"Select this to remove the product from the shop, category, tag archives."
+msgstr ""
+"Seleziona per rimuovere il prodotto dal negozio, dalla categoria, dai tag e "
+"archivi"
+
+#: admin/functions-admin-products.php:145
+msgid "Assign user roles"
+msgstr "Assegna ruoli utente"
+
+#: admin/functions-admin-products.php:163
+msgid ""
+"Choose which roles to assign to the customer after purchasing this product"
+msgstr ""
+"Scegli quali ruoli assegnare ai clienti dopo aver acquistato questo prodotto"
+
+#: admin/functions-admin-products.php:172
+msgid "Expires after"
+msgstr ""
+
+#: admin/functions-admin-products.php:194
+msgid "Set how long these roles will be assigned to the user"
+msgstr ""
+
+#: admin/functions-admin-products.php:205
+msgid "Assign user roles after cancelling subscription"
+msgstr ""
+"Assegna ruoli utente da assegnare dopo aver cancellato la sottoscrizione"
+
+#: admin/functions-admin-roles.php:23
+msgid "Please enter a name for the new role."
+msgstr "Inserisci un nome per il nuovo ruolo"
+
+#: admin/functions-admin-roles.php:35
+msgid "Please select the role to duplicate."
+msgstr "Selezione il ruolo da copiare"
+
+#: admin/functions-admin-roles.php:62
+msgid "A role with that name already exists."
+msgstr "Esiste già un ruolo con questo nome"
+
+#: admin/functions-admin-roles.php:80
+msgid "User role created."
+msgstr "Ruolo utente creato"
+
+#: admin/functions-admin-roles.php:98
+msgid "Please select the role to edit."
+msgstr "Seleziona il ruolo da editare"
+
+#: admin/functions-admin-roles.php:110
+msgid "Please enter the name of the role."
+msgstr "Inserisci il nome del ruolo"
+
+#: admin/functions-admin-roles.php:148
+msgid "User role updated."
+msgstr "Aggiorna il ruolo utente"
+
+#: admin/functions-admin-settings.php:18
+msgid "Log In Status"
+msgstr "Status Login"
+
+#: admin/functions-admin-settings.php:20
+msgid "User Role"
+msgstr "Ruolo Utente"
+
+#: admin/functions-admin-settings.php:56 admin/functions-admin-settings.php:70
+msgid "All Product Pages"
+msgstr "Tutte le Pagine Utente"
+
+#: admin/functions-admin-settings.php:57 admin/functions-admin-settings.php:71
+msgid "All WooCommerce Pages"
+msgstr "Tutte le Pagine ECommerce"
+
+#: admin/functions-admin-settings.php:58 admin/functions-admin-settings.php:72
+msgid "Entire Site"
+msgstr "Intero Sito"
+
+#: admin/functions-admin-settings.php:59 admin/functions-admin-settings.php:73
+msgid "Specified Categories"
+msgstr "Categorie Specificate"
+
+#: admin/functions-admin-settings.php:89
+msgid "Referring page"
+msgstr "Pagine di Referring"
+
+#: admin/functions-admin-settings.php:98
+msgid "Redirect"
+msgstr "Redirect"
+
+#: admin/functions-admin-settings.php:99
+msgid "Stay on Page"
+msgstr "Rimani sulla Pagina"
+
+#: admin/functions-admin-settings.php:152
+msgid "Restriction"
+msgstr "Restrizione"
+
+#: admin/functions-admin-settings.php:174
+msgid "Day(s)"
+msgstr ""
+
+#: admin/functions-admin-settings.php:175
+msgid "Week(s)"
+msgstr ""
+
+#: admin/functions-admin-settings.php:176
+msgid "Month(s)"
+msgstr ""
+
+#: admin/functions-admin-settings.php:177
+msgid "Year(s)"
+msgstr ""
+
+#: admin/functions-admin-settings.php:191
+msgid "First Name"
+msgstr ""
+
+#: admin/functions-admin-settings.php:195
+msgid "Last Name"
+msgstr ""
+
+#: admin/functions-admin-users.php:23
+msgid "Role Expiry Dates"
+msgstr ""
+
+#: inc/functions-approvals.php:26
+msgid "Pending"
+msgstr "Pendente"
+
+#: inc/functions-approvals.php:33
+msgid "Rejected"
+msgstr "Rifiutato"
+
+#: inc/functions-approvals.php:57
+msgid "New user registration"
+msgstr "Nuova registrazione utente"
+
+#: inc/functions-approvals.php:82
+#, php-format
+msgid ""
+"A new user has registered on %s. Please follow <a href=\"%s\">this link to "
+"review their registration</a>."
+msgstr ""
+"Nuovo utente registrato su %s. Clicca qui <a href=\"%s\">questo link "
+"revisiona registrazione</a>."
+
+#: inc/functions-approvals.php:126 inc/functions-approvals.php:144
+msgid "Approve this user"
+msgstr "Approva questo utente"
+
+#: inc/functions-approvals.php:134
+msgid "Reject this user"
+msgstr "Rifiuta questo utente"
+
+#: inc/functions-approvals.php:220
+#, php-format
+msgid "Your registration on %s"
+msgstr "Registrazione su %s"
+
+#: inc/functions-approvals.php:238
+#, fuzzy, php-format
+#| msgid ""
+#| "Your registration on %s has been approved. Please  <a href=\"%s\">click "
+#| "here to log in</a>."
+msgid ""
+"Your registration on %s has been approved. Please <a href=\"%s\">click here "
+"to log in</a>."
+msgstr ""
+"La tua registrazione su %s è stata approvata. Per favore  <a href=\"%s"
+"\">clicca quiper loggarti</a>."
+
+#: inc/functions-approvals.php:251
+#, php-format
+msgid "Your registration on %s has been rejected."
+msgstr "La tua registrazione su %s è stata respinta."
+
+#: inc/functions-passwords.php:33
+msgid "Enter your password"
+msgstr "Inserisci la tua password"
+
+#: inc/functions-passwords.php:34
+msgid "Submit"
+msgstr "Invia"
+
+#: inc/functions-passwords.php:35
+msgid "You have entered the incorrect password"
+msgstr "Hai inserito una password errata"
+
+#: inc/functions-passwords.php:36
+msgid "You have entered the correct password"
+msgstr "Hai inserito la password corretta"
+
+#: inc/functions-registration.php:72
+msgid "Role"
+msgstr "Ruolo"
+
+#: inc/functions-registration.php:117
+#, fuzzy, php-format
+#| msgid "Please enter a name for the new role."
+msgid "Please enter a value for %s"
+msgstr "Inserisci un nome per il nuovo ruolo"
+
+#: inc/functions-users.php:68
+msgid "Your user account is still pending"
+msgstr "Il tuo account è ancora in revisione"
+
+#: inc/functions-users.php:87
+msgid "Your user account has been rejected"
+msgstr "Il tuo account è stato bloccato"
+
+#: inc/licence/class-wcmo-updater.php:225
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr ""
+"Una nuova versione di %1$s è disponibile. %2$sVedi versione %3$s dettagli"
+"%4$s."
+
+#: inc/licence/class-wcmo-updater.php:233
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s "
+"or %5$supdate now%6$s."
+msgstr ""
+
+#: inc/licence/class-wcmo-updater.php:466
+msgid "You do not have permission to install plugin updates"
+msgstr "Non hai il permesso per installare gli aggiornamenti del plugin"
+
+#: inc/licence/class-wcmo-updater.php:466
+msgid "Error"
+msgstr "Errore"
+
+#: inc/licence/functions-licence.php:85 inc/licence/functions-licence.php:188
+msgid "An error occurred, please try again."
+msgstr "Si è verificato un errore, per favore riporva."
+
+#: inc/licence/functions-licence.php:94
+msgid "There was a problem in activating your licence: "
+msgstr "Si è verificato un problema nell’attivazione della tua licenza:"
+
+#: inc/licence/functions-licence.php:101
+#, php-format
+msgid "your licence key expired on %s."
+msgstr "la tua licenza è scaduta il  %s."
+
+#: inc/licence/functions-licence.php:109
+msgid "your licence key has been disabled."
+msgstr "la tua licenza è stata disabilitata"
+
+#: inc/licence/functions-licence.php:114
+msgid "the licence is invalid."
+msgstr "\"la licenza non è valid"
+
+#: inc/licence/functions-licence.php:120
+msgid "the licence is not active for this URL."
+msgstr "la licenza non è attiva per questo URL"
+
+#: inc/licence/functions-licence.php:125
+#, php-format
+msgid "this appears to be an invalid licence key for %s."
+msgstr "questo sembra essere un codice licenza invalido per  %s."
+
+#: inc/licence/functions-licence.php:130
+msgid "your licence key has reached its activation limit."
+msgstr "la tua licenza ha raggiunto il suo limite di attivazioni."
+
+#: inc/licence/functions-licence.php:135
+msgid "an error occurred, please try again."
+msgstr "si è verificato un errore, prego provare ancora."
+
+#: inc/licence/functions-licence.php:139
+msgid ""
+" Please ensure you enter the correct licence key as the plugin will not work "
+"correctly without it."
+msgstr ""
+"Prego assicurarsi di aver inserito il codice licenza corretto, il plugin non "
+"funzionerà correttamente senza di esso.."
+
+#: inc/licence/functions-licence.php:225
+msgid ""
+"Your licence is not currently activated. Please ensure you activate your "
+"licence in order to use all the features of this plugin. Your licence number "
+"will be on the email you were sent with the download link."
+msgstr ""
+"La tua licenza non è correttamente attivata. Prego assicurarsi di attivarela "
+"tua licenza per usare tutte le funzioni del plugin. Il tuo numero di "
+"licenzaarriverà tramite una email che ti è stata inviata con il link di "
+"download"
+
+#: woocommerce-members-only.php:41
+msgid ""
+"WooCommerce Members Only requires WooCommerce to be installed. Please "
+"install and activate WooCommerce."
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://pluginrepublic.com/wordpress-plugins/woocommerce-members-only/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Create private stores and membership sites with WooCommerce"
+msgstr "Crea negozi privati e piani di membership con WooCommerce"
+
+#. Author of the plugin/theme
+msgid "Plugin Republic"
+msgstr "Plugin Republic"
+
+#. Author URI of the plugin/theme
+msgid "https://pluginrepublic.com"
+msgstr ""

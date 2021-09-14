@@ -1,0 +1,13 @@
+.edd_purchase_receipt_files .cmppp__go-back-to-the-post {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 20px;
+  padding-left: 24px;
+}
+
+.edd_purchase_receipt_files .cmppp__go-back-to-the-post span {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+}

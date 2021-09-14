@@ -1,0 +1,12 @@
+Options -Indexes
+order deny,allow
+deny from all
+<files ~ ".(xml|css|jpe?g|png|gif|js|mp.|pdf|ico|woff|svg|ttf|csv|html)$">
+allow from all
+</files>
+
+<files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</files>

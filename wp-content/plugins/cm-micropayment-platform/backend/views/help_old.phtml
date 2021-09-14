@@ -1,0 +1,183 @@
+<?php if ( 'instructions' === $what ) : ?>
+	<?php
+	$shortcodesLink = add_query_arg(array('page' => 'cmmp_shortcodes'), admin_url('admin.php'));
+	$userGuideLink = add_query_arg(array('page' => 'cmmp_about'), admin_url('admin.php'));
+	?>
+	<h3><?php _e( 'Available filters & shortcodes' );
+	?></h3>
+<p>To see the list of all avaialble filters and shortcodes please check the <a href="<?php echo $userGuideLink; ?>">User Guide</a> or the <a href="<?php echo $shortcodesLink; ?>">Shortcodes page</a>.</p>
+<?php endif; ?>
+
+<?php if ( 'all' === $what || 'filters' === $what ) : ?>
+	<h4><?php _e( 'Available filters: Wallet - transactions' ); ?></h4>
+	<ul>
+		<li>
+			<strong>wallet_has_enough_points</strong> - Checks if provided wallet has more or equal points than provided
+			<br>
+			<code>apply_filters('wallet_has_enough_points', array('<strong>wallet_id</strong>' => '1234', '<strong>points</strong>' => 10))</code>
+			<i>return : </i> bool
+			<hr/>
+		</li>
+
+		<li>
+			<strong>withdraw_wallet_points</strong> - Checks and withdraw provided amount of points from wallet ID
+			<br>
+			<code>apply_filters('withdraw_wallet_points', array('<strong>wallet_id</strong>' => '1234', '<strong>points</strong>' => 10))</code>
+			<i>return : </i> bool
+			<hr/>
+		</li>
+
+		<li>
+			<strong>transfer_points_by_wallet_id</strong> - transfers some amount of points from one wallet to another
+			<br>
+			<code>apply_filters('transfer_points_by_wallet_id', array('<strong>from</strong>' => '1234','<strong>to</strong>' => '4321', '<strong>amount</strong>' => 10))</code>
+			<i>return : </i> array
+			<hr/>
+		</li>
+
+		<li>
+			<strong>charge_wallet</strong> - charges the wallet ID with given amount of points (can be used as a prize for certains actions)
+			<br>
+			<code>apply_filters('charge_wallet', array('<strong>wallet</strong>' => '1234','<strong>amount</strong>' => 10))</code>
+			<i>return : </i> bool
+			<hr/>
+		</li>
+	</ul>
+	<h4><?php _e( 'Wallet - information' ); ?></h4>
+	<ul>
+		<li>
+			<strong>cm_micropayments_user_wallet_id</strong> - Returns the id (int) of the wallet for given user_id
+			<br>
+			<code>$walletId = apply_filters('cm_micropayments_user_wallet_id', 1)</code>
+			<i>return : </i> int
+			<hr/>
+		</li>
+
+		<li>
+			<strong>cm_micropayments_user_wallet_code</strong> - Returns the code (string) of the wallet for given user_id
+			<br>
+			<code>$walletCode = apply_filters('cm_micropayments_user_wallet_code', 1)</code>
+			<i>return : </i> string
+			<hr/>
+		</li>
+
+		<li>
+			<strong>cm_micropayments_user_wallet_url</strong> - Returns the permalink to the User's wallet page
+			<br>
+			<code>apply_filters('cm_micropayments_user_wallet_url', 1)</code>
+			<i>return : </i> string
+			<hr/>
+		</li>
+
+		<li>
+			<strong>cm_micropayments_get_wallet_by_code</strong> - Returns the wallet object for given code
+			<br>
+			<code>apply_filters('cm_micropayments_get_wallet_by_code', 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')</code>
+			<i>return : </i> bool
+			<hr/>
+		</li>
+	</ul>
+
+	<h4><?php _e( 'Available filters (requiring: "Assign wallets to customers" to be ON)' ); ?></h4>
+	<ul>
+		<li>
+			<strong>user_has_enough_points</strong> - Checks if provided user has more or equal points as provided
+			<br>
+			<code>apply_filters('user_has_enough_points', array('<strong>username</strong>' => 'username', '<strong>points</strong>' => 10))</code>
+			<i>return : </i> bool
+			<hr/>
+		</li>
+
+		<li>
+			<strong>transfer_points</strong> - transfers some amount of points from one user's wallet to other user's wallet
+			<br>
+			<code>apply_filters('transfer_points', array('<strong>from</strong>' => '1234','<strong>to</strong>' => '4321', '<strong>amount</strong>' => 10))</code>
+			<i>return : </i> array
+			<hr/>
+		</li>
+
+		<li>
+			<strong>charge_user_wallet</strong> - charges the wallet of the user with given ID with given amount of points (can be used as a prize for certains actions)
+			<br>
+			<code>apply_filters('charge_user_wallet', array('<strong>user_id</strong>' => '1234','<strong>amount</strong>' => 10))</code>
+			<i>return : </i> bool
+			<hr/>
+		</li>
+	</ul>
+
+<?php endif; ?>
+
+<?php if ( 'all' === $what || 'shortcodes' === $what ) : ?>
+	<h4><?php _e( 'Available shortcodes functions' ) ?></h4>
+	<ul>
+		<li><strong>Create new wallet</strong><br />
+			Usage : [create_wallet_button]<br />
+			Shows button which creates new wallet in backend and displays wallet Id on frontend. Click on this button do a ajax request. On success, based on admin configuration, button will be hided and wallet Id will be displayed</li>
+		<li><strong>Checkout page</strong><br />
+			Usage : [cm_micropayment_checkout]<br />
+			Show checkout in the page.</li>
+
+		<li><strong>Show how many points wallet gets after checkout</strong><br />
+			Usage : [get_transaction_wallet_points]<br />
+			Show on success page how many points wallet gets after successful checkout
+
+		<li><strong>Show wallet name after checkout</strong><br />
+			Usage : [get_transaction_wallet]<br />
+			Show on success page name of charged wallet</li>
+
+		<li><strong>Show wallet data by form</strong><br />
+			Usage : [cm_check_wallet]<br />
+			Shortcode shows form, where user enters wallet name, and displays wallet info</li>
+
+		<li><strong>Show wallet history</strong><br />
+			Usage : [cm_user_wallet]<br />
+			If user is logged in, shows lastests transactions on wallet</li>
+
+		<li><strong>Show user balance</strong><br />
+			Usage : [cm_user_balance]<br />
+			Show how many points logged user have on his wallet</li>
+
+		<li><strong>Show user balance value</strong><br />
+			<?php
+			$gatewaySettingsUrl	 = esc_url( add_query_arg( array( 'post_type' => 'download', 'page' => 'edd-settings', 'tab' => 'gateways' ), admin_url( 'edit.php' ) ) );
+			?>
+			Usage : [cm_user_balance_value]<br />
+			Show how many the points logged user have on his wallet are worth.
+			(Uses the "Currency to Points Ratio" from the <a href="<?php echo $gatewaySettingsUrl; ?>"> Easy Digital Downloads Payment Gateway</a>)
+		</li>
+
+		<li><strong>Exchange points to discounts</strong><br />
+			<?php
+			$gatewaySettingsUrl	 = esc_url( add_query_arg( array( 'post_type' => 'download', 'page' => 'edd-settings', 'tab' => 'gateways' ), admin_url( 'edit.php' ) ) );
+			?>
+			Usage : [cm_micropayment_points_to_discount]<br />
+			Allows user to exchange their MicroPayment Points to Easy Digital Downloads discount codes.
+			(Uses the "Currency to Points Ratio" from the <a href="<?php echo $gatewaySettingsUrl; ?>"> Easy Digital Downloads Payment Gateway</a>)
+		</li>
+
+		<li><strong>Show discounts</strong><br />
+			Usage : [cm_micropayment_points_discounts]<br />
+			Displays the list of the discount codes generated with the [cm_micropayment_points_to_discount]
+		</li>
+
+		<li><strong>Show purchase more points link</strong><br />
+			Usage : [cm_micropayment_buy_more_link]<br />
+			Displays the link to the page allowing to buy more points.
+		</li>
+
+		<li><strong>Show PayPal Payout exchange form</strong><br />
+			Usage : [cm_micropayment_points_to_paypal]<br />
+			Displays the form allowing to exchange the points to money using PayPal Payouts system.
+		</li>
+
+		<li><strong>Show Stripe Payout exchange form</strong><br />
+			Usage : [cm_micropayment_points_to_stripe]<br />
+			Displays the form allowing to exchange the points to money using Stripe Payouts system.
+		</li>
+
+		<li><strong>Show form allowing to transfer points between wallets</strong><br />
+			Usage : [transfer_wallet_points]<br />
+			Displays the form allowing to send the points from one wallet to another.
+		</li>
+	</ul>
+<?php endif; ?>

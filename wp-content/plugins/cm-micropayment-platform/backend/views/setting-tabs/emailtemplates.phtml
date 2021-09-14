@@ -1,0 +1,236 @@
+<form action="" method="post">
+    <table class="form-table">
+        <tbody>
+            <tr valign="top">
+                <th scope="row">
+					<?php _e( 'Send Notifications' ) ?>
+					<div class="field_help" title="<?php _e( 'If this option is enabled the e-mail notifications on \'charge\', \'withdraw\' and \'transfer points\' will be sent' ) ?>"></div>
+				</th>
+				<td>
+					<input type="checkbox" value="1" name="cm_micropayment_send_notifications" id="cm_micropayment_send_notifications" <?php echo CMMicropaymentPlatform::get_option( 'cm_micropayment_send_notifications' ) == 1 ? 'checked="checked"' : '' ?>>
+				</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row">
+					<?php _e( '"Charge" e-mail - title' ) ?>
+					<div class="field_help" title="<?php _e( 'The title of the e-mail which will be sent when user charges the account.' ) ?>"></div>
+				</th>
+				<td>
+					<input name="cm_micropayment_email_charge_title" id="cm_micropayment_email_charge_title" class="regular-text" value="<?php echo stripslashes( CMMicropaymentPlatform::get_option( 'cm_micropayment_email_charge_title', '' ) ); ?>" />
+					<label for="cm_micropayment_email_charge_title"></label>
+				</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row"><?php _e( '"Charge" e-mail - content' ) ?>
+					<div class="field_help" title="<?php _e( 'You can use these shortcode placeholders: #br#[toID] - will be changed to user ID
+		            #br#[amountPoints] - will be changed to amount points wallet be charged
+		            #br#[toWalletID] - Wallet id which will be charged' ) ?>"></div>
+				</th>
+				<td>
+					<textarea rows="10" cols="50" name="cm_micropayment_email_charge" id="cm_micropayment_email_charge" class="regular-text"><?php echo stripslashes( CMMicropaymentPlatform::get_option( 'cm_micropayment_email_charge', '' ) ); ?></textarea>
+					<label for="cm_micropayment_email_charge"></label>
+					<p><?php _e( 'You can use these shortcode placeholders: <br />[toID] - will be changed to user ID
+	            <br />[amountPoints] - will be changed to amount points wallet be charged
+	            <br />[toWalletID] - Wallet id which will be charged' ) ?></p>
+				</td>
+			</tr>
+
+			<tr valign="top">
+				<th scope="row">
+					<?php _e( '"Grant" e-mail - title' ) ?>
+					<div class="field_help" title="<?php _e( 'The title of the e-mail which will be sent when user\'s wallet will be granted.' ) ?>"></div>
+				</th>
+				<td>
+					<input name="cm_micropayment_email_grant_title" id="cm_micropayment_email_grant_title" class="regular-text" value="<?php echo stripslashes( CMMicropaymentPlatform::get_option( 'cm_micropayment_email_grant_title', '' ) ); ?>" />
+					<label for="cm_micropayment_email_grant_title"></label>
+				</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row"><?php _e( '"Grant" e-mail - content' ) ?>
+					<div class="field_help" title="<?php _e( 'You can use these shortcode placeholders: #br#[toID] - will be changed to user ID
+		            #br#[amountPoints] - will be changed to amount points
+		            #br#[toWalletID] - Wallet id which will be granted' ) ?>"></div>
+				</th>
+				<td>
+					<textarea rows="10" cols="50" name="cm_micropayment_email_grant" id="cm_micropayment_email_grant" class="regular-text"><?php echo stripslashes( CMMicropaymentPlatform::get_option( 'cm_micropayment_email_grant', '' ) ); ?></textarea>
+					<label for="cm_micropayment_email_grant"></label>
+					<p><?php _e( 'You can use these shortcode placeholders: <br />[toID] - will be changed to user ID
+	            <br />[amountPoints] - will be changed to amount points
+	            <br />[toWalletID] - Wallet id which will be granted' ) ?></p>
+				</td>
+			</tr>
+
+			<tr valign="top">
+				<th scope="row">
+					<?php _e( '"Transfer" e-mail - title' ) ?>
+					<div class="field_help" title="<?php _e( 'The title of the e-mail which will be sent when user transfers the points from one account to another.' ) ?>"></div>
+				</th>
+				<td>
+					<input name="cm_micropayment_email_transfer_title" id="cm_micropayment_email_transfer_title" class="regular-text" value="<?php echo stripslashes( CMMicropaymentPlatform::get_option( 'cm_micropayment_email_transfer_title', '' ) ); ?>" />
+					<label for="cm_micropayment_email_transfer_title"></label>
+				</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row"><?php _e( '"Transfer" e-mail - content' ) ?>
+					<div class="field_help" title="<?php _e( 'You can use these shortcode placeholders:
+            #br#[toID], [toName], [toEmail] - will be changed to user ID
+            #br#[amountPoints] - will be changed to amount points wallet be charged
+            #br#[toWalletID] - Wallet id which will be charged
+            #br#[fromWalletID] - will be changed to user wallet name
+            #br#[amountPoints] - will be changed to amount points withdrawn from wallet
+            #br#[fromID], [fromName], [fromEmail] - will be withdrawer to user ID
+            #br#[message] - message content
+            ' ) ?>"></div>
+				</th>
+				<td>
+					<textarea rows="10" cols="50" name="cm_micropayment_email_transfer" id="cm_micropayment_email_transfer" class="regular-text"><?php echo stripslashes( CMMicropaymentPlatform::get_option( 'cm_micropayment_email_transfer', '' ) ); ?></textarea>
+					<label for="cm_micropayment_email_transfer"></label>
+					<p class="hint"><?php _e( 'You can use these shortcode placeholders:
+            <br />[toID], [toName], [toEmail] - will be changed to user ID
+            <br />[toWalletID] - Wallet id which will be charged
+            <br />[fromWalletID] - will be changed to user wallet name
+            <br />[amountPoints] - will be changed to amount points withdrawn from wallet
+            <br />[fromID], [fromName], [fromEmail] - will be withdrawer to user ID
+            <br />[message] - message content
+            ' ) ?></p>
+				</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row">
+					<?php _e( '"Withdraw" e-mail - title' ) ?>
+					<div class="field_help" title="<?php _e( 'The title of the e-mail which will be sent when user withdraws the points from account.' ) ?>"></div>
+				</th>
+				<td>
+					<input name="cm_micropayment_email_withdraw_title" id="cm_micropayment_email_withdraw_title" class="regular-text" value="<?php echo stripslashes( CMMicropaymentPlatform::get_option( 'cm_micropayment_email_withdraw_title', '' ) ); ?>" />
+					<label for="cm_micropayment_email_withdraw_title"></label>
+				</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row">
+					<?php _e( '"Withdraw" e-mail - content' ) ?>
+					<div class="field_help" title="<?php _e( 'You can use these shortcode placeholders:
+                #br#[fromWalletID] - will be changed to user wallet name
+                #br#[amountPoints] - will be changed to amount points withdrawn from wallet
+                #br#[fromID] - will be withdrawer to user ID
+                ' ) ?>"></div>
+				</th>
+				<td>
+					<textarea name="cm_micropayment_email_withdraw" id="cm_micropayment_email_withdraw" class="regular-text" rows="10" cols="50"><?php echo stripslashes( CMMicropaymentPlatform::get_option( 'cm_micropayment_email_withdraw', '' ) ); ?></textarea>
+					<label for="cm_micropayment_email_withdraw"></label>
+					<p><?php _e( 'You can use these shortcode placeholders:
+            <br />[fromWalletID] - will be changed to user wallet name
+            <br />[amountPoints] - amount of points withdrawn form wallet
+            <br />[fromID] - actual number of points in wallet
+            ' ) ?></p>
+				</td>
+			</tr>
+
+			<tr valign="top">
+				<th scope="row">
+					<?php _e( 'Send "Grant for purchase" Notifications' ) ?>
+					<div class="field_help" title="<?php _e( 'If this option is enabled the e-mail notifications will be sent when the user\'s wallet is granted points after the purchase. ' ) ?>"></div>
+				</th>
+				<td>
+					<input type="checkbox" value="1" name="cm_micropayment_send_purchase_grant_notifications" id="cm_micropayment_send_purchase_grant_notifications" <?php checked( '1', CMMicropaymentPlatform::get_option( 'cm_micropayment_send_purchase_grant_notifications' ) ); ?>>
+				</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row">
+					<?php _e( '"Grant for purchase" e-mail - title' ) ?>
+					<div class="field_help" title="<?php _e( 'The title of the e-mail which will be sent when user\'s wallet will be granted for the successfully purchase.' ) ?>"></div>
+				</th>
+				<td>
+					<input name="cm_micropayment_email_grant_for_purchase_title" id="cm_micropayment_email_grant_for_purchase_title" class="regular-text" value="<?php echo stripslashes( CMMicropaymentPlatform::get_option( 'cm_micropayment_email_grant_for_purchase_title', '' ) ); ?>" />
+					<label for="cm_micropayment_email_grant_for_purchase_title"></label>
+				</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row"><?php _e( '"Grant for purchase" e-mail - content' ) ?>
+					<div class="field_help" title="<?php _e( 'You can use these shortcode placeholders: #br#[toID] - will be changed to user ID
+		            #br#[amountPoints] - will be changed to amount points' ) ?>"></div>
+				</th>
+				<td>
+					<textarea rows="10" cols="50" name="cm_micropayment_email_grant_for_purchase" id="cm_micropayment_email_grant_for_purchase" class="regular-text"><?php echo stripslashes( CMMicropaymentPlatform::get_option( 'cm_micropayment_email_grant_for_purchase', '' ) ); ?></textarea>
+					<label for="cm_micropayment_email_grant_for_purchase"></label>
+					<p><?php _e( 'You can use these shortcode placeholders: <br />[toID] - will be changed to user ID
+	            <br />[amountPoints] - will be changed to amount points' ) ?></p>
+				</td>
+			</tr>
+
+			<tr valign="top">
+				<th scope="row">
+					<?php _e( 'Send "PayPal Payout" Notifications' ) ?>
+					<div class="field_help" title="<?php _e( 'If this option is enabled the e-mail notifications will be sent when the points are subtracted from the wallet after PayPal purchase. ' ) ?>"></div>
+				</th>
+				<td>
+					<input type="checkbox" value="1" name="cm_micropayment_send_paypal_payout_notifications" id="cm_micropayment_send_paypal_payout_notifications" <?php checked( '1', CMMicropaymentPlatform::get_option( 'cm_micropayment_send_paypal_payout_notifications' ) ); ?>>
+				</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row">
+					<?php _e( '"PayPal Payout" e-mail - title' ) ?>
+					<div class="field_help" title="<?php _e( 'The title of the e-mail which will be sent after the PayPal Payout' ) ?>"></div>
+				</th>
+				<td>
+					<input name="cm_micropayment_email_paypal_payout_title" id="cm_micropayment_email_paypal_payout_title" class="regular-text" value="<?php echo stripslashes( CMMicropaymentPlatform::get_option( 'cm_micropayment_email_paypal_payout_title', '' ) ); ?>" />
+					<label for="cm_micropayment_email_paypal_payout_title"></label>
+				</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row"><?php _e( '"PayPal Payout" e-mail - content' ) ?>
+					<div class="field_help" title="<?php _e( 'You can use these shortcode placeholders: #br#[toID] - will be changed to user ID
+		            #br#[amountPoints] - will be changed to amount points' ) ?>"></div>
+				</th>
+				<td>
+					<textarea rows="10" cols="50" name="cm_micropayment_email_paypal_payout" id="cm_micropayment_email_paypal_payout" class="regular-text"><?php echo stripslashes( CMMicropaymentPlatform::get_option( 'cm_micropayment_email_paypal_payout', '' ) ) ?></textarea>
+					<label for="cm_micropayment_email_paypal_payout"></label>
+					<p><?php _e( 'You can use these shortcode placeholders: <br />[toID] - will be changed to user ID
+	            <br />[amountPoints] - will be changed to amount points' ) ?></p>
+				</td>
+			</tr>
+            <tr valign="top">
+                <th scope="row">
+                    <?php _e( 'Send "Wallet exchange" Notifications' ) ?>
+                    <div class="field_help" title="<?php _e( 'If this option is enabled the e-mail notifications will be sent when user wallet will be exchanged with another user wallet. ' ) ?>"></div>
+                </th>
+                <td>
+                    <input type="checkbox" value="1" name="cm_micropayment_send_wallet_exchange_notifications" id="cm_micropayment_send_wallet_exchange_notifications" <?php checked( '1', CMMicropaymentPlatform::get_option( 'cm_micropayment_send_wallet_exchange_notifications' ) ); ?>>
+                </td>
+            </tr>
+            <tr valign="top">
+                <th scope="row">
+                    <?php _e( '"Wallet exchange" e-mail - title' ) ?>
+                    <div class="field_help" title="<?php _e( 'The title of the e-mail which will be sent after the Wallet exchange' ) ?>"></div>
+                </th>
+                <td>
+                    <input name="cm_micropayment_email_wallet_exchange_title" id="cm_micropayment_email_wallet_exchange_title" class="regular-text" value="<?php echo stripslashes( CMMicropaymentPlatform::get_option( 'cm_micropayment_email_wallet_exchange_title', '' ) ); ?>" />
+                    <label for="cm_micropayment_email_wallet_exchange_title"></label>
+                </td>
+            </tr>
+            <tr valign="top">
+                <th scope="row"><?php _e( '"Wallet exchange" e-mail - content' ) ?>
+                    <div class="field_help" title="<?php _e(
+                        'You can use these shortcode placeholders: <br />
+                             [fromName] - will be changed to user nickname <br />
+                             [fromWalletID] - will be changed to old user wallet name <br />
+                             [toWalletID] - will be changed to new user wallet name'
+                    ) ?>"></div>
+                </th>
+                <td>
+                    <textarea rows="10" cols="50" name="cm_micropayment_email_wallet_exchange" id="cm_micropayment_email_wallet_exchange" class="regular-text"><?php echo stripslashes( CMMicropaymentPlatform::get_option( 'cm_micropayment_email_wallet_exchange', '' ) ) ?></textarea>
+                    <label for="cm_micropayment_email_wallet_exchange"></label>
+                    <p>
+                        <?php _e(
+                        'You can use these shortcode placeholders: <br />
+                             [fromName] - will be changed to user nickname <br />
+                             [fromWalletID] - will be changed to old user wallet name <br />
+                             [toWalletID] - will be changed to new user wallet name'
+                        ) ?>
+                    </p>
+                </td>
+            </tr>
+            <?php echo do_action('micropayments_notifications_settings_after'); ?>
+        </tbody>
+    </table>
+    <p class="submit"><input type="submit" value="<?php _e( 'Save' ) ?>" class="button button-primary" id="submit" name="submit"></p>
+</form>

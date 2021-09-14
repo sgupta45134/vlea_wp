@@ -1,0 +1,6 @@
+<?php if($wallet->wallet_name == '' || $wallet->wallet_name == NULL): ?> 
+	Looks like you don't have a wallet. Please contact administrators.
+<?php else: ?>
+	Your wallet name : <strong><?php echo $wallet->wallet_name; ?></strong> <br>
+	Your points : <?php echo $wallet->points; ?>
+<?php endif; ?>

@@ -1,0 +1,20 @@
+<?php include_once CMMP_PLUGIN_DIR . '/backend/views/common/notifications.phtml'; ?>
+
+<form method="post">
+    <div>
+        <input onclick="return confirm( 'WARNING: All wallets will be erased! This cannot be reverted! Are you sure?' )" type="submit" name="cmmp_removeAllItems" value="Remove all Wallets" class="button cmmp-cleanup-button"/>
+    </div>
+</form>
+
+<h2 class="nav-tab-wrapper">
+
+    <a class="nav-tab<?php echo $page_tab == 'general' ? ' nav-tab-active' : '' ?>" href="<?php echo admin_url( 'admin.php?page=cm-micropayment-platform-settings' ) ?>"><?php _e( 'General' ) ?></a>
+    <a class="nav-tab<?php echo $page_tab == 'gateway' ? ' nav-tab-active' : '' ?>" href="<?php echo admin_url( 'admin.php?page=cm-micropayment-platform-settings&amp;tab=gateways' ) ?>"><?php _e( 'PayPal' ) ?></a>
+    <a class="nav-tab<?php echo $page_tab == 'stripe' ? ' nav-tab-active' : '' ?>" href="<?php echo admin_url( 'admin.php?page=cm-micropayment-platform-settings&amp;tab=stripes' ) ?>"><?php _e( 'Stripe ' ) ?></a>
+    <a class="nav-tab<?php echo $page_tab == 'emailtemplates' ? ' nav-tab-active' : '' ?>" href="<?php echo admin_url( 'admin.php?page=cm-micropayment-platform-settings&amp;tab=emailtemplates' ) ?>"><?php _e( 'Notifications' ) ?></a>
+    <a class="nav-tab<?php echo $page_tab == 'labels' ? ' nav-tab-active' : '' ?>" href="<?php echo admin_url( 'admin.php?page=cm-micropayment-platform-settings&amp;tab=labels' ) ?>"><?php _e( 'Labels' ) ?></a>
+    <a class="nav-tab<?php echo $page_tab == 'cron' ? ' nav-tab-active' : '' ?>" href="<?php echo admin_url( 'admin.php?page=cm-micropayment-platform-settings&amp;tab=cron' ) ?>"><?php _e( 'Periodic Grant/Charge' ) ?></a>
+    <?php do_action( 'cmmp_tab_wrapper', $page_tab ); ?>
+    <a class="nav-tab<?php echo $page_tab == 'points-prices' ? ' nav-tab-active' : '' ?>" href="<?php echo admin_url( 'admin.php?page=cm-micropayment-platform-settings&amp;tab=points-prices' ) ?>"><?php _e( 'Points' ) ?></a>
+    <a class="nav-tab<?php echo $page_tab == 'external-wallet' ? ' nav-tab-active' : '' ?>" href="<?php echo admin_url( 'admin.php?page=cm-micropayment-platform-settings&amp;tab=external-wallet' ) ?>"><?php _e( 'External wallet' ) ?></a>
+</h2>

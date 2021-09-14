@@ -1,0 +1,28 @@
+.field_help { width: 15px; height : 15px; background: url('../images/help.png'); display: inline-block; }
+#payment-filters { clear: both; display: block; }
+form#cm-micropayments-checkout-form ul.cm-micropayments-checkout-form-list label { display: inline-block; }
+.cm_mp_settings .form-table th { width:auto; }
+.cm_mp_settings .form-table td { padding:0; }
+
+.exw-status {
+    background: red;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 1.1em;
+}
+.exw-status.enabled{
+    background: green;
+}
+.ui-tooltip {
+    opacity: 1;
+    color: #ccc;
+}
+.cminds_guide_wrapper {
+    display: none !important;
+}
+#cmmp_change_user_wallet_show {
+    margin-top: -5px;
+}
+#cmmp_change_user_wallet_submit {
+    margin-top: 5px;
+}

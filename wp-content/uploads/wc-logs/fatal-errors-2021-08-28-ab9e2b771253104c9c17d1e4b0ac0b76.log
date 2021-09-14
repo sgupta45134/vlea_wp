@@ -1,0 +1,2 @@
+2021-08-28T06:21:15+00:00 CRITICAL Trait 'Automattic\WooCommerce\Admin\API\CustomAttributeTraits' not found in /home/hfgmgvmwda5f/public_html/v2/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/API/ProductAttributes.php on line 17
+

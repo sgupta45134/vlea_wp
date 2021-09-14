@@ -1,0 +1,19 @@
+<?php
+if ( ! $is_logged ) {
+	echo "<div class='wallet_id_unassigned'>" . __cm('anonymous_mode_disabled') . "</div>";
+} else {
+	if ( !empty($user_wallets) &&  ( count($user_wallets) > 0 ) ) {
+		echo "<div class='wallet_id_bar'><div>" . __cm('your_wallet_id_is') . "</div>";
+		foreach ( $user_wallets as $wallet_id ) {
+			echo "<span class='currentWalletID'>" . $wallet_id ."</span>";
+		}
+		echo "</div>";
+	}
+	if ( count($user_wallets) < $wallets_qty_limit ) {
+		echo "<a href='#' class='cmmp_button create-wallet-button-ajax'>" .	"<span class='dashicons dashicons-plus'></span>" . __cm('create_wallet') . "</a><div class='new_wallet_id_bar' style='display:none;'><div>" . __cm('new_wallet_id_is') . "</div></div>";
+	} elseif ( $wallets_qty_limit === 1 ) {
+		echo "<div class='wallet_id_unassigned'>" . __cm('only_one_wallet_for_user') . "</div>";
+	} else {
+		echo sprintf("<div class='wallet_id_unassigned'>" . __cm('wallets_quantity_limit_reached') . "</div>", $wallets_qty_limit);
+	}
+}
